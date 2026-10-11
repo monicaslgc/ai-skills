@@ -6,8 +6,6 @@ description: >
   "check my sensors", "what's the humidity", "show my energy usage", "is the garage open",
   "what devices are on", "check the thermostat", "how much energy", "sensor readings",
   "what's happening at home", "show me my home status".
-metadata:
-  version: "0.1.0"
 ---
 
 Query Home Assistant for current device states, sensor readings, and history.

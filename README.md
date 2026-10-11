@@ -2,7 +2,7 @@
 
 ![Validate](https://github.com/monicaslgc/ai-skills/actions/workflows/validate.yml/badge.svg)
 
-Small, single-purpose AI skills (`SKILL.md` instruction files) that I use for my self-hosted homelab, smart home and personal AI memory. Each skill is independent: copy one folder and it works.
+Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers and content creation. Each skill is independent: copy one folder and it works.
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
@@ -10,34 +10,56 @@ The instructions are plain Markdown and work with any agent that supports `SKILL
 
 ## Skills
 
+### Smart home
+
 | Skill | Use it when | Needs |
 |---|---|---|
 | [`control-devices`](skills/control-devices) | "Turn off the living room lights", set thermostat, blinds, fans | [Home Assistant server](tools/home-assistant-mcp) |
 | [`manage-automations`](skills/manage-automations) | List, create, enable or trigger Home Assistant automations | [Home Assistant server](tools/home-assistant-mcp) |
 | [`query-status`](skills/query-status) | "What's the state of X", history, unavailable entities | [Home Assistant server](tools/home-assistant-mcp) |
+
+### Memory
+
+| Skill | Use it when | Needs |
+|---|---|---|
 | [`memory-search`](skills/memory-search) | Look up something from past conversations | Basic Memory server |
 | [`memory-recall`](skills/memory-recall) | Start a session with relevant past context loaded | Basic Memory server |
 | [`memory-browse`](skills/memory-browse) | See an overview of what's stored | Basic Memory server |
 | [`memory-facts`](skills/memory-facts) | Show structured facts and preferences | Basic Memory server |
-| [`ssh-remote-pc`](skills/ssh-remote-pc) | Check on or run safe commands on a personal Windows PC | [SSH server](tools/ssh-remote-pc-mcp) |
+
+### Self-hosted AI and homelab
+
+| Skill | Use it when | Needs |
+|---|---|---|
 | [`local-ai-deployment-planner`](skills/local-ai-deployment-planner) | Plan a local model deployment | nothing |
 | [`self-hosted-incident-triage`](skills/self-hosted-incident-triage) | Diagnose a failing self-hosted service | nothing |
 | [`self-hosted-ai-workflow-designer`](skills/self-hosted-ai-workflow-designer) | Design an automation between services | nothing |
-| [`job-posting-scorer`](skills/job-posting-scorer) | Rank job postings with transparent, rules-based scoring | nothing |
-| [`slow-llm-db-safety`](skills/slow-llm-db-safety) | Fix database errors that follow slow local-model calls | nothing |
 | [`local-llm-ram-guard`](skills/local-llm-ram-guard) | Stop local models exhausting host RAM | nothing |
-| [`content-pipeline-planner`](skills/content-pipeline-planner) | Plan an auto-edit pipeline for short vertical videos | nothing |
+| [`slow-llm-db-safety`](skills/slow-llm-db-safety) | Fix database errors that follow slow local-model calls | nothing |
+| [`ssh-remote-pc`](skills/ssh-remote-pc) | Check on or run safe commands on a personal Windows PC | [SSH server](tools/ssh-remote-pc-mcp) |
+
+### Careers and planning
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`job-posting-scorer`](skills/job-posting-scorer) | Rank job postings with transparent, rules-based scoring | nothing |
 | [`user-story-writer`](skills/user-story-writer) | Write a user story with testable acceptance criteria for any skill or feature | nothing |
-| [`create-cozy-gameplay-overlays`](skills/create-cozy-gameplay-overlays) | Vertical overlays, plates and title cards for cozy gameplay videos | image / video tools |
-| [`create-channel-brand-assets`](skills/create-channel-brand-assets) | Banners, frames, cutouts, mascot art and component packs | image / video tools |
-| [`design-youtube-thumbnails`](skills/design-youtube-thumbnails) | Thumbnails and editable templates from real photos and game art | image / video tools |
-| [`deslop-designs`](skills/deslop-designs) | Checklist that removes generic AI-looking tells from designs | image / video tools |
+
+### Content creation
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`content-pipeline-planner`](skills/content-pipeline-planner) | Plan an auto-edit pipeline for short vertical videos | nothing |
+| [`plan-creator-content`](skills/plan-creator-content) | Research-backed content plans, briefs, calendars and reviews | image / video tools |
+| [`write-social-captions`](skills/write-social-captions) | Platform-specific captions, titles and hashtags | image / video tools |
 | [`edit-short-form-videos`](skills/edit-short-form-videos) | Edit plans, 9:16 reframing, video repairs and audio checks | image / video tools |
 | [`make-daily-challenge-shorts`](skills/make-daily-challenge-shorts) | One Short per day for a themed challenge from your own template | image / video tools |
 | [`photo-post-deliverables`](skills/photo-post-deliverables) | Five sized exports per image for photo posts and carousels | Python 3 + Pillow |
-| [`plan-creator-content`](skills/plan-creator-content) | Research-backed content plans, briefs, calendars and reviews | image / video tools |
+| [`design-youtube-thumbnails`](skills/design-youtube-thumbnails) | Thumbnails and editable templates from real photos and game art | image / video tools |
+| [`create-channel-brand-assets`](skills/create-channel-brand-assets) | Banners, frames, cutouts, mascot art and component packs | image / video tools |
+| [`create-cozy-gameplay-overlays`](skills/create-cozy-gameplay-overlays) | Vertical overlays, plates and title cards for cozy gameplay videos | image / video tools |
+| [`deslop-designs`](skills/deslop-designs) | Checklist that removes generic AI-looking tells from designs | image / video tools |
 | [`style-inspired-cosplay-looks`](skills/style-inspired-cosplay-looks) | Describe dress-up looks inspired by other characters honestly | image / video tools |
-| [`write-social-captions`](skills/write-social-captions) | Platform-specific captions, titles and hashtags | image / video tools |
 
 ## Tool requirements
 

@@ -8,8 +8,6 @@ description: >
   command on my desktop", "what processes are eating memory on my machine",
   or "is my SSH server set up yet". Also use it when the user wants help
   setting up SSH access to a personal Windows PC for the first time.
-metadata:
-  version: "0.1.0"
 ---
 
 # SSH Remote PC Control

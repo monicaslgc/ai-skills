@@ -5,8 +5,6 @@ description: >
   Trigger phrases: "turn on/off", "dim the lights", "set the thermostat", "close the blinds",
   "lock the door", "turn everything off", "set brightness", "change the temperature",
   "switch on", "toggle", "set the fan", "control my lights", "adjust the climate".
-metadata:
-  version: "0.1.0"
 ---
 
 Control Home Assistant devices by calling services through the MCP server.

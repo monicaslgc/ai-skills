@@ -5,8 +5,6 @@ description: >
   Trigger phrases: "trigger my automation", "run the morning routine", "list my automations",
   "disable the automation", "enable automation", "what automations do I have",
   "run automation", "turn off automation", "activate scene", "which automations are on".
-metadata:
-  version: "0.1.0"
 ---
 
 List, trigger, enable, and disable Home Assistant automations and scenes.

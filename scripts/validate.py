@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check every skill: valid frontmatter, folder/name match, no secrets or private IPs."""
+"""Check every skill: frontmatter, folder/name match, user story, README listing, no secrets or private IPs."""
 from pathlib import Path
 import re
 import sys
@@ -36,6 +36,13 @@ for d in dirs:
         errors.append(f"{d.name}: body too short")
     if body.count("```") % 2:
         errors.append(f"{d.name}: unbalanced code fence")
+
+readme = (ROOT / "README.md").read_text(encoding="utf-8")
+for d in dirs:
+    if not (d / "USER_STORY.md").is_file():
+        errors.append(f"{d.name}: missing USER_STORY.md")
+    if f"(skills/{d.name})" not in readme:
+        errors.append(f"{d.name}: not listed in README.md")
 
 for f in ROOT.rglob("*"):
     if f.is_file() and ".git" not in f.parts and f.suffix in {".md", ".json", ".yml", ".yaml", ".py"} and f.name != "validate.py":
