@@ -28,6 +28,16 @@ The instructions are plain Markdown and work with any agent that supports `SKILL
 | [`local-llm-ram-guard`](skills/local-llm-ram-guard) | Stop local models exhausting host RAM | nothing |
 | [`content-pipeline-planner`](skills/content-pipeline-planner) | Plan an auto-edit pipeline for short vertical videos | nothing |
 | [`user-story-writer`](skills/user-story-writer) | Write a user story with testable acceptance criteria for any skill or feature | nothing |
+| [`create-cozy-gameplay-overlays`](skills/create-cozy-gameplay-overlays) | Vertical overlays, plates and title cards for cozy gameplay videos | image / video tools |
+| [`create-channel-brand-assets`](skills/create-channel-brand-assets) | Banners, frames, cutouts, mascot art and component packs | image / video tools |
+| [`design-youtube-thumbnails`](skills/design-youtube-thumbnails) | Thumbnails and editable templates from real photos and game art | image / video tools |
+| [`deslop-designs`](skills/deslop-designs) | Checklist that removes generic AI-looking tells from designs | image / video tools |
+| [`edit-short-form-videos`](skills/edit-short-form-videos) | Edit plans, 9:16 reframing, video repairs and audio checks | image / video tools |
+| [`make-daily-challenge-shorts`](skills/make-daily-challenge-shorts) | One Short per day for a themed challenge from your own template | image / video tools |
+| [`photo-post-deliverables`](skills/photo-post-deliverables) | Five sized exports per image for photo posts and carousels | Python 3 + Pillow |
+| [`plan-creator-content`](skills/plan-creator-content) | Research-backed content plans, briefs, calendars and reviews | image / video tools |
+| [`style-inspired-cosplay-looks`](skills/style-inspired-cosplay-looks) | Describe dress-up looks inspired by other characters honestly | image / video tools |
+| [`write-social-captions`](skills/write-social-captions) | Platform-specific captions, titles and hashtags | image / video tools |
 
 ## Tool requirements
 
