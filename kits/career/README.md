@@ -30,6 +30,17 @@ cp -r ai-skills/skills/achievement-story-builder ~/.claude/skills/
 cp -r ai-skills/skills/confidentiality-safe-wording ~/.claude/skills/
 ```
 
+On Windows PowerShell:
+
+```powershell
+git clone https://github.com/monicaslgc/ai-skills.git
+Copy-Item -Recurse ai-skills\skills\job-posting-scorer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\cv-tailoring-from-master "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\cover-letter-writer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\achievement-story-builder "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\confidentiality-safe-wording "$env:USERPROFILE\.claude\skills\"
+```
+
 These skills need no tools or servers. Each skill folder has a `USER_STORY.md` with a scenario and an example prompt.
 
 All examples are invented. Do not paste real personal data, credentials or confidential contract text into a chat you do not control.

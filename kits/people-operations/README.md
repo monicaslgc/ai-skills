@@ -33,6 +33,18 @@ cp -r ai-skills/skills/interview-kit-builder ~/.claude/skills/
 cp -r ai-skills/skills/employee-onboarding-plan ~/.claude/skills/
 ```
 
+On Windows PowerShell:
+
+```powershell
+git clone https://github.com/monicaslgc/ai-skills.git
+Copy-Item -Recurse ai-skills\skills\capacity-planning-forecast "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\shift-schedule-planner "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\leave-attendance-process-designer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\cv-screening-rubric "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\interview-kit-builder "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\employee-onboarding-plan "$env:USERPROFILE\.claude\skills\"
+```
+
 These skills need no tools or servers. Each skill folder has a `USER_STORY.md` with a scenario and an example prompt.
 
 All examples are invented. Do not paste real personal data, credentials or confidential contract text into a chat you do not control.

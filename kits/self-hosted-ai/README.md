@@ -31,6 +31,18 @@ cp -r ai-skills/skills/slow-llm-db-safety ~/.claude/skills/
 cp -r ai-skills/skills/ssh-remote-pc ~/.claude/skills/
 ```
 
+On Windows PowerShell:
+
+```powershell
+git clone https://github.com/monicaslgc/ai-skills.git
+Copy-Item -Recurse ai-skills\skills\local-ai-deployment-planner "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\self-hosted-ai-workflow-designer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\self-hosted-incident-triage "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\local-llm-ram-guard "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\slow-llm-db-safety "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ssh-remote-pc "$env:USERPROFILE\.claude\skills\"
+```
+
 Most of these skills need no tools. `ssh-remote-pc` needs the SSH MCP server in [`tools/ssh-remote-pc-mcp`](../../tools/ssh-remote-pc-mcp). Each skill folder has a `USER_STORY.md` with a scenario and an example prompt.
 
 All examples are invented. Do not paste real personal data, credentials or confidential contract text into a chat you do not control.

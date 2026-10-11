@@ -51,6 +51,26 @@ cp -r ai-skills/skills/ha-notification-designer ~/.claude/skills/
 cp -r ai-skills/skills/ha-entity-naming-audit ~/.claude/skills/
 ```
 
+On Windows PowerShell:
+
+```powershell
+git clone https://github.com/monicaslgc/ai-skills.git
+Copy-Item -Recurse ai-skills\skills\control-devices "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\query-status "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\manage-automations "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-device-health-check "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-lighting-troubleshooter "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-automation-designer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-automation-debugger "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-energy-insights "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-climate-comfort-advisor "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-night-security-check "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-home-maintenance-planner "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-vacuum-routines "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-notification-designer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\ha-entity-naming-audit "$env:USERPROFILE\.claude\skills\"
+```
+
 These skills need the Home Assistant MCP server in [`tools/home-assistant-mcp`](../../tools/home-assistant-mcp) (`HA_URL` and `HA_TOKEN` as environment variables). They use only its existing tools. Each skill folder has a `USER_STORY.md` with a scenario and an example prompt.
 
 All examples are invented. Do not paste real personal data, credentials or confidential contract text into a chat you do not control.

@@ -39,6 +39,20 @@ cp -r ai-skills/skills/change-request-assessor ~/.claude/skills/
 cp -r ai-skills/skills/project-retrospective ~/.claude/skills/
 ```
 
+On Windows PowerShell:
+
+```powershell
+git clone https://github.com/monicaslgc/ai-skills.git
+Copy-Item -Recurse ai-skills\skills\project-charter-writer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\project-plan-builder "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\user-story-writer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\raid-log-manager "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\status-report-writer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\meeting-minutes-to-actions "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\change-request-assessor "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\project-retrospective "$env:USERPROFILE\.claude\skills\"
+```
+
 These skills need no tools or servers. Each skill folder has a `USER_STORY.md` with a scenario and an example prompt.
 
 All examples are invented. Do not paste real personal data, credentials or confidential contract text into a chat you do not control.

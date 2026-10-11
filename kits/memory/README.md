@@ -28,6 +28,16 @@ cp -r ai-skills/skills/memory-browse ~/.claude/skills/
 cp -r ai-skills/skills/memory-facts ~/.claude/skills/
 ```
 
+On Windows PowerShell:
+
+```powershell
+git clone https://github.com/monicaslgc/ai-skills.git
+Copy-Item -Recurse ai-skills\skills\memory-search "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\memory-recall "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\memory-browse "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\memory-facts "$env:USERPROFILE\.claude\skills\"
+```
+
 These skills need the open-source [Basic Memory](https://github.com/basicmachines-co/basic-memory) MCP server (for example `uvx basic-memory mcp`). Each skill folder has a `USER_STORY.md` with a scenario and an example prompt.
 
 All examples are invented. Do not paste real personal data, credentials or confidential contract text into a chat you do not control.

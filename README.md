@@ -103,7 +103,7 @@ Part of the [People operations kit](kits/people-operations).
 
 ### Support operations
 
-Part of the [Support operations kit](kits/support-knowledge).
+Part of the [Support operations kit](kits/support-operations).
 
 | Skill | Use it when | Needs |
 |---|---|---|
@@ -158,7 +158,7 @@ Every skill belongs to one kit. Each kit page has a suggested order and one-step
 - [Content creation kit](kits/content-creation): Skills for gaming and creator channels: planning, captions, editing, thumbnails, brand assets, photo posts and challenge series.
 - [Project management kit](kits/project-management): Skills that take a project from idea to close: charter, plan, risk log, status reports, minutes, change control and retrospective.
 - [People operations kit](kits/people-operations): Skills for managers and HR teams: shift scheduling, capacity planning, onboarding, structured interviews, CV screening and leave processes.
-- [Support operations kit](kits/support-knowledge): Skills for running a support team: SLAs and escalation, KPIs, quality audits, coaching and access management.
+- [Support operations kit](kits/support-operations): Skills for running a support team: SLAs and escalation, KPIs, quality audits, coaching and access management.
 - [Operations and productivity kit](kits/operations-productivity): Skills for making work repeatable and measurable: SOPs, automation opportunities and data-backed insight writing.
 - [Agent management kit](kits/agent-management): Skills for running AI agents responsibly: charter, permissions, evaluation, approval gates, release and incident review.
 - [Career kit](kits/career): Skills for job applications built from one honest master CV: tailoring, cover letters, interview stories and confidentiality-safe wording.
@@ -232,8 +232,8 @@ Everything here is a general method written with invented examples, and each ski
 
 ## Get involved
 
-- **Need a skill?** [Request one](../../issues/new?template=skill_request.yml)
-- **A skill gave a bad answer?** [Report it](../../issues/new?template=bad_output.yml)
+- **Need a skill?** [Request one](https://github.com/monicaslgc/ai-skills/issues/new?template=skill_request.yml)
+- **A skill gave a bad answer?** [Report it](https://github.com/monicaslgc/ai-skills/issues/new?template=bad_output.yml)
 - **Want to add or improve one?** See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Authorship and license

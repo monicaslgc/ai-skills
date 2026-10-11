@@ -42,6 +42,23 @@ cp -r ai-skills/skills/create-cozy-gameplay-overlays ~/.claude/skills/
 cp -r ai-skills/skills/deslop-designs ~/.claude/skills/
 ```
 
+On Windows PowerShell:
+
+```powershell
+git clone https://github.com/monicaslgc/ai-skills.git
+Copy-Item -Recurse ai-skills\skills\plan-creator-content "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\content-pipeline-planner "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\write-social-captions "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\style-inspired-cosplay-looks "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\edit-short-form-videos "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\make-daily-challenge-shorts "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\photo-post-deliverables "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\design-youtube-thumbnails "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\create-channel-brand-assets "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\create-cozy-gameplay-overlays "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\deslop-designs "$env:USERPROFILE\.claude\skills\"
+```
+
 These skills work best when your agent can view images and video. `photo-post-deliverables` also needs Python 3 and Pillow (`pip install pillow`). Each skill folder has a `USER_STORY.md` with a scenario and an example prompt.
 
 All examples are invented. Do not paste real personal data, credentials or confidential contract text into a chat you do not control.

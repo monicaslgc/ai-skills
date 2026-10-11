@@ -33,6 +33,18 @@ cp -r ai-skills/skills/agent-release-checklist ~/.claude/skills/
 cp -r ai-skills/skills/agent-incident-review ~/.claude/skills/
 ```
 
+On Windows PowerShell:
+
+```powershell
+git clone https://github.com/monicaslgc/ai-skills.git
+Copy-Item -Recurse ai-skills\skills\agent-charter-writer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\agent-permissions-review "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\agent-approval-gates "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\agent-eval-planner "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\agent-release-checklist "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\agent-incident-review "$env:USERPROFILE\.claude\skills\"
+```
+
 These skills need no tools or servers. Each skill folder has a `USER_STORY.md` with a scenario and an example prompt.
 
 All examples are invented. Do not paste real personal data, credentials or confidential contract text into a chat you do not control.

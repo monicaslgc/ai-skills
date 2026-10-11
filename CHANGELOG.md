@@ -24,7 +24,8 @@ All notable changes to this repository are listed here. The format follows [Keep
 - Memory, Self-hosted AI and homelab, and Content creation kits, so every skill belongs to exactly one kit; README groups now mirror the kits.
 - Validator rule: each skill must belong to exactly one kit.
 - `scripts/check_tools.py`, run in CI: checks that skills only call tools their server provides and do not rely on skills from another kit.
-- Requirements section and Windows install commands in the README.
+- Requirements section, Windows install commands in the README and in every kit page.
+- Kit folder `support-operations` (was named differently from its title); all files use LF line endings.
 - Smart home kit: 11 new Home Assistant skills that use only the tools of the included Home Assistant server.
 - Content creation skills, user stories for every skill, `CITATION.cff`, an authorship and license section and a disclaimer.
 - A validator check that kits reference real skills, and a private-term check for pre-push use.
