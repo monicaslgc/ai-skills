@@ -8,7 +8,7 @@ The server refuses a fixed list of high-risk commands (drive formatting, recursi
 
 ## Setup
 
-1. Install: `pip install -r requirements.txt`
+1. Requires Python 3.10 or newer. Install: `pip install -r requirements.txt`
 2. Set up OpenSSH on the PC: follow [the setup guide](../../skills/ssh-remote-pc/references/windows-ssh-setup.md). SSH in manually once so the host key is stored in `known_hosts`.
 3. Set environment variables where your MCP client runs the server:
 

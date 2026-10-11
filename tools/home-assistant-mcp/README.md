@@ -1,6 +1,6 @@
 # Home Assistant MCP server
 
-The tool server used by the `control-devices`, `manage-automations` and `query-status` skills. It wraps the Home Assistant REST API.
+The tool server used by the skills in the [smart home kit](../../kits/smart-home) (`control-devices`, `manage-automations`, `query-status` and the `ha-*` skills). It wraps the Home Assistant REST API.
 
 ## Tools
 
@@ -8,7 +8,7 @@ The tool server used by the `control-devices`, `manage-automations` and `query-s
 
 ## Setup
 
-1. Install: `pip install -r requirements.txt`
+1. Requires Python 3.10 or newer. Install: `pip install -r requirements.txt`
 2. In Home Assistant, open your profile and create a **long-lived access token**.
 3. Set two environment variables where your MCP client runs the server:
    - `HA_URL`, for example `http://homeassistant.local:8123`

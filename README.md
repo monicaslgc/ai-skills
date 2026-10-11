@@ -177,16 +177,31 @@ Each included server has its own README with setup steps. Credentials go in envi
 
 The local AI, job scoring, database safety, RAM guard, content pipeline and user-story skills need no tools. The creator skills work best when your agent can view images and video; `photo-post-deliverables` also needs Python 3 and Pillow (`pip install pillow`).
 
+## Requirements
+
+- **Skills:** none. They are Markdown files.
+- **Home Assistant and SSH servers:** Python 3.10 or newer, then `pip install -r requirements.txt` in the server's folder (`mcp`, plus `paramiko` for SSH).
+- **Memory skills:** the open-source Basic Memory server (for example `uvx basic-memory mcp`, which needs [uv](https://docs.astral.sh/uv/)).
+- **`photo-post-deliverables`:** Python 3 and Pillow (`pip install -r skills/photo-post-deliverables/scripts/requirements.txt`).
+- **Contributors:** Python 3 to run `scripts/validate.py` and `scripts/check_tools.py`.
+
 ## Install one skill
 
-**Claude Code** (project or personal):
+**Claude Code** (project or personal). macOS / Linux:
 
 ```bash
 git clone https://github.com/monicaslgc/ai-skills.git
 cp -r ai-skills/skills/self-hosted-incident-triage ~/.claude/skills/
 ```
 
-**Codex / other agents:** copy the skill folder to the agent's skills directory (for Codex, `.agents/skills/<skill-name>/`).
+Windows PowerShell:
+
+```powershell
+git clone https://github.com/monicaslgc/ai-skills.git
+Copy-Item -Recurse ai-skills\skills\self-hosted-incident-triage "$env:USERPROFILE\.claude\skills\"
+```
+
+**Other agents (Codex, Cursor and similar):** copy the skill folder to the skills directory your agent documents. Folder names and locations differ between products, so check its documentation.
 
 **Any chat model:** open the skill's `SKILL.md` and paste it in as instructions.
 

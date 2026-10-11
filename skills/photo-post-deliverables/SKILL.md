@@ -5,7 +5,7 @@ description: Produce the full set of sized images for a photo post or carousel (
 
 # Photo post deliverables
 
-Requires Python 3 and Pillow (`pip install pillow`) for the helper script.
+Requires Python 3 and Pillow (`pip install -r scripts/requirements.txt`) for the helper script.
 
 ## Sizes (five per image)
 
