@@ -4,7 +4,7 @@
 
 Small, single-purpose AI skills (`SKILL.md` instruction files) that I use for my self-hosted homelab, smart home and personal AI memory. Each skill is independent: copy one folder and it works.
 
-The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements). Trigger phrases in a few skills are in English and Portuguese.
+The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
 **Status:** prototypes. They have been used and checked for structure, but no formal model evaluations have been run, so review the output before acting on it.
 
@@ -12,14 +12,14 @@ The instructions are plain Markdown and work with any agent that supports `SKILL
 
 | Skill | Use it when | Needs |
 |---|---|---|
-| [`control-devices`](skills/control-devices) | "Turn off the living room lights", set thermostat, blinds, fans | Home Assistant tools |
-| [`manage-automations`](skills/manage-automations) | List, create, enable or trigger Home Assistant automations | Home Assistant tools |
-| [`query-status`](skills/query-status) | "What's the state of X", history, unavailable entities | Home Assistant tools |
-| [`memory-search`](skills/memory-search) | Look up something from past conversations | Memory tools |
-| [`memory-recall`](skills/memory-recall) | Start a session with relevant past context loaded | Memory tools |
-| [`memory-browse`](skills/memory-browse) | See an overview of what's stored | Memory tools |
-| [`memory-facts`](skills/memory-facts) | Show structured facts and preferences | Memory tools |
-| [`ssh-remote-pc`](skills/ssh-remote-pc) | Check on or run safe commands on a personal Windows PC | SSH tools |
+| [`control-devices`](skills/control-devices) | "Turn off the living room lights", set thermostat, blinds, fans | [Home Assistant server](tools/home-assistant-mcp) |
+| [`manage-automations`](skills/manage-automations) | List, create, enable or trigger Home Assistant automations | [Home Assistant server](tools/home-assistant-mcp) |
+| [`query-status`](skills/query-status) | "What's the state of X", history, unavailable entities | [Home Assistant server](tools/home-assistant-mcp) |
+| [`memory-search`](skills/memory-search) | Look up something from past conversations | Basic Memory server |
+| [`memory-recall`](skills/memory-recall) | Start a session with relevant past context loaded | Basic Memory server |
+| [`memory-browse`](skills/memory-browse) | See an overview of what's stored | Basic Memory server |
+| [`memory-facts`](skills/memory-facts) | Show structured facts and preferences | Basic Memory server |
+| [`ssh-remote-pc`](skills/ssh-remote-pc) | Check on or run safe commands on a personal Windows PC | [SSH server](tools/ssh-remote-pc-mcp) |
 | [`local-ai-deployment-planner`](skills/local-ai-deployment-planner) | Plan a local model deployment | nothing |
 | [`self-hosted-incident-triage`](skills/self-hosted-incident-triage) | Diagnose a failing self-hosted service | nothing |
 | [`self-hosted-ai-workflow-designer`](skills/self-hosted-ai-workflow-designer) | Design an automation between services | nothing |
@@ -41,15 +41,17 @@ The instructions are plain Markdown and work with any agent that supports `SKILL
 
 ## Tool requirements
 
-The tool-based skills assume an MCP server (or equivalent) that exposes tools with these names. The servers themselves are not part of this repo; adapt the names in the skill if yours differ.
+The tool-based skills need an MCP server that exposes the tools below. The two servers I wrote are included in [`tools/`](tools); the memory skills use the open-source Basic Memory server.
 
-| Skills | Tools expected |
-|---|---|
-| `control-devices`, `manage-automations`, `query-status` | `get_state`, `get_all_states`, `get_history`, `call_service`, `list_services`, `list_automations`, `trigger_automation`, `enable_automation`, `disable_automation`, `send_notification` |
-| `memory-search`, `memory-recall`, `memory-browse`, `memory-facts` | `memory_search`, `memory_get_conversation`, `memory_get_conversations`, `memory_get_facts`, `memory_stats` |
-| `ssh-remote-pc` | `run_command`, `system_status`, `list_processes`, `list_services`, `manage_service` |
+| Skills | Server | Tools used |
+|---|---|---|
+| `control-devices`, `manage-automations`, `query-status` | [`tools/home-assistant-mcp`](tools/home-assistant-mcp) | `get_state`, `get_all_states`, `get_history`, `call_service`, `get_services`, `list_automations`, `trigger_automation`, `enable_automation`, `disable_automation`, `send_notification` |
+| `memory-search`, `memory-recall`, `memory-browse`, `memory-facts` | [Basic Memory](https://github.com/basicmachines-co/basic-memory) (`uvx basic-memory mcp`) | `search_notes`, `read_note`, `list_directory`, `recent_activity`, `build_context`, `list_memory_projects`, `edit_note`, `write_note` |
+| `ssh-remote-pc` | [`tools/ssh-remote-pc-mcp`](tools/ssh-remote-pc-mcp) | `run_command`, `system_status`, `list_processes`, `list_services`, `manage_service` |
 
-The other skills (local AI, job scoring, database safety, RAM guard, content pipeline) need no tools.
+Each included server has its own README with setup steps. Credentials go in environment variables, never in files in this repo.
+
+The local AI, job scoring, database safety, RAM guard, content pipeline and user-story skills need no tools. The creator skills work best when your agent can view images and video; `photo-post-deliverables` also needs Python 3 and Pillow (`pip install pillow`).
 
 ## Install one skill
 

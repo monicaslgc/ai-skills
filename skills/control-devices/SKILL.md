@@ -55,5 +55,5 @@ When asked to turn off all lights, all switches, or everything in a room:
 ## Error handling
 
 - If `entity_id` is not found, call `get_all_states` to find the closest match and suggest it.
-- If a service is unavailable, call `list_services` for the domain to show what's available.
+- If a service is unavailable, call `get_services` for the domain to show what's available.
 - Always confirm with the user before turning off multiple devices at once.
