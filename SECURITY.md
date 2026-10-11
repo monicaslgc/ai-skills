@@ -14,3 +14,7 @@ If you find a vulnerability, a leaked secret, or an unsafe behaviour in a skill 
 ## If you committed a secret
 
 Revoke or rotate it first. Removing it from the latest commit is not enough, because it stays in the git history.
+
+## Confidential material
+
+If you find content in this repository that appears to disclose confidential or proprietary information belonging to any organisation, please report it as described above so it can be removed promptly.

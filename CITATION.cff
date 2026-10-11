@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use these skills, please cite them as below."
+title: "AI Skills"
+abstract: "Single-purpose SKILL.md instruction files and kits for smart homes, self-hosted AI, project management, people and support operations, careers and content creation, with the MCP servers that some of them use."
+type: software
+authors:
+  - name: "monicaslgc"
+    website: "https://github.com/monicaslgc"
+repository-code: "https://github.com/monicaslgc/ai-skills"
+license: MIT
+version: 0.2.0
+date-released: 2026-10-11
+keywords:
+  - agent skills
+  - SKILL.md
+  - Home Assistant
+  - MCP
+  - project management
+  - people operations

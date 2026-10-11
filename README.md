@@ -2,7 +2,7 @@
 
 ![Validate](https://github.com/monicaslgc/ai-skills/actions/workflows/validate.yml/badge.svg)
 
-Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers and content creation. Each skill is independent: copy one folder and it works.
+Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations and AI agent management. Each skill is independent: copy one folder and it works.
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
@@ -61,13 +61,116 @@ The instructions are plain Markdown and work with any agent that supports `SKILL
 | [`deslop-designs`](skills/deslop-designs) | Checklist that removes generic AI-looking tells from designs | image / video tools |
 | [`style-inspired-cosplay-looks`](skills/style-inspired-cosplay-looks) | Describe dress-up looks inspired by other characters honestly | image / video tools |
 
+### Project management
+
+Part of the [Project management kit](kits/project-management).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`project-charter-writer`](skills/project-charter-writer) | Write a one-page project charter before work starts | nothing |
+| [`project-plan-builder`](skills/project-plan-builder) | Break a project into work packages, dependencies and milestones | nothing |
+| [`raid-log-manager`](skills/raid-log-manager) | Keep a log of risks, assumptions, issues and dependencies | nothing |
+| [`status-report-writer`](skills/status-report-writer) | Write a short, honest status report with RAG | nothing |
+| [`meeting-minutes-to-actions`](skills/meeting-minutes-to-actions) | Turn meeting notes or transcripts into decisions and owned actions | nothing |
+| [`change-request-assessor`](skills/change-request-assessor) | Assess the impact of a scope or schedule change request | nothing |
+| [`project-retrospective`](skills/project-retrospective) | Run a blameless retrospective with 1-3 concrete actions | nothing |
+
+### Agent management
+
+Part of the [Agent management kit](kits/agent-management).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`agent-charter-writer`](skills/agent-charter-writer) | Write a job description for an AI agent: scope, tools, autonomy, owner | nothing |
+| [`agent-permissions-review`](skills/agent-permissions-review) | Review an agent's tool and data access for least privilege | nothing |
+| [`agent-approval-gates`](skills/agent-approval-gates) | Decide which agent actions need human approval and how to ask | nothing |
+| [`agent-eval-planner`](skills/agent-eval-planner) | Plan test cases and scoring so you can trust and regression-test an agent | nothing |
+| [`agent-release-checklist`](skills/agent-release-checklist) | Version, test and roll out agent changes safely with a rollback plan | nothing |
+| [`agent-incident-review`](skills/agent-incident-review) | Run a blameless review when an agent does something wrong | nothing |
+
+### Support and knowledge
+
+Part of the [Support operations kit](kits/support-knowledge).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`sla-and-escalation-designer`](skills/sla-and-escalation-designer) | Define priorities, response and resolution targets and escalation paths | nothing |
+| [`support-kpi-dashboard-designer`](skills/support-kpi-dashboard-designer) | Choose support metrics, define them precisely and design a dashboard | nothing |
+| [`ticket-quality-audit`](skills/ticket-quality-audit) | Audit support tickets or calls with a scorecard and calibration | nothing |
+| [`agent-coaching-plan`](skills/agent-coaching-plan) | Prepare a coaching conversation and development plan for a team member | nothing |
+| [`access-request-workflow`](skills/access-request-workflow) | Design joiner, mover, leaver and access request workflows with approvals and audit | nothing |
+
+### Career applications
+
+Part of the [Career kit](kits/career).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`cv-tailoring-from-master`](skills/cv-tailoring-from-master) | Tailor a master CV to a job posting without inventing anything | nothing |
+| [`cover-letter-writer`](skills/cover-letter-writer) | Write a short, specific, natural cover letter | nothing |
+| [`achievement-story-builder`](skills/achievement-story-builder) | Turn work achievements into interview-ready STAR stories | nothing |
+| [`confidentiality-safe-wording`](skills/confidentiality-safe-wording) | Describe confidential work publicly without revealing names or secrets | nothing |
+
+### People operations
+
+Part of the [People operations kit](kits/people-operations).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`capacity-planning-forecast`](skills/capacity-planning-forecast) | Forecast workload and turn it into staffing needs with scenarios | nothing |
+| [`shift-schedule-planner`](skills/shift-schedule-planner) | Build a fair shift schedule that meets coverage and respects rules | nothing |
+| [`leave-attendance-process-designer`](skills/leave-attendance-process-designer) | Design a clear leave and attendance process with approvals and records | nothing |
+| [`cv-screening-rubric`](skills/cv-screening-rubric) | Screen CVs against clear, job-related criteria | nothing |
+| [`interview-kit-builder`](skills/interview-kit-builder) | Build a structured interview with questions and a scoring rubric | nothing |
+| [`employee-onboarding-plan`](skills/employee-onboarding-plan) | Plan a new starter's first days, weeks and 90 days | nothing |
+
+### Operations and productivity
+
+Part of the [Operations and productivity kit](kits/operations-productivity).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`sop-writer`](skills/sop-writer) | Write a clear standard operating procedure | nothing |
+| [`process-automation-finder`](skills/process-automation-finder) | Find and prioritise tasks worth automating, with risks and a safe design | nothing |
+| [`kpi-insight-writer`](skills/kpi-insight-writer) | Turn numbers into a short insight, with causes, caveats and actions | nothing |
+
+### Smart home: analysis and routines
+
+Part of the [Smart home kit](kits/smart-home).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`ha-device-health-check`](skills/ha-device-health-check) | Find unavailable devices, low batteries and stale sensors | nothing |
+| [`ha-lighting-troubleshooter`](skills/ha-lighting-troubleshooter) | Diagnose lights that do not respond or behave strangely | nothing |
+| [`ha-automation-designer`](skills/ha-automation-designer) | Design a robust automation and give YAML to paste in Home Assistant | nothing |
+| [`ha-automation-debugger`](skills/ha-automation-debugger) | Find out why an automation did not run or ran when it should not | nothing |
+| [`ha-energy-insights`](skills/ha-energy-insights) | Analyse power and energy use: peaks, standby load and savings ideas | nothing |
+| [`ha-climate-comfort-advisor`](skills/ha-climate-comfort-advisor) | Review heating and cooling behaviour and suggest comfort and savings | nothing |
+| [`ha-night-security-check`](skills/ha-night-security-check) | Run a bedtime or leaving-home check of locks, doors, windows and lights | nothing |
+| [`ha-home-maintenance-planner`](skills/ha-home-maintenance-planner) | Plan recurring home maintenance and set up reminders | nothing |
+| [`ha-vacuum-routines`](skills/ha-vacuum-routines) | Plan robot vacuum routines and handle errors and scheduling | nothing |
+| [`ha-notification-designer`](skills/ha-notification-designer) | Design useful notifications without alert fatigue | nothing |
+| [`ha-entity-naming-audit`](skills/ha-entity-naming-audit) | Audit entity names and propose a clean, consistent naming scheme | nothing |
+
+## Kits
+
+Bundles of related skills with a suggested order and one-step install:
+
+- [Project management kit](kits/project-management): Skills that take a project from idea to close: charter, plan, risk log, status reports, minutes, change control and retrospective.
+- [Agent management kit](kits/agent-management): Skills for running AI agents responsibly: charter, permissions, evaluation, approval gates, release and incident review.
+- [Support operations kit](kits/support-knowledge): Skills for running a support team: SLAs and escalation, KPIs, quality audits, coaching and access management.
+- [Career kit](kits/career): Skills for job applications built from one honest master CV: tailoring, cover letters, interview stories and confidentiality-safe wording.
+- [People operations kit](kits/people-operations): Skills for managers and HR teams: shift scheduling, capacity planning, onboarding, structured interviews, CV screening and leave processes.
+- [Operations and productivity kit](kits/operations-productivity): Skills for making work repeatable and measurable: SOPs, automation opportunities and data-backed insight writing.
+- [Smart home kit](kits/smart-home): Skills for Home Assistant owners: device health, lighting and automation troubleshooting, automation design, energy and climate insight, security checks, maintenance, vacuum, notifications and naming.
+
 ## Tool requirements
 
 The tool-based skills need an MCP server that exposes the tools below. The two servers I wrote are included in [`tools/`](tools); the memory skills use the open-source Basic Memory server.
 
 | Skills | Server | Tools used |
 |---|---|---|
-| `control-devices`, `manage-automations`, `query-status` | [`tools/home-assistant-mcp`](tools/home-assistant-mcp) | `get_state`, `get_all_states`, `get_history`, `call_service`, `get_services`, `list_automations`, `trigger_automation`, `enable_automation`, `disable_automation`, `send_notification` |
+| `control-devices`, `manage-automations`, `query-status` and the rest of the [smart home kit](kits/smart-home) | [`tools/home-assistant-mcp`](tools/home-assistant-mcp) | `get_state`, `get_all_states`, `get_history`, `call_service`, `get_services`, `list_automations`, `trigger_automation`, `enable_automation`, `disable_automation`, `send_notification` |
 | `memory-search`, `memory-recall`, `memory-browse`, `memory-facts` | [Basic Memory](https://github.com/basicmachines-co/basic-memory) (`uvx basic-memory mcp`) | `search_notes`, `read_note`, `list_directory`, `recent_activity`, `build_context`, `list_memory_projects`, `edit_note`, `write_note` |
 | `ssh-remote-pc` | [`tools/ssh-remote-pc-mcp`](tools/ssh-remote-pc-mcp) | `run_command`, `system_status`, `list_processes`, `list_services`, `manage_service` |
 
@@ -105,12 +208,26 @@ Ask in plain language. Examples:
 
 Skills that can change things (devices, automations, SSH) are written to confirm before destructive or multi-device actions, but you should still review what an agent proposes before approving it. The skills never ask you to paste secrets. No credentials, hostnames or IP addresses are stored in this repo; server details belong in your MCP server's environment variables.
 
+## Disclaimer
+
+These skills are instructions for an AI agent, and AI output can be wrong or incomplete. Review what an agent proposes before you act on it, especially anything that changes devices, accounts, files or money, or that touches people, contracts or personal data. Nothing here is legal, HR, financial, security or safety advice, and the author is not responsible for how the skills or servers are used. As stated in the [MIT License](LICENSE), the software and documents are provided "as is", without warranty of any kind.
+
+## Confidentiality
+
+Everything here is a general method written with invented examples, and each skill should pass a textbook test: it must be explainable from public standards or common professional practice. No company-specific policy, procedure, template, threshold, pricing or contract structure belongs here, even without the company's name. These skills contain no information from any employer, client, supplier or project, and contributors must not add any. Do not submit names, figures, contract terms, internal documents, source code or procedures that belong to a company you work or have worked for, and do not use real personal data in examples, issues or pull requests. If you believe something here discloses confidential information, please report it through [SECURITY.md](SECURITY.md) so it can be removed quickly.
+
 ## Get involved
 
 - **Need a skill?** [Request one](../../issues/new?template=skill_request.yml)
 - **A skill gave a bad answer?** [Report it](../../issues/new?template=bad_output.yml)
 - **Want to add or improve one?** See [CONTRIBUTING.md](CONTRIBUTING.md)
 
+## Authorship and license
+
+These skills, kits, servers and documentation were created and are maintained by [@monicaslgc](https://github.com/monicaslgc), who holds the copyright. The project is released under the [MIT License](LICENSE): you may use, copy, modify and share it, including commercially, **provided you keep the copyright and license notice** in copies or substantial portions. Please credit the project when you reuse or adapt it; GitHub's **Cite this repository** button gives a ready-made citation from [CITATION.cff](CITATION.cff).
+
+Skills reference third-party games and tools by name only to describe their use. They are not affiliated with or endorsed by those products' owners.
+
 ## License
 
-MIT
+[MIT](LICENSE), copyright monicaslgc.

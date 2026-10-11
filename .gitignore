@@ -4,3 +4,4 @@ __pycache__/
 *.pem
 config.json
 ha-config.json
+.private-terms

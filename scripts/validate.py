@@ -44,6 +44,13 @@ for d in dirs:
     if f"(skills/{d.name})" not in readme:
         errors.append(f"{d.name}: not listed in README.md")
 
+for kit in sorted((ROOT / "kits").glob("*/README.md")) if (ROOT / "kits").is_dir() else []:
+    for ref in re.findall(r"skills/([a-z0-9-]+)\)", kit.read_text(encoding="utf-8")):
+        if not (ROOT / "skills" / ref / "SKILL.md").is_file():
+            errors.append(f"{kit.parent.name}: kit references unknown skill {ref}")
+    if f"(kits/{kit.parent.name})" not in readme:
+        errors.append(f"{kit.parent.name}: kit not linked from README.md")
+
 for f in ROOT.rglob("*"):
     if f.is_file() and ".git" not in f.parts and f.suffix in {".md", ".json", ".yml", ".yaml", ".py"} and f.name != "validate.py":
         content = f.read_text(encoding="utf-8", errors="ignore")

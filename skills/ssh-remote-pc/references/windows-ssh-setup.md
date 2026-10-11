@@ -32,7 +32,7 @@ On the Windows PC, in PowerShell:
 ipconfig | findstr /i "IPv4"
 whoami
 ```
-The IPv4 address is `SSH_HOST` (use the local network one, e.g. `192.168.x.x`,
+The IPv4 address is `SSH_HOST` (use the address of your PC on your home network,
 since this setup assumes the PC is reachable directly on the same network).
 `whoami` gives `SSH_USER` -- typically `DOMAIN\user` or `PCNAME\user`; use just
 the part after the backslash.

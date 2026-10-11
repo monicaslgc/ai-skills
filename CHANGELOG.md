@@ -2,6 +2,19 @@
 
 All notable changes to this repository are listed here. The format follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.2.0] - 2026-10-11
+
+### Added
+- Project management kit: charter, plan, RAID log, status report, minutes to actions, change request, retrospective.
+- Agent management kit: charter, permissions review, approval gates, evaluation planner, release checklist, incident review.
+- People operations kit: capacity planning, shift scheduling, leave and attendance process, CV screening rubric, structured interview kit, onboarding plan.
+- Support operations kit: SLA and escalation design, KPI dashboard design, ticket quality audit, coaching plan, access request workflow.
+- Operations and productivity kit: SOP writer, process automation finder, KPI insight writer.
+- Career kit: CV tailoring from a master CV, cover letters, achievement stories, confidentiality-safe wording.
+- Smart home kit: 11 new Home Assistant skills that use only the tools of the included Home Assistant server.
+- Content creation skills, user stories for every skill, `CITATION.cff`, an authorship and license section and a disclaimer.
+- A validator check that kits reference real skills, and a private-term check for pre-push use.
+
 ## [0.1.0] - 2026-10-11
 
 First public release.
