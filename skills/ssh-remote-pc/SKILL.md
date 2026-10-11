@@ -31,7 +31,7 @@ Required configuration (set as environment variables on the MCP server, not
 things Claude collects during a chat): `SSH_HOST`, `SSH_USER`, `SSH_KEY_PATH`,
 and optionally `SSH_PORT` and `SSH_KEY_PASSPHRASE`. If the user says a tool
 call is failing with "SSH_HOST and SSH_USER are not configured", point them to
-the README's setup section.
+`references/windows-ssh-setup.md`.
 
 ## Choosing a tool
 

@@ -25,7 +25,7 @@ Search the AI Memory database for conversations and facts relevant to the user's
 3. If a conversation looks relevant, call `memory_get_conversation` with its ID to get the full text
 4. Summarise what was found — title, date, key points — do not dump raw text
 
-## Projects reference
+## Projects reference (example taxonomy, replace with your own)
 
 | Project | Covers |
 |---|---|

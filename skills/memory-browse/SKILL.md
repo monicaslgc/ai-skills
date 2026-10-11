@@ -24,7 +24,7 @@ Browse and list conversations stored in AI Memory, with optional filtering.
 ## Filters available
 
 **By source:** claude.ai, chatgpt, gemini, claude.ai-web, cowork  
-**By project:** homelab-infra, homelab-ha, homelab-media, homelab-ai, homelab-monitoring, career, work, general
+**By project (example taxonomy, replace with your own):** homelab-infra, homelab-ha, homelab-media, homelab-ai, homelab-monitoring, career, work, general
 
 ## Output format
 
