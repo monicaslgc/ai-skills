@@ -1,0 +1,17 @@
+name: Request a skill
+description: Suggest a new skill
+labels: [skill-request]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What should the skill help with?
+    validations: {required: true}
+  - type: textarea
+    id: example
+    attributes:
+      label: Example prompt you would give it
+  - type: input
+    id: tools
+    attributes:
+      label: Tools or services involved (optional)

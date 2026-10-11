@@ -1,0 +1,23 @@
+name: Report a bad output
+description: A skill gave a wrong, unsafe or unhelpful answer
+labels: [bug]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill name
+    validations: {required: true}
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and model (e.g. Claude Code, Codex, local Llama)
+  - type: textarea
+    id: prompt
+    attributes:
+      label: What you asked (remove private details)
+    validations: {required: true}
+  - type: textarea
+    id: result
+    attributes:
+      label: What went wrong, and what you expected
+    validations: {required: true}
