@@ -39,6 +39,8 @@ cp -r ai-skills/skills/self-hosted-incident-triage ~/.claude/skills/
 
 **Any chat model:** open the skill's `SKILL.md` and paste it in as instructions.
 
+Every skill folder also has a `USER_STORY.md` with who it is for, a scenario, acceptance criteria and a prompt to try.
+
 ## Try it
 
 Ask in plain language. Examples:
