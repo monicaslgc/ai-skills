@@ -27,6 +27,7 @@ The instructions are plain Markdown and work with any agent that supports `SKILL
 | [`slow-llm-db-safety`](skills/slow-llm-db-safety) | Fix database errors that follow slow local-model calls | nothing |
 | [`local-llm-ram-guard`](skills/local-llm-ram-guard) | Stop local models exhausting host RAM | nothing |
 | [`content-pipeline-planner`](skills/content-pipeline-planner) | Plan an auto-edit pipeline for short vertical videos | nothing |
+| [`user-story-writer`](skills/user-story-writer) | Write a user story with testable acceptance criteria for any skill or feature | nothing |
 
 ## Tool requirements
 
