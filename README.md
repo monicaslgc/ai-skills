@@ -21,6 +21,10 @@ Everything here is provider-neutral Markdown. The skills that call tools (Home A
 | [`local-ai-deployment-planner`](skills/local-ai-deployment-planner) | Plan a local model deployment | nothing |
 | [`self-hosted-incident-triage`](skills/self-hosted-incident-triage) | Diagnose a failing self-hosted service | nothing |
 | [`self-hosted-ai-workflow-designer`](skills/self-hosted-ai-workflow-designer) | Design an automation between services | nothing |
+| [`job-posting-scorer`](skills/job-posting-scorer) | Rank job postings with transparent, rules-based scoring | nothing |
+| [`slow-llm-db-safety`](skills/slow-llm-db-safety) | Fix database errors that follow slow local-model calls | nothing |
+| [`local-llm-ram-guard`](skills/local-llm-ram-guard) | Stop local models exhausting host RAM | nothing |
+| [`content-pipeline-planner`](skills/content-pipeline-planner) | Plan an auto-edit pipeline for short vertical videos | nothing |
 
 ## Install one skill
 
@@ -43,6 +47,8 @@ Ask in plain language. Examples:
 - `Can I run a 14B model on 16 GB of VRAM alongside Whisper?` (`local-ai-deployment-planner`)
 - `Dim the living room to 30%.` (`control-devices`)
 - `What do we already know about my backup setup?` (`memory-recall`)
+- `Score these five job postings against my skills list.` (`job-posting-scorer`)
+- `My host is at 95% RAM and Ollama is running; what should I check?` (`local-llm-ram-guard`)
 
 ## Safety
 
