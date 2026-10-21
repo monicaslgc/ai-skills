@@ -1,6 +1,6 @@
 # Operations management kit
 
-Practical skills for running day-to-day operations: reviewing performance, managing flow and capacity, coordinating exceptions, improving processes and strengthening operational controls.
+Practical skills for day-to-day execution and multi-unit management: reviewing performance, diagnosing unit health, prioritising interventions, managing flow and capacity, coordinating recovery and keeping actions accountable.
 
 ## Skills in this kit
 
@@ -13,6 +13,12 @@ Practical skills for running day-to-day operations: reviewing performance, manag
 | [`operational-exception-coordinator`](../../skills/operational-exception-coordinator) | Triage exceptions, define escalation and verify recovery |
 | [`continuous-improvement-experiment-designer`](../../skills/continuous-improvement-experiment-designer) | Test an improvement with measures and guardrails |
 | [`operational-controls-checklist-builder`](../../skills/operational-controls-checklist-builder) | Create evidence-based checklists and exception paths |
+| [`business-unit-health-diagnostic`](../../skills/business-unit-health-diagnostic) | Assess business-unit health across evidenced performance, financial, customer and people indicators |
+| [`performance-variance-investigator`](../../skills/performance-variance-investigator) | Investigate differences from targets or baselines and test possible explanations |
+| [`operational-priority-ranker`](../../skills/operational-priority-ranker) | Rank competing actions using explicit criteria, evidence and sensitivity checks |
+| [`operational-recovery-planner`](../../skills/operational-recovery-planner) | Build phased recovery plans with metrics, milestones and review gates |
+| [`management-review-pack-builder`](../../skills/management-review-pack-builder) | Turn validated data into decision-oriented management reviews |
+| [`action-plan-follow-through-tracker`](../../skills/action-plan-follow-through-tracker) | Track commitments, blockers, evidence and follow-up actions |
 
 ## Suggested order
 
@@ -22,7 +28,13 @@ Practical skills for running day-to-day operations: reviewing performance, manag
 4. Use `workload-and-capacity-balancer` to compare demand with available skills and time.
 5. Apply `operational-exception-coordinator` when an exception requires containment, escalation or recovery tracking.
 6. Use `continuous-improvement-experiment-designer` to test a focused improvement before wider adoption.
-7. Finish with `operational-controls-checklist-builder` to make repeatable checks and exception handling explicit.
+7. Use `business-unit-health-diagnostic` to assess unit health and identify evidence gaps.
+8. Apply `performance-variance-investigator` to investigate material deviations.
+9. Use `operational-priority-ranker` to make trade-offs explicit.
+10. Use `operational-recovery-planner` for a phased recovery plan.
+11. Use `management-review-pack-builder` to present decisions and validated results.
+12. Use `action-plan-follow-through-tracker` to verify commitments and outcomes.
+13. Finish with `operational-controls-checklist-builder` to make repeatable checks explicit.
 
 These skills can also be used independently. Use the order as a guide, not as a mandatory dependency chain.
 
@@ -39,6 +51,12 @@ cp -r ai-skills/skills/workload-and-capacity-balancer ~/.claude/skills/
 cp -r ai-skills/skills/operational-exception-coordinator ~/.claude/skills/
 cp -r ai-skills/skills/continuous-improvement-experiment-designer ~/.claude/skills/
 cp -r ai-skills/skills/operational-controls-checklist-builder ~/.claude/skills/
+cp -r ai-skills/skills/business-unit-health-diagnostic ~/.claude/skills/
+cp -r ai-skills/skills/performance-variance-investigator ~/.claude/skills/
+cp -r ai-skills/skills/operational-priority-ranker ~/.claude/skills/
+cp -r ai-skills/skills/operational-recovery-planner ~/.claude/skills/
+cp -r ai-skills/skills/management-review-pack-builder ~/.claude/skills/
+cp -r ai-skills/skills/action-plan-follow-through-tracker ~/.claude/skills/
 ```
 
 On Windows PowerShell:
