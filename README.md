@@ -218,6 +218,12 @@ Part of the [Operations Management kit](kits/operations-management).
 | [`operational-exception-coordinator`](skills/operational-exception-coordinator) | Triage exceptions, define escalation and verify recovery | exception evidence and approved policy |
 | [`continuous-improvement-experiment-designer`](skills/continuous-improvement-experiment-designer) | Test an improvement with measures and guardrails | problem statement and baseline |
 | [`operational-controls-checklist-builder`](skills/operational-controls-checklist-builder) | Create evidence-based checklists and exception paths | process and approved requirements |
+| [`business-unit-health-diagnostic`](skills/business-unit-health-diagnostic) | Assess business-unit health across evidenced performance, financial, customer and people indicators | supplied operational context |
+| [`performance-variance-investigator`](skills/performance-variance-investigator) | Investigate differences from targets or baselines and test possible explanations | supplied operational context |
+| [`operational-priority-ranker`](skills/operational-priority-ranker) | Rank competing actions using explicit criteria, evidence and sensitivity checks | supplied operational context |
+| [`operational-recovery-planner`](skills/operational-recovery-planner) | Build phased recovery plans with metrics, milestones and review gates | supplied operational context |
+| [`management-review-pack-builder`](skills/management-review-pack-builder) | Turn validated data into decision-oriented management reviews | supplied operational context |
+| [`action-plan-follow-through-tracker`](skills/action-plan-follow-through-tracker) | Track commitments, blockers, evidence and follow-up actions | supplied operational context |
 
 Each new kit includes a fictional example, review references and a proposed evaluation pack. Evaluation packs are not claimed as benchmark results until executed.
 
