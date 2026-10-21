@@ -212,6 +212,10 @@ Every skill belongs to one kit. Each kit page has a suggested order and one-step
 - [Operations and productivity kit](kits/operations-productivity): Skills for making work repeatable and measurable: SOPs, automation opportunities and data-backed insight writing.
 - [Agent management kit](kits/agent-management): Skills for running AI agents responsibly: charter, permissions, evaluation, approval gates, release and incident review.
 - [Career kit](kits/career): Skills for job applications built from one honest master CV: tailoring, cover letters, interview stories and confidentiality-safe wording.
+- [Business Process Automation kit](kits/business-process-automation): Process discovery, API integration planning, data mapping, ROI estimation and acceptance testing.
+- [Product Discovery & Delivery kit](kits/product-discovery-delivery): Discovery interviews, feedback synthesis, prioritisation, requirements and release readiness.
+- [AI Quality & Evaluation kit](kits/ai-quality-evaluation): Evaluation datasets, scoring rubrics, prompt regression, structured-output validation and failure analysis.
+- [E-commerce Operations kit](kits/ecommerce-operations): Catalogue audits, SKU/variant mapping, order lifecycle checks, product content briefs and bulk-change review.
 
 ## Tool requirements
 
