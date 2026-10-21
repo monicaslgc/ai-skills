@@ -53,13 +53,13 @@ On Windows PowerShell:
 
 ```powershell
 git clone https://github.com/monicaslgc/ai-skills.git
-Copy-Item -Recurse ai-skills\\skills\\requirements-to-specification "$env:USERPROFILE\\.claude\\skills\\"
-Copy-Item -Recurse ai-skills\\skills\\workflow-process-designer "$env:USERPROFILE\\.claude\\skills\\"
-Copy-Item -Recurse ai-skills\\skills\\requirements-to-user-stories "$env:USERPROFILE\\.claude\\skills\\"
-Copy-Item -Recurse ai-skills\\skills\\integration-contract-specifier "$env:USERPROFILE\\.claude\\skills\\"
-Copy-Item -Recurse ai-skills\\skills\\development-work-breakdown-planner "$env:USERPROFILE\\.claude\\skills\\"
-Copy-Item -Recurse ai-skills\\skills\\test-and-acceptance-planner "$env:USERPROFILE\\.claude\\skills\\"
-Copy-Item -Recurse ai-skills\\skills\\delivery-readiness-reviewer "$env:USERPROFILE\\.claude\\skills\\"
+Copy-Item -Recurse ai-skills\skills\requirements-to-specification "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\workflow-process-designer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\requirements-to-user-stories "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\integration-contract-specifier "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\development-work-breakdown-planner "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\test-and-acceptance-planner "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\delivery-readiness-reviewer "$env:USERPROFILE\.claude\skills\"
 ```
 
 The skills require no specific tools. If you ask a skill to verify an API or inspect a live system, the relevant documentation, tools and permissions must be available separately.
