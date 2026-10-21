@@ -32,6 +32,24 @@ Skills can be used independently; the order is guidance, not a hard dependency c
 - **Validation:** scripts check file integrity and metadata; sampled-frame visual review checks the look.
 - **Approval:** a human approves the first render, batch preset changes and final delivery.
 
+## Included helper script
+
+`skills/media-editing-pipeline/scripts/apply_sdr_grade.py` is a conservative FFmpeg helper for supported stills and video. It is **dry-run by default** and only renders when `--execute` is passed. It validates bounded parameters, rejects source/output path equality and refuses output collisions unless `--overwrite-output` is explicitly passed. It is intended only for confirmed SDR media, not HDR or unknown colour spaces.
+
+Example dry run:
+
+```bash
+python skills/media-editing-pipeline/scripts/apply_sdr_grade.py input.mp4 out/input-graded.mp4 --brightness 0.02 --contrast 1.03 --saturation 1.0
+```
+
+After reviewing the printed plan and confirming the source is compatible SDR, execute:
+
+```bash
+python skills/media-editing-pipeline/scripts/apply_sdr_grade.py input.mp4 out/input-graded.mp4 --brightness 0.02 --contrast 1.03 --saturation 1.0 --execute
+```
+
+The helper is a basic starting point, not a colour-managed grading system. Check the rendered file visually and verify audio, duration and colour metadata before delivery.
+
 ## Requirements
 
 - Markdown skills work with any agent that supports `SKILL.md`.
