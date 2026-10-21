@@ -15,6 +15,11 @@ Use these as conceptual references and verify current editions or local requirem
 - **Management reviews and follow-through:** report decisions required, accountable actions, dependencies and outcome evidence; distinguish activity completion from realised benefit.
 - **Multi-unit assessment:** account for scale, maturity, local context and data quality before comparing units; avoid ranking teams using unadjusted figures.
 
+- **Multi-unit and maturity assessment:** compare units only on compatible measures; define observable maturity criteria before assessment and distinguish missing evidence from low maturity.
+- **Leadership and onboarding:** use role-relevant observable behaviours and competency evidence; protect personal data and require approved supervision for high-risk tasks.
+- **Peer learning and scaling:** capture the context and evidence behind a practice, then validate transferability before standardising it.
+- **Profitability improvement:** distinguish revenue, margin, operating profit and cash; document assumptions, counter-metrics and double-counting risks.
+
 ## Public starting points
 
 - Lean Enterprise Institute — Lean Lexicon and value-stream concepts: https://www.lean.org/
