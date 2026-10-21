@@ -70,6 +70,12 @@ Copy-Item -Recurse ai-skills\skills\workload-and-capacity-balancer "$env:USERPRO
 Copy-Item -Recurse ai-skills\skills\operational-exception-coordinator "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\continuous-improvement-experiment-designer "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\operational-controls-checklist-builder "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\business-unit-health-diagnostic "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\performance-variance-investigator "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\operational-priority-ranker "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\operational-recovery-planner "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\management-review-pack-builder "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\action-plan-follow-through-tracker "$env:USERPROFILE\.claude\skills\"
 ```
 
 Other assistants use different locations; follow their skills-directory documentation. Each skill folder contains a `SKILL.md` and `USER_STORY.md`.
