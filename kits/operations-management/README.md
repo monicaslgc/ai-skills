@@ -19,6 +19,13 @@ Practical skills for day-to-day execution and multi-unit management: reviewing p
 | [`operational-recovery-planner`](../../skills/operational-recovery-planner) | Build phased recovery plans with metrics, milestones and review gates |
 | [`management-review-pack-builder`](../../skills/management-review-pack-builder) | Turn validated data into decision-oriented management reviews |
 | [`action-plan-follow-through-tracker`](../../skills/action-plan-follow-through-tracker) | Track commitments, blockers, evidence and follow-up actions |
+| [`multi-unit-performance-comparator`](../../skills/multi-unit-performance-comparator) | Compare units fairly, accounting for scale, maturity and data comparability |
+| [`operational-maturity-assessor`](../../skills/operational-maturity-assessor) | Assess operational maturity using explicit criteria and observable evidence |
+| [`leadership-development-planner`](../../skills/leadership-development-planner) | Turn agreed leadership goals into practical development plans |
+| [`operational-onboarding-designer`](../../skills/operational-onboarding-designer) | Design onboarding journeys with competency checks and sign-off gates |
+| [`peer-learning-program-designer`](../../skills/peer-learning-program-designer) | Structure peer learning and test whether practices transfer |
+| [`network-expansion-readiness-assessor`](../../skills/network-expansion-readiness-assessor) | Assess readiness and prerequisites before expanding a network |
+| [`profitability-improvement-planner`](../../skills/profitability-improvement-planner) | Identify testable profitability opportunities with transparent assumptions |
 
 ## Suggested order
 
@@ -34,7 +41,13 @@ Practical skills for day-to-day execution and multi-unit management: reviewing p
 10. Use `operational-recovery-planner` for a phased recovery plan.
 11. Use `management-review-pack-builder` to present decisions and validated results.
 12. Use `action-plan-follow-through-tracker` to verify commitments and outcomes.
-13. Finish with `operational-controls-checklist-builder` to make repeatable checks explicit.
+13. Use `multi-unit-performance-comparator` to compare units only where measures are comparable.
+14. Apply `operational-maturity-assessor` to identify evidence-backed practice gaps.
+15. Use `profitability-improvement-planner` to develop and validate potential unit-economics improvements.
+16. Use `leadership-development-planner` and `operational-onboarding-designer` to build capability.
+17. Use `peer-learning-program-designer` to share practices and test transferability.
+18. Use `network-expansion-readiness-assessor` before proposing network growth.
+19. Finish with `operational-controls-checklist-builder` to make repeatable checks explicit.
 
 These skills can also be used independently. Use the order as a guide, not as a mandatory dependency chain.
 
@@ -57,6 +70,13 @@ cp -r ai-skills/skills/operational-priority-ranker ~/.claude/skills/
 cp -r ai-skills/skills/operational-recovery-planner ~/.claude/skills/
 cp -r ai-skills/skills/management-review-pack-builder ~/.claude/skills/
 cp -r ai-skills/skills/action-plan-follow-through-tracker ~/.claude/skills/
+cp -r ai-skills/skills/multi-unit-performance-comparator ~/.claude/skills/
+cp -r ai-skills/skills/operational-maturity-assessor ~/.claude/skills/
+cp -r ai-skills/skills/leadership-development-planner ~/.claude/skills/
+cp -r ai-skills/skills/operational-onboarding-designer ~/.claude/skills/
+cp -r ai-skills/skills/peer-learning-program-designer ~/.claude/skills/
+cp -r ai-skills/skills/network-expansion-readiness-assessor ~/.claude/skills/
+cp -r ai-skills/skills/profitability-improvement-planner ~/.claude/skills/
 ```
 
 On Windows PowerShell:
@@ -76,6 +96,13 @@ Copy-Item -Recurse ai-skills\skills\operational-priority-ranker "$env:USERPROFIL
 Copy-Item -Recurse ai-skills\skills\operational-recovery-planner "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\management-review-pack-builder "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\action-plan-follow-through-tracker "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\multi-unit-performance-comparator "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\operational-maturity-assessor "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\leadership-development-planner "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\operational-onboarding-designer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\peer-learning-program-designer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\network-expansion-readiness-assessor "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\profitability-improvement-planner "$env:USERPROFILE\.claude\skills\"
 ```
 
 Other assistants use different locations; follow their skills-directory documentation. Each skill folder contains a `SKILL.md` and `USER_STORY.md`.
