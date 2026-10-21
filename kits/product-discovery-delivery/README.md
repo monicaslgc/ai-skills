@@ -14,11 +14,11 @@ Skills for turning customer evidence into product decisions, requirements and re
 
 ## Suggested order
 
-1. Start with `product-discovery-interviewer`; conduct evidence-led discovery.
-2. Start with `customer-feedback-synthesizer`; group feedback into traceable themes.
-3. Start with `prioritization-scorecard`; compare opportunities transparently.
-4. Start with `prd-and-spec-writer`; draft testable requirements.
-5. Start with `release-readiness-reviewer`.
+1. Start with `product-discovery-interviewer` to frame the problem without leading the user.
+2. Use `customer-feedback-synthesizer` to organise supplied evidence into traceable themes.
+3. Apply `prioritization-scorecard` with explicit criteria, weights and confidence.
+4. Use `prd-and-spec-writer` to turn the selected opportunity into testable requirements.
+5. Finish with `release-readiness-reviewer` before rollout, including support, telemetry and rollback.
 
 ## Install the whole kit
 
