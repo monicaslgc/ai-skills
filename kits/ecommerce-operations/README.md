@@ -14,11 +14,11 @@ Skills for auditing catalogue and order data with traceability, quarantine and h
 
 ## Suggested order
 
-1. Start with `product-catalogue-auditor`; audit product records.
-2. Start with `sku-variant-mapping-reviewer`; review sku and variant mappings.
-3. Start with `order-lifecycle-auditor`; find inconsistent order states.
-4. Start with `product-content-brief-writer`; draft source-grounded product briefs.
-5. Start with `catalogue-change-reviewer`.
+1. Start with `product-catalogue-auditor` to identify missing or contradictory product facts.
+2. Use `sku-variant-mapping-reviewer` to check identifiers and variant relationships.
+3. Apply `order-lifecycle-auditor` to trace state transitions when order data is in scope.
+4. Use `product-content-brief-writer` to draft content grounded in approved product facts.
+5. Finish with `catalogue-change-reviewer` before bulk import or publication.
 
 ## Install the whole kit
 
