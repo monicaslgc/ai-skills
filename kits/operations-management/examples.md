@@ -37,3 +37,28 @@ All figures and scenarios below are fictional. They demonstrate how to structure
 **Input:** a daily reconciliation reports a mismatch between two approved exports.
 
 **Safe response:** preserve both source snapshots, confirm timestamp and scope, classify using the existing policy, identify affected records and route to the authorised owner. Do not overwrite either source or mark reconciliation complete until the discrepancy is explained and the agreed verification passes.
+
+
+## Example 5 — Business-unit health and variance
+
+**Inputs:** a fictional unit's quarterly revenue is 8% below its supplied plan; customer complaints rose, the team has two vacancies, and one channel's KPI definition changed mid-quarter.
+
+**Useful output:** report the variance with its formula; flag the channel comparison as non-comparable; treat vacancies and complaints as concurrent signals rather than proven causes; request targeted evidence before choosing an intervention.
+
+**Avoid:** assigning a single health score or concluding that vacancies caused the revenue gap without supporting evidence.
+
+## Example 6 — Recovery plan and management review
+
+**Inputs:** an underperforming unit has an agreed baseline but no approved recovery target or action owners.
+
+**Useful output:** separate stabilisation, diagnosis and improvement; propose draft milestones for approval; mark owners and targets as decisions required.
+
+**Avoid:** presenting illustrative milestones as commitments or promising a turnaround.
+
+## Example 7 — Action follow-through
+
+**Inputs:** an action log marks three tasks complete, but only one has outcome evidence; two other actions are overdue and blocked.
+
+**Useful output:** distinguish task completion from verified outcome, identify missing evidence and prepare follow-up questions under the supplied escalation policy.
+
+**Avoid:** claiming the programme succeeded because most tasks are marked complete.
