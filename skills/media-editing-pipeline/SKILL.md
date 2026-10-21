@@ -26,6 +26,16 @@ Orchestrate automatic colour correction with deterministic tools, explicit setti
 9. Fail closed on missing tools, invalid media, unsupported colour spaces, output collisions or partial renders. Keep failed outputs isolated for review; never delete the source.
 10. Produce a summary with successes, failures, QA exceptions and explicit next steps.
 
+## Included helper script
+
+`scripts/apply_sdr_grade.py` applies a restrained FFmpeg filter chain to supported still images or video. It is dry-run by default. Example:
+
+```bash
+python skills/media-editing-pipeline/scripts/apply_sdr_grade.py input.mp4 out/input-graded.mp4 --brightness 0.02 --contrast 1.03 --saturation 1.0
+```
+
+Render only after reviewing the plan, confirming the input is SDR and choosing a separate output path; add `--execute` to render. The helper is not suitable for HDR or unknown colour spaces and does not replace visual QA.
+
 ## Guardrails
 - AI analysis never executes a command directly; validated parameters feed deterministic scripts.
 - No network upload, cloud processing or external API calls unless explicitly requested.
