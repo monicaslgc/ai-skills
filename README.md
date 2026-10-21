@@ -2,7 +2,7 @@
 
 ![Validate](https://github.com/monicaslgc/ai-skills/actions/workflows/validate.yml/badge.svg)
 
-Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation and e-commerce operations. Each skill is independent: copy one folder and it works.
+Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations and operations management. Each skill is independent: copy one folder and it works.
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
@@ -205,6 +205,20 @@ Part of the [E-commerce Operations kit](kits/ecommerce-operations).
 | [`product-content-brief-writer`](skills/product-content-brief-writer) | Draft source-grounded product briefs | approved product facts |
 | [`catalogue-change-reviewer`](skills/catalogue-change-reviewer) | Review imports and bulk edits before publication | before/after snapshots |
 
+### Operations management
+
+Part of the [Operations Management kit](kits/operations-management).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`daily-operations-review`](skills/daily-operations-review) | Turn daily operational signals into decisions and owned actions | supplied operational data |
+| [`operational-performance-reviewer`](skills/operational-performance-reviewer) | Review KPIs and explain variances without inventing causes | KPI definitions and data |
+| [`bottleneck-and-flow-analyzer`](skills/bottleneck-and-flow-analyzer) | Find queues, handoffs, waiting time and rework | process map or flow evidence |
+| [`workload-and-capacity-balancer`](skills/workload-and-capacity-balancer) | Compare demand with usable capacity and assess options | demand and capacity assumptions |
+| [`operational-exception-coordinator`](skills/operational-exception-coordinator) | Triage exceptions, define escalation and verify recovery | exception evidence and approved policy |
+| [`continuous-improvement-experiment-designer`](skills/continuous-improvement-experiment-designer) | Test an improvement with measures and guardrails | problem statement and baseline |
+| [`operational-controls-checklist-builder`](skills/operational-controls-checklist-builder) | Create evidence-based checklists and exception paths | process and approved requirements |
+
 Each new kit includes a fictional example, review references and a proposed evaluation pack. Evaluation packs are not claimed as benchmark results until executed.
 
 ## Kits
@@ -225,6 +239,7 @@ Every skill belongs to one kit. Each kit page has a suggested order and one-step
 - [Product Discovery & Delivery kit](kits/product-discovery-delivery): Discovery interviews, feedback synthesis, prioritisation, requirements and release readiness.
 - [AI Quality & Evaluation kit](kits/ai-quality-evaluation): Evaluation datasets, scoring rubrics, prompt regression, structured-output validation and failure analysis.
 - [E-commerce Operations kit](kits/ecommerce-operations): Catalogue audits, SKU/variant mapping, order lifecycle checks, product content briefs and bulk-change review.
+- [Operations Management kit](kits/operations-management): Daily reviews, KPI analysis, flow and bottleneck analysis, workload/capacity balancing, exception coordination, improvement experiments and operational controls.
 - [n8n Automation kit](kits/n8n-automation): Workflow discovery, importable workflow design, validation, testing and troubleshooting.
 
 ## Tool requirements
