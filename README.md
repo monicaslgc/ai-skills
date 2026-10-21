@@ -148,6 +148,15 @@ Part of the [Career kit](kits/career).
 | [`achievement-story-builder`](skills/achievement-story-builder) | Turn work achievements into interview-ready STAR stories | nothing |
 | [`confidentiality-safe-wording`](skills/confidentiality-safe-wording) | Describe confidential work publicly without revealing names or secrets | nothing |
 
+### n8n automation
+
+Part of the [n8n Automation kit](kits/n8n-automation).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [n8n-automation-architect](skills/n8n-automation-architect) | Discover, design and document reliable n8n automations | n8n context and process details |
+| [n8n-workflow-builder-debugger](skills/n8n-workflow-builder-debugger) | Build, validate, test and troubleshoot n8n workflow JSON | Target n8n version and workflow evidence |
+
 ### Business process automation
 
 Part of the [Business Process Automation kit](kits/business-process-automation).
@@ -216,6 +225,7 @@ Every skill belongs to one kit. Each kit page has a suggested order and one-step
 - [Product Discovery & Delivery kit](kits/product-discovery-delivery): Discovery interviews, feedback synthesis, prioritisation, requirements and release readiness.
 - [AI Quality & Evaluation kit](kits/ai-quality-evaluation): Evaluation datasets, scoring rubrics, prompt regression, structured-output validation and failure analysis.
 - [E-commerce Operations kit](kits/ecommerce-operations): Catalogue audits, SKU/variant mapping, order lifecycle checks, product content briefs and bulk-change review.
+- [n8n Automation kit](kits/n8n-automation): Workflow discovery, importable workflow design, validation, testing and troubleshooting.
 
 ## Tool requirements
 
