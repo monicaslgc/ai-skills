@@ -10,6 +10,10 @@ Use these as conceptual references and verify current editions or local requirem
 - **Incident and exception management:** use an approved severity matrix, clear escalation triggers, containment boundaries, recovery criteria and a learning review.
 - **Continuous improvement:** state a falsifiable hypothesis, measure a baseline, define a counter-metric and use a stop/rollback condition.
 - **Operational controls:** define the control objective, evidence, frequency, exception route and reviewer; do not infer compliance from a completed checklist alone.
+- **Business performance and variance:** verify KPI definitions and comparability before interpreting changes; distinguish arithmetic contributors from causal explanations.
+- **Recovery and prioritisation:** use explicit baselines, milestones, decision gates and transparent criteria; protect mandatory obligations from ordinary weighted scoring.
+- **Management reviews and follow-through:** report decisions required, accountable actions, dependencies and outcome evidence; distinguish activity completion from realised benefit.
+- **Multi-unit assessment:** account for scale, maturity, local context and data quality before comparing units; avoid ranking teams using unadjusted figures.
 
 ## Public starting points
 
