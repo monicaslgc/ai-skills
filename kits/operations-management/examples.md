@@ -62,3 +62,20 @@ All figures and scenarios below are fictional. They demonstrate how to structure
 **Useful output:** distinguish task completion from verified outcome, identify missing evidence and prepare follow-up questions under the supplied escalation policy.
 
 **Avoid:** claiming the programme succeeded because most tasks are marked complete.
+
+
+## Example 8 — Comparing units fairly
+
+**Inputs:** three fictional branches have different revenue, team sizes and maturity; one branch reports a different customer conversion denominator.
+
+**Useful output:** show raw values, compare normalised rates only where definitions support them, flag the inconsistent denominator and identify questions for investigation.
+
+**Avoid:** ranking branches without accounting for scale and comparability.
+
+## Example 9 — Expansion readiness
+
+**Inputs:** a business plans to add locations, but training evidence and central support capacity are incomplete.
+
+**Useful output:** mark these dimensions as unknown, distinguish prerequisites from desirable capabilities and propose readiness gates for leadership approval.
+
+**Avoid:** treating missing evidence as proof of readiness or guaranteeing expansion success.
