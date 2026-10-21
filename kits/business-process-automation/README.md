@@ -14,11 +14,11 @@ Skills for discovering, designing and validating business process automations: d
 
 ## Suggested order
 
-1. Start with `process-discovery-interviewer`; map a process before automation.
-2. Start with `api-integration-planner`; plan verified api integrations.
-3. Start with `data-mapping-validator`; validate fields, identifiers and transformations.
-4. Start with `automation-roi-estimator`; estimate costs, value and sensitivity.
-5. Start with `automation-acceptance-tester`.
+1. Start with `process-discovery-interviewer` to map the current process, owners and exceptions.
+2. Use `api-integration-planner` to verify the required integrations and document unknowns.
+3. Apply `data-mapping-validator` to agree identifiers, field types and transformation rules.
+4. Use `automation-roi-estimator` once a baseline and assumptions are available.
+5. Finish with `automation-acceptance-tester` to define normal, boundary and failure-path tests.
 
 ## Install the whole kit
 
