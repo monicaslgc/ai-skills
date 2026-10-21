@@ -2,7 +2,7 @@
 
 ![Validate](https://github.com/monicaslgc/ai-skills/actions/workflows/validate.yml/badge.svg)
 
-Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations and operations management. Each skill is independent: copy one folder and it works.
+Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations, operations management and photo/video color grading. Each skill is independent: copy one folder and it works.
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
@@ -72,6 +72,20 @@ Part of the [Content creation kit](kits/content-creation).
 | [`create-channel-brand-assets`](skills/create-channel-brand-assets) | Banners, frames, cutouts, mascot art and component packs | image / video tools |
 | [`create-cozy-gameplay-overlays`](skills/create-cozy-gameplay-overlays) | Vertical overlays, plates and title cards for cozy gameplay videos | image / video tools |
 | [`deslop-designs`](skills/deslop-designs) | Checklist that removes generic AI-looking tells from designs | image / video tools |
+
+### Photo & video color grading
+
+Part of the [Photo & Video Color Grading kit](kits/photo-video-color-grading).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`media-quality-analyzer`](skills/media-quality-analyzer) | Diagnose exposure, colour casts, clipping and lighting issues | image/video inspection tools recommended |
+| [`photo-color-corrector`](skills/photo-color-corrector) | Correct still-image exposure, white balance, contrast and saturation | FFmpeg or profile-aware image tools |
+| [`video-color-grader`](skills/video-color-grader) | Correct video and check shot-to-shot consistency | FFmpeg + ffprobe |
+| [`shot-matching`](skills/shot-matching) | Match shots to a reference while preserving intentional lighting | image/video inspection tools recommended |
+| [`look-development`](skills/look-development) | Turn a visual brief into a repeatable, bounded look | rendering toolchain for previews |
+| [`media-editing-pipeline`](skills/media-editing-pipeline) | Orchestrate safe dry runs, rendering, logs and QA | Python 3 + FFmpeg/ffprobe |
+| [`color-quality-reviewer`](skills/color-quality-reviewer) | Review render integrity and visual defects before delivery | FFmpeg/ffprobe + visual review |
 
 ### Project management
 
@@ -254,6 +268,7 @@ Every skill belongs to one kit. Each kit page has a suggested order and one-step
 - [E-commerce Operations kit](kits/ecommerce-operations): Catalogue audits, SKU/variant mapping, order lifecycle checks, product content briefs and bulk-change review.
 - [Operations Management kit](kits/operations-management): Daily reviews, KPI analysis, flow and bottleneck analysis, workload/capacity balancing, exception coordination, improvement experiments and operational controls.
 - [n8n Automation kit](kits/n8n-automation): Workflow discovery, importable workflow design, validation, testing and troubleshooting.
+- [Photo & Video Color Grading kit](kits/photo-video-color-grading): Script-based photo/video colour correction, shot matching, look development, safe rendering and quality review.
 
 ## Tool requirements
 
@@ -267,7 +282,7 @@ The tool-based skills need an MCP server that exposes the tools below. The two s
 
 Each included server has its own README with setup steps. Credentials go in environment variables, never in files in this repo.
 
-The local AI, job scoring, database safety, RAM guard, content pipeline and user-story skills need no tools. The creator skills work best when your agent can view images and video; `photo-post-deliverables` also needs Python 3 and Pillow (`pip install pillow`).
+The local AI, job scoring, database safety, RAM guard, content pipeline and user-story skills need no tools. The Photo & Video Color Grading kit's rendering workflows use FFmpeg/ffprobe; its included helper is dry-run-first and only supports a basic SDR correction chain. The creator skills work best when your agent can view images and video; `photo-post-deliverables` also needs Python 3 and Pillow (`pip install pillow`).
 
 ## Requirements
 
@@ -275,6 +290,7 @@ The local AI, job scoring, database safety, RAM guard, content pipeline and user
 - **Home Assistant and SSH servers:** Python 3.10 or newer, then `pip install -r requirements.txt` in the server's folder (`mcp`, plus `paramiko` for SSH).
 - **Memory skills:** the open-source Basic Memory server (for example `uvx basic-memory mcp`, which needs [uv](https://docs.astral.sh/uv/)).
 - **`photo-post-deliverables`:** Python 3 and Pillow (`pip install -r skills/photo-post-deliverables/scripts/requirements.txt`).
+- **Photo & Video Color Grading:** Python 3, FFmpeg and ffprobe for automatic rendering; no additional Python packages are required by `apply_sdr_grade.py`.
 - **Contributors:** Python 3 to run `scripts/validate.py` and `scripts/check_tools.py`.
 
 ## Install one skill
