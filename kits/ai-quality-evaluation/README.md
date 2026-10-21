@@ -14,11 +14,11 @@ Skills for making AI behaviour testable through datasets, rubrics, regression ch
 
 ## Suggested order
 
-1. Start with `ai-eval-dataset-builder`; build privacy-safe evaluation sets.
-2. Start with `ai-output-rubric-designer`; create anchored scoring rubrics.
-3. Start with `prompt-regression-tester`; compare prompt/model versions.
-4. Start with `structured-output-validator`; check structured model outputs.
-5. Start with `ai-failure-analyzer`.
+1. Start with `ai-eval-dataset-builder` to define representative, privacy-safe cases.
+2. Use `ai-output-rubric-designer` to define observable scoring criteria.
+3. Apply `structured-output-validator` where outputs must follow a schema and business rules.
+4. Use `prompt-regression-tester` to compare a candidate against a fixed baseline.
+5. Finish with `ai-failure-analyzer` to turn failures into actionable regression cases.
 
 ## Install the whole kit
 
