@@ -2,7 +2,7 @@
 
 ![Validate](https://github.com/monicaslgc/ai-skills/actions/workflows/validate.yml/badge.svg)
 
-Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations and operations management. Each skill is independent: copy one folder and it works.
+Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations, operations management, and specifications and delivery workflows. Each skill is independent: copy one folder and it works.
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
