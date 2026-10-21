@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "run_id": "synthetic-run-001",
+  "status": "planned",
+  "dry_run": true,
+  "toolchain": {
+    "ffmpeg_version": "not-recorded",
+    "ffprobe_version": "not-recorded",
+    "script_version": "not-recorded"
+  },
+  "preset": {
+    "id": "synthetic-neutral-sdr-v1",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "source": "fixtures/synthetic-input.jpg",
+      "output": "out/synthetic-input-corrected.jpg",
+      "status": "planned",
+      "source_metadata": {
+        "media_type": "image",
+        "colour_space": "unknown",
+        "hdr": "unknown"
+      },
+      "parameters": {},
+      "validation": {
+        "exists": false,
+        "non_empty": false,
+        "visual_review": "pending",
+        "warnings": []
+      },
+      "error": null
+    }
+  ],
+  "approval": {
+    "approved_by_human": false,
+    "approved_at": null
+  }
+}
