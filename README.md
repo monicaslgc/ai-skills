@@ -224,6 +224,13 @@ Part of the [Operations Management kit](kits/operations-management).
 | [`operational-recovery-planner`](skills/operational-recovery-planner) | Build phased recovery plans with metrics, milestones and review gates | supplied operational context |
 | [`management-review-pack-builder`](skills/management-review-pack-builder) | Turn validated data into decision-oriented management reviews | supplied operational context |
 | [`action-plan-follow-through-tracker`](skills/action-plan-follow-through-tracker) | Track commitments, blockers, evidence and follow-up actions | supplied operational context |
+| [`multi-unit-performance-comparator`](skills/multi-unit-performance-comparator) | Compare units fairly, accounting for scale, maturity and data comparability | supplied operational context |
+| [`operational-maturity-assessor`](skills/operational-maturity-assessor) | Assess operational maturity using explicit criteria and observable evidence | supplied operational context |
+| [`leadership-development-planner`](skills/leadership-development-planner) | Turn agreed leadership goals into practical development plans | supplied operational context |
+| [`operational-onboarding-designer`](skills/operational-onboarding-designer) | Design onboarding journeys with competency checks and sign-off gates | supplied operational context |
+| [`peer-learning-program-designer`](skills/peer-learning-program-designer) | Structure peer learning and test whether practices transfer | supplied operational context |
+| [`network-expansion-readiness-assessor`](skills/network-expansion-readiness-assessor) | Assess readiness and prerequisites before expanding a network | supplied operational context |
+| [`profitability-improvement-planner`](skills/profitability-improvement-planner) | Identify testable profitability opportunities with transparent assumptions | supplied operational context |
 
 Each new kit includes a fictional example, review references and a proposed evaluation pack. Evaluation packs are not claimed as benchmark results until executed.
 
