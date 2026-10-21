@@ -169,6 +169,20 @@ Part of the [Business Process Automation kit](kits/business-process-automation).
 | [`automation-roi-estimator`](skills/automation-roi-estimator) | Estimate costs, value and sensitivity | baseline assumptions |
 | [`automation-acceptance-tester`](skills/automation-acceptance-tester) | Define acceptance and failure-path tests | requirements |
 
+### Specifications and delivery workflows
+
+Part of the [Specifications & Delivery Workflows kit](kits/specifications-delivery-workflows).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`requirements-to-specification`](skills/requirements-to-specification) | Turn a request into a traceable functional specification | Request and available evidence |
+| [`workflow-process-designer`](skills/workflow-process-designer) | Design normal paths, exceptions, retries and approval gates | Process and system context |
+| [`requirements-to-user-stories`](skills/requirements-to-user-stories) | Convert requirements into testable backlog stories | Approved requirements |
+| [`integration-contract-specifier`](skills/integration-contract-specifier) | Define API contracts and field mappings without inventing details | Official API docs or explicit unknowns |
+| [`development-work-breakdown-planner`](skills/development-work-breakdown-planner) | Organise implementation into dependencies, tasks and milestones | Specification and capacity assumptions |
+| [`test-and-acceptance-planner`](skills/test-and-acceptance-planner) | Derive test cases and traceability from requirements | Requirements and workflow |
+| [`delivery-readiness-reviewer`](skills/delivery-readiness-reviewer) | Assess readiness using evidence and explicit gates | Artifact and review criteria |
+
 ### Product discovery and delivery
 
 Part of the [Product Discovery & Delivery kit](kits/product-discovery-delivery).
