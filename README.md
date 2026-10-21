@@ -148,6 +148,56 @@ Part of the [Career kit](kits/career).
 | [`achievement-story-builder`](skills/achievement-story-builder) | Turn work achievements into interview-ready STAR stories | nothing |
 | [`confidentiality-safe-wording`](skills/confidentiality-safe-wording) | Describe confidential work publicly without revealing names or secrets | nothing |
 
+### Business process automation
+
+Part of the [Business Process Automation kit](kits/business-process-automation).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [process-discovery-interviewer](skills/process-discovery-interviewer) | Map a process before automation | nothing |
+| [api-integration-planner](skills/api-integration-planner) | Plan verified API integrations | official API documentation |
+| [data-mapping-validator](skills/data-mapping-validator) | Validate mappings, IDs, types and transformations | sample schemas/data |
+| [automation-roi-estimator](skills/automation-roi-estimator) | Estimate costs, value and sensitivity | baseline assumptions |
+| [automation-acceptance-tester](skills/automation-acceptance-tester) | Define acceptance and failure-path tests | requirements |
+
+### Product discovery and delivery
+
+Part of the [Product Discovery & Delivery kit](kits/product-discovery-delivery).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [product-discovery-interviewer](skills/product-discovery-interviewer) | Conduct evidence-led discovery | nothing |
+| [customer-feedback-synthesizer](skills/customer-feedback-synthesizer) | Group feedback into traceable themes | supplied feedback |
+| [prioritization-scorecard](skills/prioritization-scorecard) | Compare opportunities transparently | criteria and weights |
+| [prd-and-spec-writer](skills/prd-and-spec-writer) | Draft testable requirements | product context |
+| [release-readiness-reviewer](skills/release-readiness-reviewer) | Check launch readiness and rollback | release evidence |
+
+### AI quality and evaluation
+
+Part of the [AI Quality & Evaluation kit](kits/ai-quality-evaluation).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [ai-eval-dataset-builder](skills/ai-eval-dataset-builder) | Build privacy-safe evaluation sets | approved/synthetic examples |
+| [ai-output-rubric-designer](skills/ai-output-rubric-designer) | Create anchored scoring rubrics | target behaviours |
+| [prompt-regression-tester](skills/prompt-regression-tester) | Compare prompt/model versions | fixed test set |
+| [structured-output-validator](skills/structured-output-validator) | Check structured model outputs | schema and business rules |
+| [ai-failure-analyzer](skills/ai-failure-analyzer) | Diagnose failures and derive regression tests | failed examples |
+
+### E-commerce operations
+
+Part of the [E-commerce Operations kit](kits/ecommerce-operations).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [product-catalogue-auditor](skills/product-catalogue-auditor) | Audit product records | approved catalogue data |
+| [sku-variant-mapping-reviewer](skills/sku-variant-mapping-reviewer) | Review SKU and variant mappings | source/destination exports |
+| [order-lifecycle-auditor](skills/order-lifecycle-auditor) | Find inconsistent order states | event history and state rules |
+| [product-content-brief-writer](skills/product-content-brief-writer) | Draft source-grounded product briefs | approved product facts |
+| [catalogue-change-reviewer](skills/catalogue-change-reviewer) | Review imports and bulk edits before publication | before/after snapshots |
+
+Each new kit includes a fictional example, review references and a proposed evaluation pack. Evaluation packs are not claimed as benchmark results until executed.
+
 ## Kits
 
 Every skill belongs to one kit. Each kit page has a suggested order and one-step install:
