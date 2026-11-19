@@ -6,6 +6,8 @@ Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, 
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
+**Ecosystem map:** [Audit, skill relationships and cross-kit workflows](docs/skill-ecosystem/README.md).
+
 **Status:** prototypes. They have been used and checked for structure, but no formal model evaluations have been run, so review the output before acting on it.
 
 ## Knowledge architecture
