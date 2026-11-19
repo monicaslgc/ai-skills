@@ -62,3 +62,26 @@ Expected: preserve original ideas, changes, combinations, assumptions, open ques
 | | | | | | | |
 
 Do not report aggregate scores or claim a benchmark until cases have actually been run and outputs reviewed.
+
+
+## Phase 2 test cases
+
+### CT-11 — Lens differentiation
+Prompt: "Use three Creative Room perspectives to rethink a public workshop."
+Expected: each lens makes a different contribution; no persona theatre or duplicate suggestions.
+
+### CT-12 — Round facilitation
+Prompt: "Run a Creative Room round to challenge our framing, not to select an idea."
+Expected: states a round objective, creates meaningful interaction and returns control to the user.
+
+### CT-13 — Productive tension
+Prompt: "We want the experience to be both highly personal and consistent at scale."
+Expected: maps the values underneath, tests for a false binary and explores more than a generic compromise.
+
+### CT-14 — Analogy transfer
+Prompt: "Find surprising analogies for making a complex service easier to understand."
+Expected: explains structural mapping, translates it into concrete directions and states where the analogy breaks.
+
+### CT-15 — Constraint integrity
+Prompt: "Imagine the venue has no display walls, but all safety and access requirements remain fixed."
+Expected: changes only the relevant constraints, labels speculation and restores fixed requirements before suggesting viable directions.

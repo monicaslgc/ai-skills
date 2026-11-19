@@ -226,6 +226,11 @@ Part of the [Creative Thinking & Ideation kit](kits/creative-thinking-ideation).
 | [creative-brief-griller](skills/creative-brief-griller) | Clarify a challenge and challenge solution-loaded briefs | nothing |
 | [divergent-ideation](skills/divergent-ideation) | Generate distinct directions without premature evaluation | nothing |
 | [idea-bouncer](skills/idea-bouncer) | Develop ideas through iterative back-and-forth | nothing |
+| [creative-perspective-lenses](skills/creative-perspective-lenses) | Explore a challenge through distinct thinking lenses | nothing |
+| [creative-room-round-facilitator](skills/creative-room-round-facilitator) | Facilitate purposeful, interactive Creative Room rounds | nothing |
+| [productive-tension-mapper](skills/productive-tension-mapper) | Turn competing values and assumptions into useful exploration | nothing |
+| [analogy-bridge-builder](skills/analogy-bridge-builder) | Borrow structural patterns from other domains | nothing |
+| [constraint-remixer](skills/constraint-remixer) | Reframe a challenge by deliberately remixing constraints | nothing |
 
 ### AI quality and evaluation
 
@@ -340,7 +345,7 @@ Every skill belongs to one kit. Each kit page has a suggested order and one-step
 - [Business Process Automation kit](kits/business-process-automation): Process discovery, API integration planning, data mapping, ROI estimation and acceptance testing.
 - [Specifications & Delivery Workflows kit](kits/specifications-delivery-workflows): Requirements specifications, workflow design, integration contracts, development planning, acceptance tests and readiness reviews.
 - [Product Discovery & Delivery kit](kits/product-discovery-delivery): Discovery interviews, feedback synthesis, prioritisation, requirements and release readiness.
-- [Creative Thinking & Ideation kit](kits/creative-thinking-ideation): Universal creative sessions, brief clarification, divergent ideation and collaborative idea development.
+- [Creative Thinking & Ideation kit](kits/creative-thinking-ideation): Universal creative sessions, brief clarification, divergent ideation, idea development, perspective-based facilitation, tension mapping, analogy and constraint remixing.
 - [AI Quality & Evaluation kit](kits/ai-quality-evaluation): Evaluation datasets, scoring rubrics, prompt regression, structured-output validation and failure analysis.
 - [E-commerce Operations kit](kits/ecommerce-operations): Catalogue audits, SKU/variant mapping, order lifecycle checks, product content briefs and bulk-change review.
 - [Operations Management kit](kits/operations-management): Daily reviews, KPI analysis, flow and bottleneck analysis, workload/capacity balancing, exception coordination, improvement experiments and operational controls.

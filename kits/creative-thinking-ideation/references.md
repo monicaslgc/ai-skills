@@ -33,3 +33,14 @@ For implementation architecture and agent workflow inspiration:
 - https://github.com/monicaslgc/ai-skills — repository conventions for independent skills, user stories, kits and validation.
 
 This document is a practical synthesis. It does not reproduce proprietary workshop materials.
+
+
+## Additional facilitation methods
+
+- **Perspective-taking:** deliberately change the question being asked (possibility, purpose, experience, mechanism, critique or synthesis). A lens is a temporary mode of attention, not a persona.
+- **Creative facilitation rounds:** define a purpose for each round, select only useful perspectives, allow interaction, capture carry-forward material and invite participant direction.
+- **Tension mapping:** make competing values and assumptions explicit before exploring sequencing, segmentation, adjustable boundaries or experiments. This avoids false compromise.
+- **Analogical reasoning:** map structural similarities across domains, translate a pattern into the target context and identify where the analogy breaks.
+- **Constraint manipulation:** distinguish fixed constraints from assumptions, then change one variable deliberately to discover new possibilities. Restore hard constraints before assessing directions.
+
+These methods are used as practical prompts, not as claims of validated outcomes or universal recipes.
