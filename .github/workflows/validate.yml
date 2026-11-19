@@ -10,3 +10,6 @@ jobs:
           python-version: "3.12"
       - run: python scripts/validate.py
       - run: python scripts/check_tools.py
+      - run: python scripts/validate_brand_schemas.py
+      - run: python scripts/validate_brand_evals.py
+      - run: python -m unittest discover -s tests -p 'test_brand_*.py'

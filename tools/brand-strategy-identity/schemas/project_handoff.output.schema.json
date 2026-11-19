@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BrandStageHandoff",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "needs-input",
+        "ready-for-review",
+        "approved",
+        "blocked"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "source_uri": {
+            "type": "string"
+          },
+          "accessed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          }
+        },
+        "required": [
+          "claim",
+          "confidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_skill": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approval_required": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "status",
+    "summary",
+    "evidence",
+    "assumptions",
+    "decisions",
+    "open_questions",
+    "risks",
+    "next_skill",
+    "approval_required"
+  ],
+  "additionalProperties": false
+}
