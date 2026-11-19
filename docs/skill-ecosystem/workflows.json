@@ -1,0 +1,458 @@
+{
+  "schema_version": "1.0",
+  "workflows": [
+    {
+      "id": "idea-to-product-delivery",
+      "name": "Idea to product delivery",
+      "trigger": "A user wants to turn an open challenge or selected idea into a testable product change.",
+      "completion": "Approved release or an explicit decision to stop, park or return to discovery.",
+      "stages": [
+        {
+          "id": "evidence",
+          "skill": "product-discovery-interviewer",
+          "availability": "available",
+          "when": "Use when the problem, audience or behaviour needs evidence; skip if adequate evidence is supplied.",
+          "output": "DiscoveryEvidence",
+          "handoff_to": "feedback"
+        },
+        {
+          "id": "feedback",
+          "skill": "customer-feedback-synthesizer",
+          "availability": "available",
+          "when": "Use only when feedback data exists.",
+          "output": "FeedbackThemes",
+          "handoff_to": "explore"
+        },
+        {
+          "id": "explore",
+          "skill": "creative-session",
+          "availability": "available",
+          "when": "Use when alternative frames or solution directions are needed.",
+          "output": "IdeaLandscape",
+          "handoff_to": "concept"
+        },
+        {
+          "id": "concept",
+          "skill": "concept-developer",
+          "availability": "available",
+          "when": "User selects a direction worth developing.",
+          "output": "ConceptBrief",
+          "handoff_to": "assess"
+        },
+        {
+          "id": "assess",
+          "skill": "concept-evaluator",
+          "availability": "available",
+          "when": "User wants an evidence-aware assessment before committing.",
+          "output": "ConceptEvaluation",
+          "handoff_to": "learn"
+        },
+        {
+          "id": "learn",
+          "skill": "concept-experiment-designer",
+          "availability": "available",
+          "when": "A critical concept assumption can be tested before full delivery.",
+          "output": "ConceptExperiment",
+          "handoff_to": "prioritise"
+        },
+        {
+          "id": "prioritise",
+          "skill": "prioritization-scorecard",
+          "availability": "available",
+          "when": "Compare multiple opportunities using agreed criteria; do not use as a substitute for concept evaluation.",
+          "output": "PrioritisationDecision",
+          "handoff_to": "specify"
+        },
+        {
+          "id": "specify",
+          "skill": "prd-and-spec-writer",
+          "availability": "available",
+          "when": "The user approves a direction for product definition.",
+          "output": "ProductSpecification",
+          "handoff_to": "detail"
+        },
+        {
+          "id": "detail",
+          "skill": "requirements-to-user-stories",
+          "availability": "pending-pr-1",
+          "source_pr": 1,
+          "when": "Approved requirements are ready to be broken into stories.",
+          "output": "UserStories",
+          "handoff_to": "plan"
+        },
+        {
+          "id": "plan",
+          "skill": "development-work-breakdown-planner",
+          "availability": "pending-pr-1",
+          "source_pr": 1,
+          "when": "Stories and dependencies are ready for engineering sequencing.",
+          "output": "DeliveryBacklog",
+          "handoff_to": "verify"
+        },
+        {
+          "id": "verify",
+          "skill": "test-and-acceptance-planner",
+          "availability": "pending-pr-1",
+          "source_pr": 1,
+          "when": "Requirements and workflows are stable enough to define tests.",
+          "output": "AcceptancePlan",
+          "handoff_to": "release"
+        },
+        {
+          "id": "release",
+          "skill": "release-readiness-reviewer",
+          "availability": "available",
+          "when": "A release candidate and supporting evidence exist.",
+          "output": "ReleaseDecision"
+        }
+      ]
+    },
+    {
+      "id": "brand-from-discovery-to-launch",
+      "name": "Brand from discovery to launch",
+      "trigger": "A team needs to research, define, express and launch a brand direction.",
+      "completion": "Approved brand system and launch plan, with measurement and governance owners.",
+      "stages": [
+        {
+          "id": "audience",
+          "skill": "audience-research",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "Audience segments and research questions need to be developed.",
+          "output": "AudienceEvidence",
+          "handoff_to": "stakeholders"
+        },
+        {
+          "id": "stakeholders",
+          "skill": "brand-stakeholder-interviews",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "Stakeholder perspectives need to be gathered.",
+          "output": "StakeholderEvidence",
+          "handoff_to": "discovery"
+        },
+        {
+          "id": "discovery",
+          "skill": "brand-discovery",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "Sufficient evidence is available to frame the brand challenge.",
+          "output": "BrandDiscoveryBrief",
+          "handoff_to": "strategy"
+        },
+        {
+          "id": "strategy",
+          "skill": "brand-strategy",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "Discovery decisions and evidence are reviewed.",
+          "output": "BrandStrategy",
+          "handoff_to": "position"
+        },
+        {
+          "id": "position",
+          "skill": "brand-positioning",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "Positioning options need to be developed or compared.",
+          "output": "PositioningTerritories",
+          "handoff_to": "identity"
+        },
+        {
+          "id": "identity",
+          "skill": "brand-identity-prism",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "Identity coherence needs to be tested against the strategy.",
+          "output": "IdentityFramework",
+          "handoff_to": "campaign"
+        },
+        {
+          "id": "campaign",
+          "skill": "campaign-concept-developer",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "A campaign concept is needed from approved brand strategy.",
+          "output": "CampaignTerritories",
+          "handoff_to": "quality"
+        },
+        {
+          "id": "quality",
+          "skill": "brand-quality-evaluator",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "A brand deliverable needs a structured quality review.",
+          "output": "BrandQualityReview"
+        }
+      ]
+    },
+    {
+      "id": "content-to-publishable-media",
+      "name": "Content to publishable media",
+      "trigger": "A content idea needs a repeatable path from brief to reviewed media assets.",
+      "completion": "Assets pass quality review and a human approves publication.",
+      "stages": [
+        {
+          "id": "brief",
+          "skill": "plan-creator-content",
+          "availability": "available",
+          "when": "A content objective, channel or calendar needs planning.",
+          "output": "ContentBrief",
+          "handoff_to": "concept"
+        },
+        {
+          "id": "concept",
+          "skill": "creative-session",
+          "availability": "available",
+          "when": "The content angle or visual story needs exploration.",
+          "output": "ContentConcept",
+          "handoff_to": "pipeline"
+        },
+        {
+          "id": "pipeline",
+          "skill": "content-pipeline-planner",
+          "availability": "available",
+          "when": "Production steps, tools and handoffs need planning.",
+          "output": "ContentPipeline",
+          "handoff_to": "edit"
+        },
+        {
+          "id": "edit",
+          "skill": "media-editing-pipeline",
+          "availability": "pending-pr-2",
+          "source_pr": 2,
+          "when": "Approved correction decisions are ready for deterministic processing.",
+          "output": "MediaOutputs",
+          "handoff_to": "review"
+        },
+        {
+          "id": "review",
+          "skill": "color-quality-reviewer",
+          "availability": "pending-pr-2",
+          "source_pr": 2,
+          "when": "Rendered assets need a technical and visual review.",
+          "output": "MediaQualityReport",
+          "handoff_to": "package"
+        },
+        {
+          "id": "package",
+          "skill": "design-youtube-thumbnails",
+          "availability": "available",
+          "when": "A thumbnail is required for the selected platform.",
+          "output": "Thumbnail",
+          "handoff_to": "copy"
+        },
+        {
+          "id": "copy",
+          "skill": "write-social-captions",
+          "availability": "available",
+          "when": "Platform copy is needed.",
+          "output": "Captions",
+          "handoff_to": "approve"
+        },
+        {
+          "id": "approve",
+          "skill": "agent-approval-gates",
+          "availability": "available",
+          "when": "A governed publishing workflow requires a human approval step.",
+          "output": "PublicationApproval"
+        }
+      ]
+    },
+    {
+      "id": "operational-improvement-to-automation",
+      "name": "Operational improvement to automation",
+      "trigger": "An existing process has a measurable problem and automation may be one possible intervention.",
+      "completion": "Approved workflow is accepted, monitored and has an owner and rollback path.",
+      "stages": [
+        {
+          "id": "discover",
+          "skill": "process-discovery-interviewer",
+          "availability": "available",
+          "when": "Process steps, actors and boundaries are unclear.",
+          "output": "ProcessMap",
+          "handoff_to": "diagnose"
+        },
+        {
+          "id": "diagnose",
+          "skill": "bottleneck-and-flow-analyzer",
+          "availability": "available",
+          "when": "Queues, waiting, rework or handoffs need diagnosis.",
+          "output": "BottleneckAnalysis",
+          "handoff_to": "experiment"
+        },
+        {
+          "id": "experiment",
+          "skill": "continuous-improvement-experiment-designer",
+          "availability": "available",
+          "when": "A process change should be tested before scaling.",
+          "output": "ImprovementExperiment",
+          "handoff_to": "select"
+        },
+        {
+          "id": "select",
+          "skill": "process-automation-finder",
+          "availability": "available",
+          "when": "Automation suitability should be assessed after understanding the process.",
+          "output": "AutomationRecommendation",
+          "handoff_to": "design"
+        },
+        {
+          "id": "design",
+          "skill": "workflow-process-designer",
+          "availability": "pending-pr-1",
+          "source_pr": 1,
+          "when": "A selected and approved process needs a buildable workflow design.",
+          "output": "WorkflowSpecification",
+          "handoff_to": "integrate"
+        },
+        {
+          "id": "integrate",
+          "skill": "api-integration-planner",
+          "availability": "available",
+          "when": "The workflow depends on APIs or system integrations.",
+          "output": "IntegrationPlan",
+          "handoff_to": "build"
+        },
+        {
+          "id": "build",
+          "skill": "n8n-automation-architect",
+          "availability": "available",
+          "when": "n8n is the approved implementation platform.",
+          "output": "N8nDesign",
+          "handoff_to": "test"
+        },
+        {
+          "id": "test",
+          "skill": "automation-acceptance-tester",
+          "availability": "available",
+          "when": "The workflow is implemented and needs acceptance scenarios.",
+          "output": "AutomationAcceptance"
+        }
+      ]
+    },
+    {
+      "id": "agent-from-idea-to-governed-release",
+      "name": "Agent from idea to governed release",
+      "trigger": "A new or materially changed AI agent needs to be designed and released safely.",
+      "completion": "Agent passes approved evaluations, has least-privilege access, release approval and monitoring.",
+      "stages": [
+        {
+          "id": "charter",
+          "skill": "agent-charter-writer",
+          "availability": "available",
+          "when": "Purpose, boundaries, tools and autonomy need definition.",
+          "output": "AgentCharter",
+          "handoff_to": "permissions"
+        },
+        {
+          "id": "permissions",
+          "skill": "agent-permissions-review",
+          "availability": "available",
+          "when": "Tool and data access can be reviewed against least privilege.",
+          "output": "PermissionReview",
+          "handoff_to": "approvals"
+        },
+        {
+          "id": "approvals",
+          "skill": "agent-approval-gates",
+          "availability": "available",
+          "when": "Consequential actions and escalation paths need approval rules.",
+          "output": "ApprovalPolicy",
+          "handoff_to": "evaluation"
+        },
+        {
+          "id": "evaluation",
+          "skill": "agent-eval-planner",
+          "availability": "available",
+          "when": "Expected behaviour and failure cases need test planning.",
+          "output": "EvaluationPlan",
+          "handoff_to": "dataset"
+        },
+        {
+          "id": "dataset",
+          "skill": "ai-eval-dataset-builder",
+          "availability": "available",
+          "when": "A traceable, privacy-safe evaluation set is needed.",
+          "output": "EvaluationDataset",
+          "handoff_to": "rubric"
+        },
+        {
+          "id": "rubric",
+          "skill": "ai-output-rubric-designer",
+          "availability": "available",
+          "when": "Qualitative output quality needs anchored criteria.",
+          "output": "EvaluationRubric",
+          "handoff_to": "regression"
+        },
+        {
+          "id": "regression",
+          "skill": "prompt-regression-tester",
+          "availability": "available",
+          "when": "A fixed test set exists and versions need comparison.",
+          "output": "RegressionReport",
+          "handoff_to": "release"
+        },
+        {
+          "id": "release",
+          "skill": "agent-release-checklist",
+          "availability": "available",
+          "when": "Evaluation and governance evidence is ready for release review.",
+          "output": "AgentReleaseReview"
+        }
+      ]
+    },
+    {
+      "id": "visual-reference-to-finished-look",
+      "name": "Visual reference to finished look",
+      "trigger": "A visual direction needs to be translated into repeatable media treatment and reviewed output.",
+      "completion": "Approved look is documented and outputs pass technical and creative review.",
+      "stages": [
+        {
+          "id": "inspiration",
+          "skill": "visual-inspiration-research",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "Reference research is required for an approved creative brief.",
+          "output": "VisualReferences",
+          "handoff_to": "direction"
+        },
+        {
+          "id": "direction",
+          "skill": "moodboard-art-direction",
+          "availability": "pending-pr-3",
+          "source_pr": 3,
+          "when": "References need translation into an art-direction brief.",
+          "output": "ArtDirection",
+          "handoff_to": "look"
+        },
+        {
+          "id": "look",
+          "skill": "look-development",
+          "availability": "pending-pr-2",
+          "source_pr": 2,
+          "when": "A repeatable photo/video look needs specification.",
+          "output": "LookSpecification",
+          "handoff_to": "grade"
+        },
+        {
+          "id": "grade",
+          "skill": "video-color-grader",
+          "availability": "pending-pr-2",
+          "source_pr": 2,
+          "when": "Approved technical corrections and creative grade need application to video.",
+          "output": "GradedMedia",
+          "handoff_to": "review"
+        },
+        {
+          "id": "review",
+          "skill": "color-quality-reviewer",
+          "availability": "pending-pr-2",
+          "source_pr": 2,
+          "when": "The rendered result needs review against the brief and technical requirements.",
+          "output": "QualityReview"
+        }
+      ]
+    }
+  ]
+}
