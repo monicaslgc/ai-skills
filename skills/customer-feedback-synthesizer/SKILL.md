@@ -39,3 +39,8 @@ Keep traceability to supplied feedback IDs; report frequency only when countable
 
 ## Evaluation
 Pass only if the response produces the artifact, labels unknowns, handles a relevant boundary/failure case, invents no facts or APIs, and supplies a concrete validation check.
+
+## Optional handoffs
+- Use `product-discovery-interviewer` when themes reveal questions that need new behavioural evidence.
+- Use `creative-session` when the user wants to explore responses to the evidenced needs.
+- Keep original feedback IDs and limitations in any handoff; a theme summary is not a substitute for source evidence.

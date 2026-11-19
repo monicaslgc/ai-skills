@@ -39,3 +39,9 @@ Avoid leading questions and feature pitching. Label observations, quotes and hyp
 
 ## Evaluation
 Pass only if the response produces the artifact, labels unknowns, handles a relevant boundary/failure case, invents no facts or APIs, and supplies a concrete validation check.
+
+## Optional handoffs
+- Use `customer-feedback-synthesizer` when there is an existing feedback corpus to analyse; interviews and supplied feedback synthesis are complementary evidence sources.
+- Use `creative-session` when discovery has clarified the problem and the user wants to explore solution directions.
+- Use `concept-evaluator` only after a concept exists and the user wants to examine its desirability, feasibility and viability.
+Do not turn an interview plan or a small qualitative sample into a claim of market validation.

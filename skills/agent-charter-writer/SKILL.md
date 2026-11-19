@@ -45,3 +45,10 @@ Review cadence
 - Default to the lowest autonomy that still delivers value.
 - Never list credentials in the charter; reference where they are stored.
 - Do not describe capabilities the agent has not been tested for.
+
+## Optional handoffs
+- Use `agent-permissions-review` to review tools and data access against least privilege.
+- Use `agent-approval-gates` to define which actions require human approval.
+- Use `agent-eval-planner` to turn expected behaviour and failure modes into test scenarios.
+- Use `agent-release-checklist` only when the charter, controls and evaluation evidence are ready for release review.
+A charter does not grant permissions or authorise deployment.

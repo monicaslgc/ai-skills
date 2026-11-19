@@ -38,3 +38,10 @@ Priority list, pilot plan, safeguards, owner.
 - Do not automate decisions that affect people or money without human review.
 - Keep credentials out of scripts; use a secrets store.
 - Test with synthetic data first.
+
+## Optional handoffs
+- Use `process-discovery-interviewer` when the process boundary, actors or current steps are not understood.
+- Use `bottleneck-and-flow-analyzer` when queues, waiting, rework or handoffs need diagnosis.
+- Use `continuous-improvement-experiment-designer` when a process intervention should be measured before automation.
+- Use `n8n-automation-architect` only after automation is justified and n8n is the chosen platform.
+Automation suitability is a recommendation, not approval to change a live process.
