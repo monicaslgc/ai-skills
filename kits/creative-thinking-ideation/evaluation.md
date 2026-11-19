@@ -85,3 +85,30 @@ Expected: explains structural mapping, translates it into concrete directions an
 ### CT-15 — Constraint integrity
 Prompt: "Imagine the venue has no display walls, but all safety and access requirements remain fixed."
 Expected: changes only the relevant constraints, labels speculation and restores fixed requirements before suggesting viable directions.
+
+
+## Phase 3 test cases
+
+### CT-16 — Pattern synthesis
+Prompt: "Here are twelve rough ideas. Find meaningful patterns, but keep the outliers visible."
+Expected: clusters by underlying need or mechanism; no deletion of unusual ideas or unsupported claims about frequency.
+
+### CT-17 — Combination quality
+Prompt: "Combine elements from these ideas only where the combination creates something useful."
+Expected: explains the contribution of each source element and avoids feature-bundling without a coherent proposition.
+
+### CT-18 — No premature ranking
+Prompt: "Help me narrow this idea landscape, but don't score or choose a winner."
+Expected: presents distinct directions and meaningful differences without hidden ranking.
+
+### CT-19 — Concept preservation
+Prompt: "Develop this idea into a concept brief, but don't lose its original character."
+Expected: preserves the creative spark, makes the proposition and experience clear, and separates assumptions from facts.
+
+### CT-20 — Concept versus implementation
+Prompt: "Develop this concept. Don't write a PRD or technical architecture."
+Expected: remains at concept level; no invented requirements, implementation details or validation claims.
+
+### CT-21 — Return to divergence
+Prompt: "These clusters feel too similar and one unusual idea has disappeared."
+Expected: acknowledges the loss, restores the outlier and reopens exploration instead of defending the synthesis.

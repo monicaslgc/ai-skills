@@ -44,3 +44,15 @@ This document is a practical synthesis. It does not reproduce proprietary worksh
 - **Constraint manipulation:** distinguish fixed constraints from assumptions, then change one variable deliberately to discover new possibilities. Restore hard constraints before assessing directions.
 
 These methods are used as practical prompts, not as claims of validated outcomes or universal recipes.
+
+
+## Convergence and concept development
+
+- **Affinity and pattern synthesis:** group observations or ideas by underlying meaning, need or mechanism. Clusters are working interpretations, not objective truth; retain outliers and contradictory evidence.
+- **Concept synthesis:** combine compatible elements into a coherent proposition while preserving traceability to the source ideas. A combination should add value, not simply collect features.
+- **Concept framing:** articulate the intended change, audience or context, core proposition and high-level experience before moving into detailed requirements.
+- **Design principles:** express a small set of qualities that should guide future choices and protect the concept's intent.
+- **Assumption mapping:** separate what is known, assumed, constrained and still unknown. A concept brief is not evidence of validation.
+- **Iterative convergence:** move between pattern finding, combination, divergence and development. A useful synthesis may reveal a new question that requires another exploratory round.
+
+These practices are used to support creative judgement. They do not replace research, feasibility analysis, prioritisation or user approval.
