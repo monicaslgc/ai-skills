@@ -2,7 +2,7 @@
 
 ![Validate](https://github.com/monicaslgc/ai-skills/actions/workflows/validate.yml/badge.svg)
 
-Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations and operations management. Each skill is independent: copy one folder and it works.
+Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations, operations management, and specifications and delivery workflows. Each skill is independent: copy one folder and it works.
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
@@ -169,6 +169,20 @@ Part of the [Business Process Automation kit](kits/business-process-automation).
 | [`automation-roi-estimator`](skills/automation-roi-estimator) | Estimate costs, value and sensitivity | baseline assumptions |
 | [`automation-acceptance-tester`](skills/automation-acceptance-tester) | Define acceptance and failure-path tests | requirements |
 
+### Specifications and delivery workflows
+
+Part of the [Specifications & Delivery Workflows kit](kits/specifications-delivery-workflows).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`requirements-to-specification`](skills/requirements-to-specification) | Turn a request into a traceable functional specification | Request and available evidence |
+| [`workflow-process-designer`](skills/workflow-process-designer) | Design normal paths, exceptions, retries and approval gates | Process and system context |
+| [`requirements-to-user-stories`](skills/requirements-to-user-stories) | Convert requirements into testable backlog stories | Approved requirements |
+| [`integration-contract-specifier`](skills/integration-contract-specifier) | Define API contracts and field mappings without inventing details | Official API docs or explicit unknowns |
+| [`development-work-breakdown-planner`](skills/development-work-breakdown-planner) | Organise implementation into dependencies, tasks and milestones | Specification and capacity assumptions |
+| [`test-and-acceptance-planner`](skills/test-and-acceptance-planner) | Derive test cases and traceability from requirements | Requirements and workflow |
+| [`delivery-readiness-reviewer`](skills/delivery-readiness-reviewer) | Assess readiness using evidence and explicit gates | Artifact and review criteria |
+
 ### Product discovery and delivery
 
 Part of the [Product Discovery & Delivery kit](kits/product-discovery-delivery).
@@ -249,6 +263,7 @@ Every skill belongs to one kit. Each kit page has a suggested order and one-step
 - [Agent management kit](kits/agent-management): Skills for running AI agents responsibly: charter, permissions, evaluation, approval gates, release and incident review.
 - [Career kit](kits/career): Skills for job applications built from one honest master CV: tailoring, cover letters, interview stories and confidentiality-safe wording.
 - [Business Process Automation kit](kits/business-process-automation): Process discovery, API integration planning, data mapping, ROI estimation and acceptance testing.
+- [Specifications & Delivery Workflows kit](kits/specifications-delivery-workflows): Requirements specifications, workflow design, integration contracts, development planning, acceptance tests and readiness reviews.
 - [Product Discovery & Delivery kit](kits/product-discovery-delivery): Discovery interviews, feedback synthesis, prioritisation, requirements and release readiness.
 - [AI Quality & Evaluation kit](kits/ai-quality-evaluation): Evaluation datasets, scoring rubrics, prompt regression, structured-output validation and failure analysis.
 - [E-commerce Operations kit](kits/ecommerce-operations): Catalogue audits, SKU/variant mapping, order lifecycle checks, product content briefs and bulk-change review.
