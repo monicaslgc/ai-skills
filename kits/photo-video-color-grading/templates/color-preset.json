@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "preset_id": "synthetic-neutral-sdr-v1",
+  "purpose": "Example only: conservative SDR correction parameters, not a universal look",
+  "input": {
+    "media_type": "image_or_video",
+    "colour_space": "sRGB_or_BT709_confirmed",
+    "transfer": "SDR_confirmed",
+    "hdr": false
+  },
+  "adjustments": {
+    "brightness": 0.02,
+    "contrast": 1.03,
+    "saturation": 1.0,
+    "color_balance": {
+      "red_midtones": 0.01,
+      "green_midtones": 0.0,
+      "blue_midtones": -0.01
+    }
+  },
+  "limits": {
+    "max_abs_brightness": 0.1,
+    "min_contrast": 0.8,
+    "max_contrast": 1.25,
+    "min_saturation": 0.7,
+    "max_saturation": 1.3,
+    "max_abs_color_balance": 0.1
+  },
+  "execution": {
+    "dry_run_by_default": true,
+    "overwrite_source": false,
+    "require_human_approval": true,
+    "output_directory": "out"
+  },
+  "notes": [
+    "Values are synthetic and must be validated for the chosen tool.",
+    "FFmpeg colorbalance values are not Kelvin temperature/tint measurements.",
+    "Do not use this example preset on HDR or unknown-colour-space media."
+  ]
+}

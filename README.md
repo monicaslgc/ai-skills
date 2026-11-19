@@ -2,13 +2,28 @@
 
 ![Validate](https://github.com/monicaslgc/ai-skills/actions/workflows/validate.yml/badge.svg)
 
-Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations, operations management, and specifications and delivery workflows. Each skill is independent: copy one folder and it works.
+Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations, operations management, specifications and delivery workflows, and photo/video color grading. Each skill is independent: copy one folder and it works.
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
 **Status:** prototypes. They have been used and checked for structure, but no formal model evaluations have been run, so review the output before acting on it.
 
 ## Skills
+
+### Photo & video color grading
+
+Part of the [Photo & Video Color Grading kit](kits/photo-video-color-grading).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`media-quality-analyzer`](skills/media-quality-analyzer) | Inspect media quality and identify technical issues | Python; optional FFmpeg/ffprobe |
+| [`photo-color-corrector`](skills/photo-color-corrector) | Correct exposure, white balance and colour in photographs | Image editor or image-processing tools |
+| [`video-color-grader`](skills/video-color-grader) | Grade video footage for a consistent visual look | Video editor |
+| [`shot-matching`](skills/shot-matching) | Match shots across a sequence | Video editor |
+| [`look-development`](skills/look-development) | Develop and document a repeatable visual look | Image/video editor |
+| [`media-editing-pipeline`](skills/media-editing-pipeline) | Plan and execute a repeatable media-editing pipeline | Python, FFmpeg and ffprobe |
+| [`color-quality-reviewer`](skills/color-quality-reviewer) | Review a finished grade for technical and visual consistency | Image/video review tools |
+
 
 ### Smart home
 
