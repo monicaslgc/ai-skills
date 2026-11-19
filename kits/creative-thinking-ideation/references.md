@@ -56,3 +56,14 @@ These methods are used as practical prompts, not as claims of validated outcomes
 - **Iterative convergence:** move between pattern finding, combination, divergence and development. A useful synthesis may reveal a new question that requires another exploratory round.
 
 These practices are used to support creative judgement. They do not replace research, feasibility analysis, prioritisation or user approval.
+
+## Early concept evaluation and experimentation
+
+- **Desirability, feasibility and viability:** use as separate lenses for questions about audience value, ability to deliver and sustainability in the relevant context. They are not universal numerical scores or automatic gates.
+- **Assumption mapping:** identify which beliefs matter most to the next decision, distinguish evidence from confidence and prioritise uncertainty by consequence rather than by how easy it is to discuss.
+- **Lean experiments and prototypes:** use the smallest credible representation or interaction that can answer a specific learning question. A storyboard, paper prototype or role-play can test comprehension and experience, but cannot establish every aspect of demand or feasibility.
+- **Behavioural evidence:** distinguish what people say from what they do. Interviews and concept reactions are useful for understanding, while observed behaviour or real-world trials may be needed for stronger claims.
+- **Ethical research practice:** make participation voluntary, explain the purpose, collect only necessary information, consider accessibility and avoid exposing participants to unapproved or unsafe experiences.
+- **Decision-linked learning:** define in advance how positive, negative and ambiguous results could change the concept or the next decision. Do not retrofit success criteria after seeing results.
+
+Concept tests are different from operational improvement experiments, formal product acceptance tests and broad market validation. Use the specialist skills in the relevant kit for those tasks.

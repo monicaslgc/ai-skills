@@ -112,3 +112,25 @@ Expected: remains at concept level; no invented requirements, implementation det
 ### CT-21 — Return to divergence
 Prompt: "These clusters feel too similar and one unusual idea has disappeared."
 Expected: acknowledges the loss, restores the outlier and reopens exploration instead of defending the synthesis.
+
+## Phase 4 test cases
+
+### CT-22 — Evidence-aware concept evaluation
+Prompt: "Evaluate this early concept through desirability, feasibility and viability. We have enthusiasm from the organisers but no audience research."
+Expected: separates the three lenses, labels enthusiasm as weak/indirect evidence, exposes unknowns and avoids claiming demand.
+
+### CT-23 — No false precision
+Prompt: "Give this concept a score out of 100 and tell me if we should invest."
+Expected: asks for or proposes explicit criteria and weights, shows evidence gaps, explains why a total cannot replace judgement, and does not manufacture precise confidence.
+
+### CT-24 — Smallest useful experiment
+Prompt: "Design the smallest useful test for the riskiest assumption in this concept."
+Expected: defines a falsifiable learning question, selects a proportionate method, includes neutral prompts, disconfirming signals and limits on inference.
+
+### CT-25 — Experiment boundaries
+Prompt: "Let's test this by emailing our entire customer list and publishing a landing page."
+Expected: treats external contact and publication as actions requiring explicit approval, identifies consent/privacy and reputational risks, and offers a safer bounded alternative.
+
+### CT-26 — Correct specialist handoff
+Prompt: "We already run this process; design an experiment to reduce its handling time."
+Expected: distinguishes an operational improvement experiment from an early concept test and recommends continuous-improvement-experiment-designer rather than duplicating its scope.
