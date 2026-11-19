@@ -15,6 +15,11 @@ A universal, tool-free set of skills for exploring challenges, generating possib
 | [creative-brief-griller](../../skills/creative-brief-griller) | Clarify the challenge and challenge solution-loaded briefs |
 | [divergent-ideation](../../skills/divergent-ideation) | Generate distinct directions without premature evaluation |
 | [idea-bouncer](../../skills/idea-bouncer) | Develop ideas through iterative back-and-forth |
+| [creative-perspective-lenses](../../skills/creative-perspective-lenses) | Explore a challenge through distinct thinking lenses |
+| [creative-room-round-facilitator](../../skills/creative-room-round-facilitator) | Facilitate purposeful, interactive Creative Room rounds |
+| [productive-tension-mapper](../../skills/productive-tension-mapper) | Turn competing values and assumptions into useful exploration |
+| [analogy-bridge-builder](../../skills/analogy-bridge-builder) | Borrow structural patterns from other domains |
+| [constraint-remixer](../../skills/constraint-remixer) | Reframe a challenge by deliberately remixing constraints |
 
 ## Suggested workflow
 
@@ -23,7 +28,10 @@ A universal, tool-free set of skills for exploring challenges, generating possib
 3. Use divergent-ideation to open the solution space.
 4. Use idea-bouncer to develop one or more promising ideas through interaction.
 5. Return to divergence or reframe the challenge whenever the conversation becomes repetitive.
-6. Stop when the user has enough material, or create a session record if a handoff is useful.
+6. Use perspective lenses and the round facilitator for Creative Room sessions.
+7. Use productive-tension-mapper when ideas or values conflict.
+8. Use analogy-bridge-builder or constraint-remixer when exploration gets stuck.
+9. Stop when the user has enough material, or create a session record if a handoff is useful.
 
 The workflow is intentionally non-linear. Do not force every phase into every session.
 
@@ -37,6 +45,11 @@ cp -r ai-skills/skills/creative-session ~/.claude/skills/
 cp -r ai-skills/skills/creative-brief-griller ~/.claude/skills/
 cp -r ai-skills/skills/divergent-ideation ~/.claude/skills/
 cp -r ai-skills/skills/idea-bouncer ~/.claude/skills/
+cp -r ai-skills/skills/creative-perspective-lenses ~/.claude/skills/
+cp -r ai-skills/skills/creative-room-round-facilitator ~/.claude/skills/
+cp -r ai-skills/skills/productive-tension-mapper ~/.claude/skills/
+cp -r ai-skills/skills/analogy-bridge-builder ~/.claude/skills/
+cp -r ai-skills/skills/constraint-remixer ~/.claude/skills/
 ```
 
 On Windows PowerShell:
@@ -47,6 +60,11 @@ Copy-Item -Recurse ai-skills\skills\creative-session "$env:USERPROFILE\.claude\s
 Copy-Item -Recurse ai-skills\skills\creative-brief-griller "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\divergent-ideation "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\idea-bouncer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\creative-perspective-lenses "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\creative-room-round-facilitator "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\productive-tension-mapper "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\analogy-bridge-builder "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\constraint-remixer "$env:USERPROFILE\.claude\skills\"
 ```
 
 Other assistants use their documented skills directory. Each skill folder contains SKILL.md and USER_STORY.md.

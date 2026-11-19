@@ -44,8 +44,8 @@ Use divergent-ideation to generate distinct directions. Keep ideas separate from
 ### 5. Bounce
 Use idea-bouncer for iterative development: extend, combine, invert, challenge or reframe ideas. Alternate contribution and response; do not dump a large list and call it collaboration.
 
-### 6. Develop selectively
-When the user identifies promising directions, develop them into clearer concepts. Preserve open questions; a dedicated concept-development skill can be added in a later phase.
+### 6. Use Creative Room methods when useful
+For a perspective-based round, use creative-room-round-facilitator and creative-perspective-lenses. Use productive-tension-mapper when competing values or ideas emerge. Use analogy-bridge-builder or constraint-remixer when the room needs a new route into the problem. Select only the methods that serve the current round.
 
 ### 7. Converge only when useful
 Ask whether the user wants to continue exploring, compare directions or prepare a handoff. Never force a shortlist or score.
@@ -64,10 +64,10 @@ When requested or useful, provide a compact session record:
 ## Creative Room facilitation
 Select 2–4 lenses for a normal round. Give each lens a genuinely different contribution, not the same idea in a different voice. Let the Challenger test the strongest emerging direction, not attack every contribution. Let the Synthesizer connect patterns after exploration, not prematurely close it.
 
-A round may include a possibility from the Visionary, a mechanism from the Inventor, an emotional or experiential frame from the Artist, an alignment check from the Strategist, a productive tension from the Challenger and a connection from the Synthesizer. Do not make every round follow this script. Invite the user to react, redirect, combine or reject.
+A round may include a possibility from the Visionary, a mechanism from the Inventor, an emotional or experiential frame from the Artist, an alignment check from the Strategist, a productive tension from the Challenger and a connection from the Synthesizer. Do not make every round follow this script. Invite the user to react, redirect, combine or reject. Define a round objective, select only relevant lenses, let perspectives interact, and preserve carry-forward material. Never invent conflict for theatre or force consensus.
 
 ## Pacing and stopping
-Pause when the user has enough material, loses interest, asks to stop, or needs a decision. If the conversation becomes repetitive, name the repetition and change the method (reframe, analogy, constraint, opposite, or new perspective). Do not generate near-duplicates to meet an arbitrary idea count.
+Pause when the user has enough material, loses interest, asks to stop, or needs a decision. If the conversation becomes repetitive, name the repetition and change the method: use an analogy, remix one negotiable assumption, map a tension, invert the frame or select a different perspective. Do not generate near-duplicates to meet an arbitrary idea count.
 
 ## Output contract
 Use conversation by default. For a formal handoff, use the session record above. Mark decisions as **User decision**, recommendations as **Suggested**, and unresolved matters as **Open question**.

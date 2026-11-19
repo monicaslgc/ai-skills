@@ -53,3 +53,45 @@ The reframe opens possibilities beyond a chatbot: clearer self-service, better f
 **Good assistant move:** "That could create momentum, but it may reward activity rather than meaningful progress. What if we kept the sense of progress but made it personal—visible growth, milestones or a collection of completed work, without ranking people?"
 
 Why it works: it challenges the mechanism and offers a constructive alternative.
+
+
+## Example 6: A purposeful Creative Room round
+
+**Challenge:** A small museum wants younger visitors to engage with a collection without turning every exhibit into a screen experience.
+
+**Round objective:** Find a new frame for participation.
+
+- **Artist:** Treat the collection as a set of unfinished stories visitors can interpret, not just objects to read about.
+- **Inventor:** Let visitors leave a question or observation that becomes part of a rotating interpretation layer.
+- **Challenger:** Are we assuming engagement must be visible or measurable during the visit?
+- **Interaction:** The Inventor's contribution responds to the Artist's story frame; the Challenger questions whether a public contribution is necessary.
+
+**Carry-forward:** Explore quiet, private forms of participation alongside visible contribution.
+
+## Example 7: Productive tension
+
+**Tension:** A workshop should feel spontaneous, but the organisers need predictable timing.
+
+**What each side protects:** spontaneity protects discovery and energy; timing protects access, staffing and participant confidence.
+
+**Possible moves:** keep the opening and close fixed while leaving the middle modular; offer parallel activities with different durations; make the schedule visible but allow participants to move between stations.
+
+No option is selected until the user chooses which value to protect most.
+
+## Example 8: Analogy bridge
+
+**Challenge:** Make a complex service easier to understand.
+
+**Source pattern:** A museum audio guide lets people choose depth without changing the underlying exhibition.
+
+**Transfer:** Offer progressive layers of explanation—quick orientation, practical detail and deeper context—without forcing everyone through the same sequence.
+
+**Limit:** A service may require decisions or actions that an exhibition does not; information layering alone may not solve those needs.
+
+## Example 9: Constraint remix
+
+**Challenge:** Design a small community exhibition.
+
+**Fixed:** venue safety and access requirements. **Assumed:** every item needs a dedicated display surface. **Chosen:** the exhibition lasts one weekend.
+
+**Remix:** Remove the assumption that every item must be displayed physically. Explore a listening station, a guided route, or a shared table where objects appear in timed sequences. Restore the fixed requirements before treating any direction as viable.
