@@ -1,0 +1,606 @@
+{
+  "schema_version": "1.0",
+  "relationship_types": [
+    "requires",
+    "hands-off-to",
+    "complements",
+    "alternative-to",
+    "governed-by"
+  ],
+  "nodes": [
+    {
+      "id": "creative-session",
+      "availability": "available"
+    },
+    {
+      "id": "creative-brief-griller",
+      "availability": "available"
+    },
+    {
+      "id": "divergent-ideation",
+      "availability": "available"
+    },
+    {
+      "id": "idea-bouncer",
+      "availability": "available"
+    },
+    {
+      "id": "creative-perspective-lenses",
+      "availability": "available"
+    },
+    {
+      "id": "creative-room-round-facilitator",
+      "availability": "available"
+    },
+    {
+      "id": "productive-tension-mapper",
+      "availability": "available"
+    },
+    {
+      "id": "analogy-bridge-builder",
+      "availability": "available"
+    },
+    {
+      "id": "constraint-remixer",
+      "availability": "available"
+    },
+    {
+      "id": "creative-convergence",
+      "availability": "available"
+    },
+    {
+      "id": "concept-developer",
+      "availability": "available"
+    },
+    {
+      "id": "concept-evaluator",
+      "availability": "available"
+    },
+    {
+      "id": "concept-experiment-designer",
+      "availability": "available"
+    },
+    {
+      "id": "product-discovery-interviewer",
+      "availability": "available"
+    },
+    {
+      "id": "customer-feedback-synthesizer",
+      "availability": "available"
+    },
+    {
+      "id": "prioritization-scorecard",
+      "availability": "available"
+    },
+    {
+      "id": "prd-and-spec-writer",
+      "availability": "available"
+    },
+    {
+      "id": "release-readiness-reviewer",
+      "availability": "available"
+    },
+    {
+      "id": "continuous-improvement-experiment-designer",
+      "availability": "available"
+    },
+    {
+      "id": "bottleneck-and-flow-analyzer",
+      "availability": "available"
+    },
+    {
+      "id": "operational-priority-ranker",
+      "availability": "available"
+    },
+    {
+      "id": "process-automation-finder",
+      "availability": "available"
+    },
+    {
+      "id": "n8n-automation-architect",
+      "availability": "available"
+    },
+    {
+      "id": "n8n-workflow-builder-debugger",
+      "availability": "available"
+    },
+    {
+      "id": "api-integration-planner",
+      "availability": "available"
+    },
+    {
+      "id": "data-mapping-validator",
+      "availability": "available"
+    },
+    {
+      "id": "automation-acceptance-tester",
+      "availability": "available"
+    },
+    {
+      "id": "project-charter-writer",
+      "availability": "available"
+    },
+    {
+      "id": "project-plan-builder",
+      "availability": "available"
+    },
+    {
+      "id": "raid-log-manager",
+      "availability": "available"
+    },
+    {
+      "id": "change-request-assessor",
+      "availability": "available"
+    },
+    {
+      "id": "project-retrospective",
+      "availability": "available"
+    },
+    {
+      "id": "agent-charter-writer",
+      "availability": "available"
+    },
+    {
+      "id": "agent-permissions-review",
+      "availability": "available"
+    },
+    {
+      "id": "agent-approval-gates",
+      "availability": "available"
+    },
+    {
+      "id": "agent-eval-planner",
+      "availability": "available"
+    },
+    {
+      "id": "ai-eval-dataset-builder",
+      "availability": "available"
+    },
+    {
+      "id": "ai-output-rubric-designer",
+      "availability": "available"
+    },
+    {
+      "id": "prompt-regression-tester",
+      "availability": "available"
+    },
+    {
+      "id": "agent-release-checklist",
+      "availability": "available"
+    },
+    {
+      "id": "agent-incident-review",
+      "availability": "available"
+    },
+    {
+      "id": "requirements-to-specification",
+      "availability": "pending-pr-1",
+      "source_pr": 1
+    },
+    {
+      "id": "requirements-to-user-stories",
+      "availability": "pending-pr-1",
+      "source_pr": 1
+    },
+    {
+      "id": "development-work-breakdown-planner",
+      "availability": "pending-pr-1",
+      "source_pr": 1
+    },
+    {
+      "id": "test-and-acceptance-planner",
+      "availability": "pending-pr-1",
+      "source_pr": 1
+    },
+    {
+      "id": "delivery-readiness-reviewer",
+      "availability": "pending-pr-1",
+      "source_pr": 1
+    },
+    {
+      "id": "workflow-process-designer",
+      "availability": "pending-pr-1",
+      "source_pr": 1
+    },
+    {
+      "id": "integration-contract-specifier",
+      "availability": "pending-pr-1",
+      "source_pr": 1
+    },
+    {
+      "id": "audience-research",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "brand-discovery",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "brand-stakeholder-interviews",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "competitive-brand-research",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "market-category-analysis",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "brand-strategy",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "brand-positioning",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "brand-identity-prism",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "brand-workflow-orchestrator",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "campaign-concept-developer",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "brand-quality-evaluator",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "brand-claim-validator",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "brand-content-planner",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "plan-creator-content",
+      "availability": "available"
+    },
+    {
+      "id": "content-pipeline-planner",
+      "availability": "available"
+    },
+    {
+      "id": "edit-short-form-videos",
+      "availability": "available"
+    },
+    {
+      "id": "write-social-captions",
+      "availability": "available"
+    },
+    {
+      "id": "design-youtube-thumbnails",
+      "availability": "available"
+    },
+    {
+      "id": "media-editing-pipeline",
+      "availability": "pending-pr-2",
+      "source_pr": 2
+    },
+    {
+      "id": "media-quality-analyzer",
+      "availability": "pending-pr-2",
+      "source_pr": 2
+    },
+    {
+      "id": "color-quality-reviewer",
+      "availability": "pending-pr-2",
+      "source_pr": 2
+    },
+    {
+      "id": "look-development",
+      "availability": "pending-pr-2",
+      "source_pr": 2
+    },
+    {
+      "id": "video-color-grader",
+      "availability": "pending-pr-2",
+      "source_pr": 2
+    },
+    {
+      "id": "photo-color-corrector",
+      "availability": "pending-pr-2",
+      "source_pr": 2
+    },
+    {
+      "id": "process-discovery-interviewer",
+      "availability": "available"
+    },
+    {
+      "id": "visual-inspiration-research",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    },
+    {
+      "id": "moodboard-art-direction",
+      "availability": "pending-pr-3",
+      "source_pr": 3
+    }
+  ],
+  "relationships": [
+    {
+      "from": "creative-session",
+      "type": "requires",
+      "to": "creative-brief-griller",
+      "when": "only when the brief is materially ambiguous"
+    },
+    {
+      "from": "creative-session",
+      "type": "hands-off-to",
+      "to": "divergent-ideation",
+      "when": "when the user asks to open the solution space"
+    },
+    {
+      "from": "creative-session",
+      "type": "hands-off-to",
+      "to": "idea-bouncer",
+      "when": "when an idea needs iterative development"
+    },
+    {
+      "from": "creative-session",
+      "type": "hands-off-to",
+      "to": "creative-convergence",
+      "when": "when a sufficiently varied idea landscape needs synthesis"
+    },
+    {
+      "from": "creative-session",
+      "type": "hands-off-to",
+      "to": "concept-developer",
+      "when": "when the user selects a direction for development"
+    },
+    {
+      "from": "creative-session",
+      "type": "hands-off-to",
+      "to": "concept-evaluator",
+      "when": "when the user asks what is promising or uncertain about a concept"
+    },
+    {
+      "from": "creative-session",
+      "type": "hands-off-to",
+      "to": "concept-experiment-designer",
+      "when": "when a critical early concept assumption needs a test"
+    },
+    {
+      "from": "creative-perspective-lenses",
+      "type": "complements",
+      "to": "productive-tension-mapper",
+      "when": "use when distinct perspectives expose competing values"
+    },
+    {
+      "from": "analogy-bridge-builder",
+      "type": "complements",
+      "to": "constraint-remixer",
+      "when": "optional reframing methods; neither is required by the other"
+    },
+    {
+      "from": "concept-evaluator",
+      "type": "hands-off-to",
+      "to": "prioritization-scorecard",
+      "when": "only after comparing multiple opportunities is the actual decision"
+    },
+    {
+      "from": "concept-experiment-designer",
+      "type": "alternative-to",
+      "to": "continuous-improvement-experiment-designer",
+      "when": "choose by early concept learning versus an established operational process"
+    },
+    {
+      "from": "product-discovery-interviewer",
+      "type": "complements",
+      "to": "customer-feedback-synthesizer",
+      "when": "interviews create new evidence; synthesis analyses supplied evidence"
+    },
+    {
+      "from": "customer-feedback-synthesizer",
+      "type": "complements",
+      "to": "creative-session",
+      "when": "evidence may inform the challenge frame and ideation"
+    },
+    {
+      "from": "concept-developer",
+      "type": "hands-off-to",
+      "to": "prd-and-spec-writer",
+      "when": "only after concept direction and scope are approved for product definition"
+    },
+    {
+      "from": "prd-and-spec-writer",
+      "type": "complements",
+      "to": "requirements-to-specification",
+      "when": "product-specific PRD versus general requirements specification"
+    },
+    {
+      "from": "requirements-to-specification",
+      "type": "hands-off-to",
+      "to": "requirements-to-user-stories",
+      "when": "after requirements are reviewed and approved"
+    },
+    {
+      "from": "requirements-to-user-stories",
+      "type": "hands-off-to",
+      "to": "development-work-breakdown-planner",
+      "when": "when stories are ready to be sequenced into engineering work"
+    },
+    {
+      "from": "development-work-breakdown-planner",
+      "type": "complements",
+      "to": "project-plan-builder",
+      "when": "delivery backlog versus project-level schedule and governance"
+    },
+    {
+      "from": "test-and-acceptance-planner",
+      "type": "governed-by",
+      "to": "release-readiness-reviewer",
+      "when": "acceptance evidence contributes to release readiness"
+    },
+    {
+      "from": "delivery-readiness-reviewer",
+      "type": "complements",
+      "to": "release-readiness-reviewer",
+      "when": "increment/specification readiness precedes production release readiness"
+    },
+    {
+      "from": "bottleneck-and-flow-analyzer",
+      "type": "hands-off-to",
+      "to": "continuous-improvement-experiment-designer",
+      "when": "when a measurable process change is proposed"
+    },
+    {
+      "from": "continuous-improvement-experiment-designer",
+      "type": "hands-off-to",
+      "to": "process-automation-finder",
+      "when": "only if evidence suggests automation is an appropriate intervention"
+    },
+    {
+      "from": "process-automation-finder",
+      "type": "hands-off-to",
+      "to": "workflow-process-designer",
+      "when": "after a process is selected and approved for design"
+    },
+    {
+      "from": "workflow-process-designer",
+      "type": "hands-off-to",
+      "to": "n8n-automation-architect",
+      "when": "when n8n is the chosen implementation platform"
+    },
+    {
+      "from": "n8n-automation-architect",
+      "type": "hands-off-to",
+      "to": "n8n-workflow-builder-debugger",
+      "when": "when a design is ready to be built and tested"
+    },
+    {
+      "from": "api-integration-planner",
+      "type": "complements",
+      "to": "data-mapping-validator",
+      "when": "integration design and mapping validation are distinct checks"
+    },
+    {
+      "from": "data-mapping-validator",
+      "type": "governed-by",
+      "to": "automation-acceptance-tester",
+      "when": "validated mappings become acceptance conditions"
+    },
+    {
+      "from": "agent-charter-writer",
+      "type": "hands-off-to",
+      "to": "agent-permissions-review",
+      "when": "after agent purpose, scope and autonomy are drafted"
+    },
+    {
+      "from": "agent-permissions-review",
+      "type": "hands-off-to",
+      "to": "agent-approval-gates",
+      "when": "after least-privilege access is understood"
+    },
+    {
+      "from": "agent-approval-gates",
+      "type": "governed-by",
+      "to": "agent-eval-planner",
+      "when": "tests should include approval and refusal behaviour"
+    },
+    {
+      "from": "agent-eval-planner",
+      "type": "complements",
+      "to": "ai-eval-dataset-builder",
+      "when": "plan cases then construct a traceable test set"
+    },
+    {
+      "from": "ai-output-rubric-designer",
+      "type": "complements",
+      "to": "prompt-regression-tester",
+      "when": "rubric defines quality; regression tests compare versions"
+    },
+    {
+      "from": "agent-release-checklist",
+      "type": "governed-by",
+      "to": "agent-incident-review",
+      "when": "release controls should feed incident learning and rollback"
+    },
+    {
+      "from": "brand-discovery",
+      "type": "hands-off-to",
+      "to": "brand-strategy",
+      "when": "only after discovery evidence and decisions are reviewed"
+    },
+    {
+      "from": "audience-research",
+      "type": "complements",
+      "to": "brand-stakeholder-interviews",
+      "when": "audience evidence and internal stakeholder perspectives are not interchangeable"
+    },
+    {
+      "from": "brand-strategy",
+      "type": "hands-off-to",
+      "to": "brand-positioning",
+      "when": "when positioning options need explicit development"
+    },
+    {
+      "from": "brand-positioning",
+      "type": "complements",
+      "to": "brand-identity-prism",
+      "when": "positioning and identity coherence are related but distinct"
+    },
+    {
+      "from": "creative-session",
+      "type": "complements",
+      "to": "brand-workflow-orchestrator",
+      "when": "general ideation can support a brand stage; it does not replace the brand workflow"
+    },
+    {
+      "from": "concept-developer",
+      "type": "alternative-to",
+      "to": "campaign-concept-developer",
+      "when": "use generic concept development or the brand/campaign specialist by task domain"
+    },
+    {
+      "from": "campaign-concept-developer",
+      "type": "governed-by",
+      "to": "brand-quality-evaluator",
+      "when": "campaign territories should be reviewed against approved brand strategy"
+    },
+    {
+      "from": "brand-content-planner",
+      "type": "hands-off-to",
+      "to": "plan-creator-content",
+      "when": "when brand strategy has been translated into a specific content plan"
+    },
+    {
+      "from": "content-pipeline-planner",
+      "type": "hands-off-to",
+      "to": "media-editing-pipeline",
+      "when": "planning versus execution of the media processing pipeline"
+    },
+    {
+      "from": "media-quality-analyzer",
+      "type": "hands-off-to",
+      "to": "media-editing-pipeline",
+      "when": "source diagnosis may inform correction settings"
+    },
+    {
+      "from": "media-editing-pipeline",
+      "type": "hands-off-to",
+      "to": "color-quality-reviewer",
+      "when": "review rendered outputs before delivery"
+    }
+  ]
+}
