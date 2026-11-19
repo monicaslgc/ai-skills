@@ -74,8 +74,7 @@
         {
           "id": "detail",
           "skill": "requirements-to-user-stories",
-          "availability": "pending-pr-1",
-          "source_pr": 1,
+          "availability": "available",
           "when": "Approved requirements are ready to be broken into stories.",
           "output": "UserStories",
           "handoff_to": "plan"
@@ -83,8 +82,7 @@
         {
           "id": "plan",
           "skill": "development-work-breakdown-planner",
-          "availability": "pending-pr-1",
-          "source_pr": 1,
+          "availability": "available",
           "when": "Stories and dependencies are ready for engineering sequencing.",
           "output": "DeliveryBacklog",
           "handoff_to": "verify"
@@ -92,8 +90,7 @@
         {
           "id": "verify",
           "skill": "test-and-acceptance-planner",
-          "availability": "pending-pr-1",
-          "source_pr": 1,
+          "availability": "available",
           "when": "Requirements and workflows are stable enough to define tests.",
           "output": "AcceptancePlan",
           "handoff_to": "release"
@@ -116,8 +113,7 @@
         {
           "id": "audience",
           "skill": "audience-research",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "Audience segments and research questions need to be developed.",
           "output": "AudienceEvidence",
           "handoff_to": "stakeholders"
@@ -125,8 +121,7 @@
         {
           "id": "stakeholders",
           "skill": "brand-stakeholder-interviews",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "Stakeholder perspectives need to be gathered.",
           "output": "StakeholderEvidence",
           "handoff_to": "discovery"
@@ -134,8 +129,7 @@
         {
           "id": "discovery",
           "skill": "brand-discovery",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "Sufficient evidence is available to frame the brand challenge.",
           "output": "BrandDiscoveryBrief",
           "handoff_to": "strategy"
@@ -143,8 +137,7 @@
         {
           "id": "strategy",
           "skill": "brand-strategy",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "Discovery decisions and evidence are reviewed.",
           "output": "BrandStrategy",
           "handoff_to": "position"
@@ -152,8 +145,7 @@
         {
           "id": "position",
           "skill": "brand-positioning",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "Positioning options need to be developed or compared.",
           "output": "PositioningTerritories",
           "handoff_to": "identity"
@@ -161,8 +153,7 @@
         {
           "id": "identity",
           "skill": "brand-identity-prism",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "Identity coherence needs to be tested against the strategy.",
           "output": "IdentityFramework",
           "handoff_to": "campaign"
@@ -170,8 +161,7 @@
         {
           "id": "campaign",
           "skill": "campaign-concept-developer",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "A campaign concept is needed from approved brand strategy.",
           "output": "CampaignTerritories",
           "handoff_to": "quality"
@@ -179,8 +169,7 @@
         {
           "id": "quality",
           "skill": "brand-quality-evaluator",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "A brand deliverable needs a structured quality review.",
           "output": "BrandQualityReview"
         }
@@ -219,8 +208,7 @@
         {
           "id": "edit",
           "skill": "media-editing-pipeline",
-          "availability": "pending-pr-2",
-          "source_pr": 2,
+          "availability": "available",
           "when": "Approved correction decisions are ready for deterministic processing.",
           "output": "MediaOutputs",
           "handoff_to": "review"
@@ -228,8 +216,7 @@
         {
           "id": "review",
           "skill": "color-quality-reviewer",
-          "availability": "pending-pr-2",
-          "source_pr": 2,
+          "availability": "available",
           "when": "Rendered assets need a technical and visual review.",
           "output": "MediaQualityReport",
           "handoff_to": "package"
@@ -300,8 +287,7 @@
         {
           "id": "design",
           "skill": "workflow-process-designer",
-          "availability": "pending-pr-1",
-          "source_pr": 1,
+          "availability": "available",
           "when": "A selected and approved process needs a buildable workflow design.",
           "output": "WorkflowSpecification",
           "handoff_to": "integrate"
@@ -411,8 +397,7 @@
         {
           "id": "inspiration",
           "skill": "visual-inspiration-research",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "Reference research is required for an approved creative brief.",
           "output": "VisualReferences",
           "handoff_to": "direction"
@@ -420,8 +405,7 @@
         {
           "id": "direction",
           "skill": "moodboard-art-direction",
-          "availability": "pending-pr-3",
-          "source_pr": 3,
+          "availability": "available",
           "when": "References need translation into an art-direction brief.",
           "output": "ArtDirection",
           "handoff_to": "look"
@@ -429,8 +413,7 @@
         {
           "id": "look",
           "skill": "look-development",
-          "availability": "pending-pr-2",
-          "source_pr": 2,
+          "availability": "available",
           "when": "A repeatable photo/video look needs specification.",
           "output": "LookSpecification",
           "handoff_to": "grade"
@@ -438,8 +421,7 @@
         {
           "id": "grade",
           "skill": "video-color-grader",
-          "availability": "pending-pr-2",
-          "source_pr": 2,
+          "availability": "available",
           "when": "Approved technical corrections and creative grade need application to video.",
           "output": "GradedMedia",
           "handoff_to": "review"
@@ -447,8 +429,7 @@
         {
           "id": "review",
           "skill": "color-quality-reviewer",
-          "availability": "pending-pr-2",
-          "source_pr": 2,
+          "availability": "available",
           "when": "The rendered result needs review against the brief and technical requirements.",
           "output": "QualityReview"
         }

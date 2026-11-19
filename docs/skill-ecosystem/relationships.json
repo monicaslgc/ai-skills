@@ -174,103 +174,83 @@
     },
     {
       "id": "requirements-to-specification",
-      "availability": "pending-pr-1",
-      "source_pr": 1
+      "availability": "available"
     },
     {
       "id": "requirements-to-user-stories",
-      "availability": "pending-pr-1",
-      "source_pr": 1
+      "availability": "available"
     },
     {
       "id": "development-work-breakdown-planner",
-      "availability": "pending-pr-1",
-      "source_pr": 1
+      "availability": "available"
     },
     {
       "id": "test-and-acceptance-planner",
-      "availability": "pending-pr-1",
-      "source_pr": 1
+      "availability": "available"
     },
     {
       "id": "delivery-readiness-reviewer",
-      "availability": "pending-pr-1",
-      "source_pr": 1
+      "availability": "available"
     },
     {
       "id": "workflow-process-designer",
-      "availability": "pending-pr-1",
-      "source_pr": 1
+      "availability": "available"
     },
     {
       "id": "integration-contract-specifier",
-      "availability": "pending-pr-1",
-      "source_pr": 1
+      "availability": "available"
     },
     {
       "id": "audience-research",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "brand-discovery",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "brand-stakeholder-interviews",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "competitive-brand-research",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "market-category-analysis",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "brand-strategy",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "brand-positioning",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "brand-identity-prism",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "brand-workflow-orchestrator",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "campaign-concept-developer",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "brand-quality-evaluator",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "brand-claim-validator",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "brand-content-planner",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "plan-creator-content",
@@ -294,33 +274,27 @@
     },
     {
       "id": "media-editing-pipeline",
-      "availability": "pending-pr-2",
-      "source_pr": 2
+      "availability": "available"
     },
     {
       "id": "media-quality-analyzer",
-      "availability": "pending-pr-2",
-      "source_pr": 2
+      "availability": "available"
     },
     {
       "id": "color-quality-reviewer",
-      "availability": "pending-pr-2",
-      "source_pr": 2
+      "availability": "available"
     },
     {
       "id": "look-development",
-      "availability": "pending-pr-2",
-      "source_pr": 2
+      "availability": "available"
     },
     {
       "id": "video-color-grader",
-      "availability": "pending-pr-2",
-      "source_pr": 2
+      "availability": "available"
     },
     {
       "id": "photo-color-corrector",
-      "availability": "pending-pr-2",
-      "source_pr": 2
+      "availability": "available"
     },
     {
       "id": "process-discovery-interviewer",
@@ -328,13 +302,11 @@
     },
     {
       "id": "visual-inspiration-research",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     },
     {
       "id": "moodboard-art-direction",
-      "availability": "pending-pr-3",
-      "source_pr": 3
+      "availability": "available"
     }
   ],
   "relationships": [

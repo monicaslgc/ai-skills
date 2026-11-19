@@ -87,6 +87,8 @@ for name, text in skills.items():
     all_refs = set(re.findall(r"`([a-z0-9]+(?:-[a-z0-9]+)+)`", text))
     optional_refs = set(re.findall(r"`([a-z0-9]+(?:-[a-z0-9]+)+)`", optional_text))
     for ref in sorted(all_refs):
+        if ref in {"needs-input", "ready-for-review"}:
+            continue
         if ref == name or ref.endswith("-mcp"):
             continue
         if ref not in skills:
