@@ -8,6 +8,12 @@ The instructions are plain Markdown and work with any agent that supports `SKILL
 
 **Status:** prototypes. They have been used and checked for structure, but no formal model evaluations have been run, so review the output before acting on it.
 
+## Knowledge architecture
+
+Skills are task instructions grounded in reusable domain knowledge. The repository-wide architecture, authoring standard and phased migration plan are documented in [KNOWLEDGE_ARCHITECTURE.md](KNOWLEDGE_ARCHITECTURE.md), [knowledge/KNOWLEDGE_STANDARD.md](knowledge/KNOWLEDGE_STANDARD.md) and [KNOWLEDGE_ROADMAP.md](KNOWLEDGE_ROADMAP.md).
+
+New and substantially revised skills should declare whether they are standalone, kit-dependent or hybrid, and identify the knowledge they rely on. See the [knowledge directory](knowledge/README.md).
+
 ## Skills
 
 ### Photo & video color grading
@@ -263,7 +269,50 @@ Part of the [Operations Management kit](kits/operations-management).
 
 Each new kit includes a fictional example, review references and a proposed evaluation pack. Evaluation packs are not claimed as benchmark results until executed.
 
+### Brand strategy and identity
+
+Part of the [Brand Strategy & Identity kit](kits/brand-strategy-identity).
+
+| Skill | Use it when |
+|---|---|
+| [`audience-research`](skills/audience-research) | Synthesize audience evidence and identify research gaps |
+| [`brand-application-designer`](skills/brand-application-designer) | Specify identity use across touchpoints |
+| [`brand-architecture`](skills/brand-architecture) | Choose a coherent brand portfolio structure |
+| [`brand-asset-governance`](skills/brand-asset-governance) | Govern reusable brand files and versions |
+| [`brand-audit`](skills/brand-audit) | Audit an existing brand across strategy and touchpoints |
+| [`brand-claim-validator`](skills/brand-claim-validator) | Check claims against substantiating evidence |
+| [`brand-consistency-auditor`](skills/brand-consistency-auditor) | Audit touchpoints against approved brand rules |
+| [`brand-content-planner`](skills/brand-content-planner) | Plan content aligned with brand positioning |
+| [`brand-discovery`](skills/brand-discovery) | Collect the context needed for brand decisions |
+| [`brand-guidelines-generator`](skills/brand-guidelines-generator) | Compile approved brand rules into guidelines |
+| [`brand-identity-prism`](skills/brand-identity-prism) | Assess identity through six connected facets |
+| [`brand-launch-planner`](skills/brand-launch-planner) | Plan internal and external brand rollout |
+| [`brand-localization-advisor`](skills/brand-localization-advisor) | Adapt brand expression across languages and markets |
+| [`brand-messaging-framework`](skills/brand-messaging-framework) | Build audience-specific message hierarchies |
+| [`brand-name-availability`](skills/brand-name-availability) | Screen domains, company registers and preliminary trademark conflicts before concept work |
+| [`brand-naming-validation`](skills/brand-naming-validation) | Screen shortlisted names before legal review |
+| [`brand-performance-analyst`](skills/brand-performance-analyst) | Evaluate brand measures and interpret evidence |
+| [`brand-personality-archetypes`](skills/brand-personality-archetypes) | Translate traits into practical brand behaviour |
+| [`brand-positioning`](skills/brand-positioning) | Develop and compare positioning options |
+| [`brand-quality-evaluator`](skills/brand-quality-evaluator) | Evaluate deliverables against explicit criteria |
+| [`brand-stakeholder-interviews`](skills/brand-stakeholder-interviews) | Plan and synthesize stakeholder interviews |
+| [`brand-strategy`](skills/brand-strategy) | Turn discovery evidence into a coherent strategy |
+| [`brand-tool-calling`](skills/brand-tool-calling) | Select and call tools safely |
+| [`brand-voice-copywriter`](skills/brand-voice-copywriter) | Create verbal identity and on-brand copy |
+| [`brand-workflow-orchestrator`](skills/brand-workflow-orchestrator) | Route work through the brand workflow and approval gates |
+| [`brand-workshop-facilitator`](skills/brand-workshop-facilitator) | Facilitate workshops and capture decisions |
+| [`campaign-concept-developer`](skills/campaign-concept-developer) | Develop brand-consistent campaign territories |
+| [`competitive-brand-research`](skills/competitive-brand-research) | Research competitors and adjacent categories |
+| [`logo-design-brief`](skills/logo-design-brief) | Brief designers on strategic identity requirements |
+| [`market-category-analysis`](skills/market-category-analysis) | Map category conventions and opportunities |
+| [`moodboard-art-direction`](skills/moodboard-art-direction) | Translate strategy into visual territories |
+| [`naming-studio`](skills/naming-studio) | Generate strategically grounded name candidates |
+| [`visual-inspiration-research`](skills/visual-inspiration-research) | Find visual references from strategic search terms |
+
 ## Kits
+
+- [Brand Strategy & Identity kit](kits/brand-strategy-identity): Brand discovery, market research, strategy, naming, visual identity, messaging, launch and governance.
+- [MCP Usage kit](kits/mcp-usage): Vendor-neutral knowledge and a skill for discovering and safely using MCP capabilities exposed by an AI host.
 
 Every skill belongs to one kit. Each kit page has a suggested order and one-step install:
 
@@ -367,3 +416,21 @@ Skills reference third-party games and tools by name only to describe their use.
 ## License
 
 [MIT](LICENSE), copyright monicaslgc.
+
+## Brand Strategy & Identity
+
+A modular kit covers brand discovery, market research, strategy, positioning, naming, visual direction, messaging, launch and governance. It includes specialist skills, early domain/company-register/preliminary trademark screening, human approval gates, a proposed tool catalogue, selected JSON Schema examples, security guidance and evaluation fixtures. See [Brand Strategy & Identity kit](kits/brand-strategy-identity/README.md).
+
+### MCP usage
+
+Part of the [MCP Usage kit](kits/mcp-usage).
+
+| Skill | Use it when |
+|---|---|
+| [mcp-client-operator](skills/mcp-client-operator) | Discover, inspect, select and safely use connected MCP tools, resources and prompts |
+
+## MCP usage framework
+
+The [MCP Client Operator](skills/mcp-client-operator/SKILL.md) is a vendor-neutral skill for discovering, inspecting, selecting and safely using MCP servers and capabilities that the current host actually exposes. Reusable domain knowledge is in [knowledge/mcp](knowledge/mcp/README.md), with behavioural scenarios in [evaluations/mcp](evaluations/mcp/README.md). These are proposed evaluation cases, not claimed model benchmark results.
+
+The framework does not install or configure servers, create connections, or manage credentials unless the host explicitly exposes those capabilities.

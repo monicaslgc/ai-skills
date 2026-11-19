@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ApprovalRequestInput",
+  "description": "Request explicit human approval for an artefact version.",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision_type": {
+      "type": "string",
+      "enum": [
+        "strategy",
+        "name",
+        "visual_direction",
+        "identity",
+        "claim",
+        "campaign",
+        "launch",
+        "other"
+      ]
+    },
+    "artifact_uri": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifact_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approver_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "project_id",
+    "decision_type",
+    "artifact_uri",
+    "artifact_version",
+    "approver_id",
+    "summary"
+  ],
+  "additionalProperties": false
+}

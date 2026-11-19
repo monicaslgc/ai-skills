@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NamingValidationInput",
+  "description": "Preliminary screening, not legal clearance.",
+  "type": "object",
+  "properties": {
+    "candidate_names": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "maxItems": 50
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "markets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "check_trademarks": {
+      "type": "boolean"
+    },
+    "check_domains": {
+      "type": "boolean"
+    },
+    "check_social_handles": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "candidate_names",
+    "languages",
+    "markets"
+  ],
+  "additionalProperties": false
+}
