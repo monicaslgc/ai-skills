@@ -233,6 +233,8 @@ Part of the [Creative Thinking & Ideation kit](kits/creative-thinking-ideation).
 | [constraint-remixer](skills/constraint-remixer) | Reframe a challenge by deliberately remixing constraints | nothing |
 | [creative-convergence](skills/creative-convergence) | Find patterns and combinations without premature ranking | nothing |
 | [concept-developer](skills/concept-developer) | Develop a promising idea into a coherent concept brief | nothing |
+| [concept-evaluator](skills/concept-evaluator) | Assess desirability, feasibility and viability while exposing evidence gaps | nothing |
+| [concept-experiment-designer](skills/concept-experiment-designer) | Design a small experiment to test a critical concept assumption | nothing |
 
 ### AI quality and evaluation
 
@@ -347,7 +349,7 @@ Every skill belongs to one kit. Each kit page has a suggested order and one-step
 - [Business Process Automation kit](kits/business-process-automation): Process discovery, API integration planning, data mapping, ROI estimation and acceptance testing.
 - [Specifications & Delivery Workflows kit](kits/specifications-delivery-workflows): Requirements specifications, workflow design, integration contracts, development planning, acceptance tests and readiness reviews.
 - [Product Discovery & Delivery kit](kits/product-discovery-delivery): Discovery interviews, feedback synthesis, prioritisation, requirements and release readiness.
-- [Creative Thinking & Ideation kit](kits/creative-thinking-ideation): Universal creative sessions, brief clarification, divergent ideation, idea development, perspective-based facilitation, tension mapping, analogy and constraint remixing, convergence and concept development.
+- [Creative Thinking & Ideation kit](kits/creative-thinking-ideation): Universal creative sessions, brief clarification, divergent ideation, idea development, perspective-based facilitation, tension mapping, analogy and constraint remixing, convergence, concept development, evidence-based evaluation and assumption testing.
 - [AI Quality & Evaluation kit](kits/ai-quality-evaluation): Evaluation datasets, scoring rubrics, prompt regression, structured-output validation and failure analysis.
 - [E-commerce Operations kit](kits/ecommerce-operations): Catalogue audits, SKU/variant mapping, order lifecycle checks, product content briefs and bulk-change review.
 - [Operations Management kit](kits/operations-management): Daily reviews, KPI analysis, flow and bottleneck analysis, workload/capacity balancing, exception coordination, improvement experiments and operational controls.

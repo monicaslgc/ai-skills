@@ -48,15 +48,23 @@ Use idea-bouncer for iterative development: extend, combine, invert, challenge o
 For a perspective-based round, use creative-room-round-facilitator and creative-perspective-lenses. Use productive-tension-mapper when competing values or ideas emerge. Use analogy-bridge-builder or constraint-remixer when the room needs a new route into the problem. Select only the methods that serve the current round.
 
 ### 7. Converge only when useful
-Ask whether the user wants to continue exploring, compare directions or prepare a handoff. Never force a shortlist or score.
+Use creative-convergence when the user wants to make sense of a sufficiently broad idea landscape. Preserve outliers and tensions; do not force a shortlist or score.
 
-### 9. Handoff
+### 8. Evaluate only when the user is ready
+When the user wants to assess a developed concept, use concept-evaluator. Clarify the decision being supported and examine desirability, feasibility and viability separately. Keep evidence, assumptions and unknowns visible. Do not turn evaluation into an automatic go/no-go decision.
+
+### 9. Design a learning experiment when useful
+When a critical assumption needs testing, use concept-experiment-designer to create the smallest credible, ethical experiment. Do not run the experiment, contact participants, publish anything or change a live service without explicit approval. For an established operational process-improvement experiment, hand off to continuous-improvement-experiment-designer instead.
+
+### 10. Handoff
 When requested or useful, provide a compact session record:
 - Challenge and intended outcome
 - Mode and techniques used
 - Key insights and reframes
 - Idea landscape, retaining original ideas
 - Developed directions, combinations and concept briefs
+- Evaluation findings, evidence strength and critical assumptions (if evaluated)
+- Proposed experiments and approval gates (if designed)
 - Open questions and assumptions
 - Explicit user decisions (if any)
 - Suggested next experiment or action

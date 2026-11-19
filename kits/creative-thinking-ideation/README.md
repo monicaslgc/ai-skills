@@ -22,6 +22,8 @@ A universal, tool-free set of skills for exploring challenges, generating possib
 | [constraint-remixer](../../skills/constraint-remixer) | Reframe a challenge by deliberately remixing constraints |
 | [creative-convergence](../../skills/creative-convergence) | Find patterns and combinations without premature ranking |
 | [concept-developer](../../skills/concept-developer) | Develop a promising idea into a coherent concept brief |
+| [concept-evaluator](../../skills/concept-evaluator) | Assess desirability, feasibility and viability while exposing evidence gaps |
+| [concept-experiment-designer](../../skills/concept-experiment-designer) | Design a small, ethical experiment to test a critical concept assumption |
 
 ## Suggested workflow
 
@@ -36,7 +38,9 @@ A universal, tool-free set of skills for exploring challenges, generating possib
 9. Use creative-convergence when the idea landscape is broad enough to reveal patterns or combinations.
 10. Use concept-developer to turn a user-selected direction into a clear, discussable concept.
 11. Return to divergence whenever convergence removes important differences or exposes a weak assumption.
-12. Stop when the user has enough material, or create a session record if a handoff is useful.
+12. Use concept-evaluator when the user is ready to examine a concept's desirability, feasibility and viability.
+13. Use concept-experiment-designer when a critical assumption needs a small, ethical test. For operational process improvements, use the Operations Management kit's continuous-improvement-experiment-designer instead.
+14. Stop when the user has enough material, or create a session record if a handoff is useful.
 
 The workflow is intentionally non-linear. Do not force every phase into every session.
 
@@ -57,6 +61,8 @@ cp -r ai-skills/skills/analogy-bridge-builder ~/.claude/skills/
 cp -r ai-skills/skills/constraint-remixer ~/.claude/skills/
 cp -r ai-skills/skills/creative-convergence ~/.claude/skills/
 cp -r ai-skills/skills/concept-developer ~/.claude/skills/
+cp -r ai-skills/skills/concept-evaluator ~/.claude/skills/
+cp -r ai-skills/skills/concept-experiment-designer ~/.claude/skills/
 ```
 
 On Windows PowerShell:
@@ -72,6 +78,10 @@ Copy-Item -Recurse ai-skills\skills\creative-room-round-facilitator "$env:USERPR
 Copy-Item -Recurse ai-skills\skills\productive-tension-mapper "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\analogy-bridge-builder "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\constraint-remixer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\creative-convergence "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\concept-developer "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\concept-evaluator "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\concept-experiment-designer "$env:USERPROFILE\.claude\skills\"
 ```
 
 Other assistants use their documented skills directory. Each skill folder contains SKILL.md and USER_STORY.md.

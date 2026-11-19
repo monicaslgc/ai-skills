@@ -124,3 +124,27 @@ No option is selected until the user chooses which value to protect most.
 **First question to test:** Which participation mode feels most inviting to the intended community?
 
 This is a concept seed, not a validated event plan.
+
+## Example 12: Evaluate without pretending to know
+
+**Concept:** A neighbourhood repair event with observation, guided repair and short lessons.
+
+**Desirability:** Organisers believe the format may feel more welcoming, but there is no visitor evidence yet. This is a hypothesis, not demonstrated demand.
+
+**Feasibility:** Volunteer expertise, venue layout, tool safety and accessibility remain unknown.
+
+**Viability:** The group needs to understand staffing effort, material costs and whether the event can be repeated. No cost or capacity data has been supplied.
+
+**Learning priority:** Test whether intended visitors understand the participation options and which mode they would actually choose. Do not treat this assessment as a go/no-go verdict.
+
+## Example 13: Design a concept experiment
+
+**Learning question:** Can first-time visitors understand the three participation modes and choose one that feels comfortable?
+
+**Method:** Show a simple storyboard to a small, deliberately recruited group from the intended audience. Ask participants to explain the options in their own words, choose a route and describe what feels unclear.
+
+**Neutral prompts:** "What do you think you could do here?" "What would you expect to happen next?" "Is anything unclear or off-putting?"
+
+**Signals:** repeated misunderstanding is a negative signal; confident explanation and a reasoned choice are positive but limited signals. Stated preference does not prove attendance.
+
+**Boundary:** obtain consent, collect minimal notes, make no public promise and do not recruit or contact anyone without approval. The result informs the next concept iteration; it does not establish broad demand.
