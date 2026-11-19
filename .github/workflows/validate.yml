@@ -14,3 +14,4 @@ jobs:
       - run: python scripts/validate_brand_evals.py
       - run: python -m unittest discover -s tests -p 'test_brand_*.py'
       - run: python scripts/validate_skill_workflows.py
+      - run: python scripts/validate_workflow_scenarios.py

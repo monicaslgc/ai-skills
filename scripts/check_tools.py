@@ -80,11 +80,22 @@ for name, text in skills.items():
     if name == "ssh-remote-pc":
         for tool in sorted((used & SSH_TOOL_LIKE) - ssh_tools):
             errors.append(f"{name}: calls `{tool}` which the SSH server does not provide")
-    for ref in sorted(set(re.findall(r"`([a-z0-9]+(?:-[a-z0-9]+)+)`", text))):
+    # Explicitly optional cross-kit handoffs do not make a kit depend on another kit.
+    # All referenced skill names must still exist in this repository.
+    optional = re.search(r"(?ms)^## Optional handoffs\s*\n(.*?)(?=^## |\Z)", text)
+    optional_text = optional.group(1) if optional else ""
+    all_refs = set(re.findall(r"`([a-z0-9]+(?:-[a-z0-9]+)+)`", text))
+    optional_refs = set(re.findall(r"`([a-z0-9]+(?:-[a-z0-9]+)+)`", optional_text))
+    for ref in sorted(all_refs):
+        if ref in {"needs-input", "ready-for-review"}:
+            continue
         if ref == name or ref.endswith("-mcp"):
             continue
-        if ref in skills and kit_of.get(ref) != kit:
-            errors.append(f"{name}: relies on `{ref}` from a different kit ({kit_of.get(ref)}); install would be incomplete")
+        if ref not in skills:
+            errors.append(f"{name}: references unknown skill `{ref}`")
+            continue
+        if ref not in optional_refs and kit_of.get(ref) != kit:
+            errors.append(f"{name}: requires `{ref}` from a different kit ({kit_of.get(ref)}); install would be incomplete")
 
 if errors:
     print("FAILED")

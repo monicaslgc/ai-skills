@@ -59,3 +59,10 @@ Copy goes to `write-social-captions`, thumbnails to `design-youtube-thumbnails`,
 
 - Do not post, schedule, comment or message anyone.
 - Do not log in to an account or share analytics outside the conversation.
+
+## Optional handoffs
+- Use `creative-session` when the content angle, narrative or creative territory needs exploration before planning.
+- Use `content-pipeline-planner` when production steps and tool handoffs need to be designed.
+- Use `edit-short-form-videos`, `write-social-captions` and `design-youtube-thumbnails` when the corresponding deliverables are required.
+- Use the Photo & Video Color Grading kit's media pipeline and quality-review skills when those PR #2 capabilities are integrated.
+A content plan does not imply that assets were produced, approved or published.

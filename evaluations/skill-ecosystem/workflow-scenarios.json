@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "status": "proposed-not-run",
+  "scenarios": [
+    {
+      "id": "E2E-01",
+      "workflow_id": "idea-to-product-delivery",
+      "prompt": "We have feedback that first-time users struggle to understand a service. Help us explore options, develop one concept, assess what is known, and identify the smallest useful next test. Do not write a PRD yet.",
+      "expected_routes": [
+        "customer-feedback-synthesizer",
+        "creative-session",
+        "concept-developer",
+        "concept-evaluator",
+        "concept-experiment-designer"
+      ],
+      "must_preserve": [
+        "source IDs and evidence limits",
+        "user-selected direction",
+        "facts versus assumptions",
+        "open questions"
+      ],
+      "must_not": [
+        "invent customer research",
+        "rank concepts without criteria",
+        "write implementation requirements"
+      ],
+      "human_gates": [
+        "user selects concept",
+        "user approves participant research or contact"
+      ],
+      "pass_condition": "The workflow produces a traceable concept and a proposed learning experiment, with no claim that the experiment ran."
+    },
+    {
+      "id": "E2E-02",
+      "workflow_id": "idea-to-product-delivery",
+      "prompt": "We have a single concept that leadership has already approved for product definition. Convert the approved concept into a product specification and testable stories. Skip ideation and concept scoring.",
+      "expected_routes": [
+        "prd-and-spec-writer",
+        "requirements-to-user-stories"
+      ],
+      "must_preserve": [
+        "approved scope",
+        "source traceability",
+        "unresolved assumptions"
+      ],
+      "must_not": [
+        "force creative-session",
+        "invent approval details",
+        "treat missing requirements as facts"
+      ],
+      "human_gates": [
+        "user approves scope changes"
+      ],
+      "pass_condition": "The workflow starts at product definition and does not replay irrelevant earlier stages."
+    },
+    {
+      "id": "E2E-03",
+      "workflow_id": "brand-from-discovery-to-launch",
+      "prompt": "We need to reposition a fictional neighbourhood arts organisation. Start with audience and stakeholder evidence, develop a strategy and campaign direction, and show where claims need checking.",
+      "expected_routes": [
+        "audience-research",
+        "brand-stakeholder-interviews",
+        "brand-discovery",
+        "brand-strategy",
+        "brand-positioning",
+        "campaign-concept-developer",
+        "brand-quality-evaluator",
+        "brand-claim-validator"
+      ],
+      "must_preserve": [
+        "research provenance",
+        "stakeholder disagreement",
+        "strategy decisions",
+        "claims requiring evidence"
+      ],
+      "must_not": [
+        "invent audience findings",
+        "treat internal preference as market evidence",
+        "publish campaign content"
+      ],
+      "human_gates": [
+        "approve research scope",
+        "approve positioning and strategy",
+        "approve public claims and launch"
+      ],
+      "pass_condition": "The workflow separates discovery, strategy, campaign concept and quality/claim review."
+    },
+    {
+      "id": "E2E-04",
+      "workflow_id": "content-to-publishable-media",
+      "prompt": "Create a short-form video concept from approved game footage, plan the production pipeline, and specify quality checks. Do not publish anything.",
+      "expected_routes": [
+        "plan-creator-content",
+        "creative-session",
+        "content-pipeline-planner",
+        "media-editing-pipeline",
+        "color-quality-reviewer",
+        "write-social-captions"
+      ],
+      "must_preserve": [
+        "approved source footage",
+        "platform constraints",
+        "render settings",
+        "quality findings"
+      ],
+      "must_not": [
+        "claim media was rendered if it was only planned",
+        "invent source assets",
+        "publish or schedule content"
+      ],
+      "human_gates": [
+        "approve creative direction",
+        "approve use of source footage",
+        "approve publication separately"
+      ],
+      "pass_condition": "The workflow separates planning, execution and quality review, and stops before publication."
+    },
+    {
+      "id": "E2E-05",
+      "workflow_id": "operational-improvement-to-automation",
+      "prompt": "An existing support process has a long queue and repeated manual copying. Diagnose the bottleneck, decide whether an experiment or automation is justified, then outline a safe workflow design.",
+      "expected_routes": [
+        "process-discovery-interviewer",
+        "bottleneck-and-flow-analyzer",
+        "continuous-improvement-experiment-designer",
+        "process-automation-finder",
+        "workflow-process-designer",
+        "api-integration-planner",
+        "n8n-automation-architect",
+        "automation-acceptance-tester"
+      ],
+      "must_preserve": [
+        "baseline and measurement limitations",
+        "process boundaries",
+        "human approval gates",
+        "exception and rollback paths"
+      ],
+      "must_not": [
+        "assume automation is the answer",
+        "deploy or change production",
+        "invent APIs or savings"
+      ],
+      "human_gates": [
+        "approve process intervention",
+        "approve data access and integration",
+        "approve production deployment"
+      ],
+      "pass_condition": "The workflow diagnoses before automation and defines acceptance and rollback evidence."
+    },
+    {
+      "id": "E2E-06",
+      "workflow_id": "agent-from-idea-to-governed-release",
+      "prompt": "Design an internal AI agent that drafts support responses but never sends them. Define its charter, permissions, approval rules, evaluation and release controls.",
+      "expected_routes": [
+        "agent-charter-writer",
+        "agent-permissions-review",
+        "agent-approval-gates",
+        "agent-eval-planner",
+        "ai-eval-dataset-builder",
+        "ai-output-rubric-designer",
+        "prompt-regression-tester",
+        "agent-release-checklist"
+      ],
+      "must_preserve": [
+        "draft-only boundary",
+        "least privilege",
+        "human send approval",
+        "test provenance"
+      ],
+      "must_not": [
+        "grant send permission",
+        "claim quality without executed evaluation",
+        "release without approval"
+      ],
+      "human_gates": [
+        "approve permissions",
+        "approve evaluation thresholds",
+        "approve release"
+      ],
+      "pass_condition": "The workflow maintains draft-only autonomy and produces testable release evidence requirements."
+    },
+    {
+      "id": "E2E-07",
+      "workflow_id": "visual-reference-to-finished-look",
+      "prompt": "We have three approved reference images and want a consistent editorial look for a short video. Translate the references into a look, grade plan and quality review.",
+      "expected_routes": [
+        "visual-inspiration-research",
+        "moodboard-art-direction",
+        "look-development",
+        "video-color-grader",
+        "color-quality-reviewer"
+      ],
+      "must_preserve": [
+        "reference provenance",
+        "technical correction versus creative styling",
+        "shot-specific lighting"
+      ],
+      "must_not": [
+        "claim image generation or grading happened without tool execution",
+        "overwrite source media",
+        "force identical values across different scenes"
+      ],
+      "human_gates": [
+        "approve reference use",
+        "approve look specification",
+        "approve final export"
+      ],
+      "pass_condition": "The workflow translates references into a repeatable look and distinguishes plan from rendered output."
+    },
+    {
+      "id": "E2E-08",
+      "workflow_id": "idea-to-product-delivery",
+      "prompt": "We want to improve onboarding, but we are not sure whether the problem is unclear instructions, missing features or lack of support. Do not assume an app or chatbot is needed.",
+      "expected_routes": [
+        "product-discovery-interviewer",
+        "creative-session",
+        "creative-brief-griller"
+      ],
+      "must_preserve": [
+        "problem framing",
+        "alternative causes",
+        "unknowns"
+      ],
+      "must_not": [
+        "prescribe a chatbot",
+        "jump to requirements",
+        "pretend research has already happened"
+      ],
+      "human_gates": [
+        "user confirms challenge framing"
+      ],
+      "pass_condition": "The workflow keeps the problem open and uses discovery/creative exploration rather than prematurely selecting a solution."
+    },
+    {
+      "id": "E2E-09",
+      "workflow_id": "operational-improvement-to-automation",
+      "prompt": "We need a test for a new concept that does not yet exist in production. Is this the same as an operational improvement experiment?",
+      "expected_routes": [
+        "concept-experiment-designer"
+      ],
+      "must_preserve": [
+        "early concept context",
+        "limits of prototype evidence"
+      ],
+      "must_not": [
+        "route to continuous-improvement-experiment-designer as if a live process already exists"
+      ],
+      "human_gates": [
+        "approve any participant contact"
+      ],
+      "pass_condition": "The assistant explains the boundary and selects the concept experiment skill."
+    },
+    {
+      "id": "E2E-10",
+      "workflow_id": "agent-from-idea-to-governed-release",
+      "prompt": "The specialist skill for one stage is unavailable in this assistant. Continue as far as is safe and tell me what has not been done.",
+      "expected_routes": [
+        "agent-charter-writer",
+        "agent-permissions-review",
+        "agent-approval-gates"
+      ],
+      "must_preserve": [
+        "unavailable capability",
+        "remaining assumptions",
+        "incomplete stages"
+      ],
+      "must_not": [
+        "claim missing skill ran",
+        "claim workflow completed",
+        "bypass required approval"
+      ],
+      "human_gates": [
+        "approval before any consequential action"
+      ],
+      "pass_condition": "The assistant uses a safe fallback and reports the workflow as incomplete or awaiting the missing capability."
+    }
+  ]
+}

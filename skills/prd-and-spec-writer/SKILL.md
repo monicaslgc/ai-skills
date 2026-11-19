@@ -39,3 +39,10 @@ Separate requirements from proposals, capture non-goals and unresolved decisions
 
 ## Evaluation
 Pass only if the response produces the artifact, labels unknowns, handles a relevant boundary/failure case, invents no facts or APIs, and supplies a concrete validation check.
+
+## Optional handoffs
+- Use `concept-developer` before requirements work when the proposed direction is still only a loose idea.
+- Use `concept-evaluator` or `concept-experiment-designer` when critical concept assumptions remain unresolved; do not disguise them as requirements.
+- Use `user-story-writer` after scope and requirements are approved and need implementation-independent stories.
+- Use `release-readiness-reviewer` when a release candidate and supporting evidence exist.
+The PRD/specification is not a substitute for discovery evidence, concept validation or release approval.

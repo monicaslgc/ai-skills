@@ -10,6 +10,7 @@ This documentation explains how independent skills relate and how complete workf
 - [03 — Handoff contracts](03-handoff-contracts.md): reusable input/output contracts between skill stages.
 - [04 — Orchestration rules](04-orchestration.md): routing, optionality, fallbacks and human control.
 - [05 — Cross-skill evaluation](05-evaluation.md): proposed regression scenarios for complete workflows.
+- [06 — Integration and completion plan](06-integration-plan.md): PR merge order, pending work and definition of done.
 
 The documents describe intended routing, not an executing runtime. Skills remain independently usable. A workflow may recommend the next skill, but must not claim that it ran unless the host actually invoked it and returned a result.
 
