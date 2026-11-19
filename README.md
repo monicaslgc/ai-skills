@@ -10,6 +10,21 @@ The instructions are plain Markdown and work with any agent that supports `SKILL
 
 ## Skills
 
+### Photo & video color grading
+
+Part of the [Photo & Video Color Grading kit](kits/photo-video-color-grading).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`media-quality-analyzer`](skills/media-quality-analyzer) | Inspect media quality and identify technical issues | Python; optional FFmpeg/ffprobe |
+| [`photo-color-corrector`](skills/photo-color-corrector) | Correct exposure, white balance and colour in photographs | Image editor or image-processing tools |
+| [`video-color-grader`](skills/video-color-grader) | Grade video footage for a consistent visual look | Video editor |
+| [`shot-matching`](skills/shot-matching) | Match shots across a sequence | Video editor |
+| [`look-development`](skills/look-development) | Develop and document a repeatable visual look | Image/video editor |
+| [`media-editing-pipeline`](skills/media-editing-pipeline) | Plan and execute a repeatable media-editing pipeline | Python, FFmpeg and ffprobe |
+| [`color-quality-reviewer`](skills/color-quality-reviewer) | Review a finished grade for technical and visual consistency | Image/video review tools |
+
+
 ### Smart home
 
 Part of the [Smart home kit](kits/smart-home).
