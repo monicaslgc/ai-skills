@@ -14,9 +14,9 @@ This document distinguishes implementation completion from merging and behaviour
 | 6 — Relationship/workflow architecture | Typed registry, six workflows, handoff contracts, orchestration rules and CI validation | Implemented in PR #9 |
 | 7 — Integration and regression framework | Optional handoffs, 10 end-to-end scenarios and fixture validators | Implemented in PR #10 |
 
-At this revision, PRs #1–#9 have been integrated into `main`. PR #10 carries the final regression fixtures and integration updates. The original stack has been reconciled onto the updated default branch.
+All PRs #1–#10 have been merged into `main` in the planned order. The independent kit branches and stacked creative/ecosystem branches were reconciled onto the updated default branch before integration.
 
-## Original merge sequence (now completed)
+## Merge sequence completed
 
 ### First: reconcile the independent kit PRs
 
@@ -34,7 +34,7 @@ The dependency chain is:
 `#4 → #5 → #6 → #7 → #8 → #9 → #10`
 
 1. PR #4 — #9 were each rebased/reconciled onto the current `main` and merged in dependency order.
-2. PR #10 is the remaining integration PR at this revision.
+2. PR #10 (cross-skill regression fixtures and final integration updates) — reconciled and merged.
 3. The combined workflow retains `actions/checkout@v5`, `actions/setup-python@v6`, brand validation, workflow validation and scenario validation.
 4. Registry references for PRs #1–#3 have been changed from pending to available; the final validators run in CI.
 
@@ -61,6 +61,6 @@ Before claiming behavioural quality:
 
 ## Definition of done
 
-The repository integration is complete when all ten PRs are merged in a reconciled sequence, all pending registry references are updated, and the complete CI suite passes on `main`.
+The repository integration is complete: all ten PRs are merged in a reconciled sequence, all registry references are available, and the complete CI suite passes on `main`.
 
 The behavioural quality gate is complete only when the ten E2E scenarios have actually been run and reviewed. These are separate completion conditions.
