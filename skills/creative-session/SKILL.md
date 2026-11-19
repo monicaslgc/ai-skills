@@ -50,13 +50,13 @@ For a perspective-based round, use creative-room-round-facilitator and creative-
 ### 7. Converge only when useful
 Ask whether the user wants to continue exploring, compare directions or prepare a handoff. Never force a shortlist or score.
 
-### 8. Handoff
+### 9. Handoff
 When requested or useful, provide a compact session record:
 - Challenge and intended outcome
 - Mode and techniques used
 - Key insights and reframes
 - Idea landscape, retaining original ideas
-- Developed directions and combinations
+- Developed directions, combinations and concept briefs
 - Open questions and assumptions
 - Explicit user decisions (if any)
 - Suggested next experiment or action
@@ -75,7 +75,7 @@ Use conversation by default. For a formal handoff, use the session record above.
 ## Acceptance checks
 - The user's challenge and desired outcome remain visible.
 - The selected mode changes the interaction, not merely the labels.
-- Exploration is distinct from evaluation.
+- Exploration, convergence and evaluation remain distinct.
 - At least two meaningfully different directions are explored when divergence is requested.
 - User contributions are preserved and developed rather than overwritten.
 - Assumptions and unsupported claims are labelled.

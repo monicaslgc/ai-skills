@@ -95,3 +95,32 @@ No option is selected until the user chooses which value to protect most.
 **Fixed:** venue safety and access requirements. **Assumed:** every item needs a dedicated display surface. **Chosen:** the exhibition lasts one weekend.
 
 **Remix:** Remove the assumption that every item must be displayed physically. Explore a listening station, a guided route, or a shared table where objects appear in timed sequences. Restore the fixed requirements before treating any direction as viable.
+
+
+## Example 10: Converge without flattening
+
+**Challenge:** A team has explored ways to make a public workshop more welcoming.
+
+**Patterns:** low-pressure participation; visible shared learning; flexible levels of involvement.
+
+**Possible combination:** pair an optional observation route with short mentor-led activities and a shared wall of discoveries. The combination connects access, participation and collective learning.
+
+**Outlier to preserve:** a quiet, self-guided route for visitors who do not want to interact. It addresses a different need and should not be absorbed into the group activity.
+
+**Next move:** ask which direction the user wants to develop. Do not rank the ideas by frequency.
+
+## Example 11: Develop a concept
+
+**Starting idea:** A neighbourhood repair event should feel more like a festival than a service desk.
+
+**Concept in one sentence:** A community gathering where repairing objects becomes a shared, visible act of learning and storytelling.
+
+**Core experience:** Visitors can observe, bring an item for help, join a short repair lesson or share the story of an object. Participation has several levels; nobody is required to present or repair something.
+
+**Design principles:** welcoming before instructional; visible learning; respect for objects and their histories; low-pressure participation.
+
+**Unknowns:** available repair expertise, venue requirements, material safety, accessibility and whether visitors prefer demonstrations or hands-on participation.
+
+**First question to test:** Which participation mode feels most inviting to the intended community?
+
+This is a concept seed, not a validated event plan.

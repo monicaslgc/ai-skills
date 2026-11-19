@@ -20,6 +20,8 @@ A universal, tool-free set of skills for exploring challenges, generating possib
 | [productive-tension-mapper](../../skills/productive-tension-mapper) | Turn competing values and assumptions into useful exploration |
 | [analogy-bridge-builder](../../skills/analogy-bridge-builder) | Borrow structural patterns from other domains |
 | [constraint-remixer](../../skills/constraint-remixer) | Reframe a challenge by deliberately remixing constraints |
+| [creative-convergence](../../skills/creative-convergence) | Find patterns and combinations without premature ranking |
+| [concept-developer](../../skills/concept-developer) | Develop a promising idea into a coherent concept brief |
 
 ## Suggested workflow
 
@@ -31,7 +33,10 @@ A universal, tool-free set of skills for exploring challenges, generating possib
 6. Use perspective lenses and the round facilitator for Creative Room sessions.
 7. Use productive-tension-mapper when ideas or values conflict.
 8. Use analogy-bridge-builder or constraint-remixer when exploration gets stuck.
-9. Stop when the user has enough material, or create a session record if a handoff is useful.
+9. Use creative-convergence when the idea landscape is broad enough to reveal patterns or combinations.
+10. Use concept-developer to turn a user-selected direction into a clear, discussable concept.
+11. Return to divergence whenever convergence removes important differences or exposes a weak assumption.
+12. Stop when the user has enough material, or create a session record if a handoff is useful.
 
 The workflow is intentionally non-linear. Do not force every phase into every session.
 
@@ -50,6 +55,8 @@ cp -r ai-skills/skills/creative-room-round-facilitator ~/.claude/skills/
 cp -r ai-skills/skills/productive-tension-mapper ~/.claude/skills/
 cp -r ai-skills/skills/analogy-bridge-builder ~/.claude/skills/
 cp -r ai-skills/skills/constraint-remixer ~/.claude/skills/
+cp -r ai-skills/skills/creative-convergence ~/.claude/skills/
+cp -r ai-skills/skills/concept-developer ~/.claude/skills/
 ```
 
 On Windows PowerShell:
