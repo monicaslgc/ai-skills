@@ -2,11 +2,28 @@
 
 ![Validate](https://github.com/monicaslgc/ai-skills/actions/workflows/validate.yml/badge.svg)
 
-Small, single-purpose AI skills (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations, operations management, specifications and delivery workflows, and photo/video color grading. Each skill is independent: copy one folder and it works.
+**202 ready-to-use, single-purpose AI skills in 24 kits (`SKILL.md` instruction files) for smart homes, self-hosted AI, careers, content creation, project management, people operations, support operations, AI agent management, n8n workflows, business process automation, product discovery, AI evaluation, e-commerce operations, operations management, specifications and delivery workflows, and photo/video color grading.** Each skill is independent: copy one folder and it works.
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
 **Ecosystem map:** [Audit, skill relationships and cross-kit workflows](docs/skill-ecosystem/README.md).
+
+## Start here
+
+| If you are... | Try these |
+|---|---|
+| A project manager | [`project-charter-writer`](skills/project-charter-writer), [`status-report-writer`](skills/status-report-writer), [`change-request-assessor`](skills/change-request-assessor), [`raid-log-manager`](skills/raid-log-manager) |
+| Running a support team | [`sla-and-escalation-designer`](skills/sla-and-escalation-designer), [`ticket-quality-audit`](skills/ticket-quality-audit), [`support-kpi-dashboard-designer`](skills/support-kpi-dashboard-designer) |
+| Putting AI agents to work | [`agent-approval-gates`](skills/agent-approval-gates), [`agent-permissions-review`](skills/agent-permissions-review), [`agent-eval-planner`](skills/agent-eval-planner) |
+| Managing people or hiring | [`interview-kit-builder`](skills/interview-kit-builder), [`employee-onboarding-plan`](skills/employee-onboarding-plan), [`shift-schedule-planner`](skills/shift-schedule-planner) |
+| Looking for a job | [`cv-tailoring-from-master`](skills/cv-tailoring-from-master), [`cover-letter-writer`](skills/cover-letter-writer), [`achievement-story-builder`](skills/achievement-story-builder) |
+| Between the business and engineering | [`stakeholder-request-translator`](skills/stakeholder-request-translator), [`requirements-elicitation-plan`](skills/requirements-elicitation-plan), [`requirements-quality-check`](skills/requirements-quality-check), [`plain-language-technical-explainer`](skills/plain-language-technical-explainer) |
+| Running customers from signature to steady state | [`customer-onboarding-project-plan`](skills/customer-onboarding-project-plan), [`go-live-and-hypercare-plan`](skills/go-live-and-hypercare-plan), [`customer-health-scorecard`](skills/customer-health-scorecard), [`business-review-pack`](skills/business-review-pack) , [`renewal-and-expansion-plan`](skills/renewal-and-expansion-plan), [`customer-incident-communication`](skills/customer-incident-communication) |
+| Documenting an app | [`app-flow-mapper`](skills/app-flow-mapper), [`user-guide-writer`](skills/user-guide-writer), [`guide-freshness-check`](skills/guide-freshness-check) |
+| Official documents and client reports | [`official-letter-and-notice-writer`](skills/official-letter-and-notice-writer), [`status-and-performance-report`](skills/status-and-performance-report), [`client-handover-documentation`](skills/client-handover-documentation) |
+| A Home Assistant owner | [`ha-automation-designer`](skills/ha-automation-designer), [`ha-device-health-check`](skills/ha-device-health-check), [`ha-energy-insights`](skills/ha-energy-insights) |
+
+Every skill has a `USER_STORY.md` next to it: who it is for, a scenario, acceptance criteria and a prompt to try. Skills that can change things confirm before acting, and none of them asks for secrets.
 
 **Status:** prototypes. They have been used and checked for structure, but no formal model evaluations have been run, so review the output before acting on it.
 
@@ -159,6 +176,57 @@ Part of the [Agent management kit](kits/agent-management).
 | [`agent-release-checklist`](skills/agent-release-checklist) | Version, test and roll out agent changes safely with a rollback plan | nothing |
 | [`agent-incident-review`](skills/agent-incident-review) | Run a blameless review when an agent does something wrong | nothing |
 
+### Requirements
+
+Part of the [Requirements kit](kits/requirements).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`requirements-elicitation-plan`](skills/requirements-elicitation-plan) | Plan how to discover requirements: stakeholders, techniques, questions and validation | nothing |
+| [`stakeholder-request-translator`](skills/stakeholder-request-translator) | Turn a non-technical request into a clear technical request and read it back | nothing |
+| [`requirements-quality-check`](skills/requirements-quality-check) | Check requirements for clarity, testability, gaps and priority | nothing |
+| [`plain-language-technical-explainer`](skills/plain-language-technical-explainer) | Explain a technical matter to non-technical stakeholders so they can decide | nothing |
+| [`industry-domain-primer`](skills/industry-domain-primer) | Build a sourced primer for a sector or domain you do not know yet | nothing |
+
+### Customer operations
+
+Part of the [Customer operations kit](kits/customer-operations).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`customer-onboarding-project-plan`](skills/customer-onboarding-project-plan) | Plan an onboarding with goals, scope, milestones, owners, risks and go-live criteria | nothing |
+| [`configuration-workshop-planner`](skills/configuration-workshop-planner) | Plan and run a workshop that ends with decisions and a configuration sheet | nothing |
+| [`integration-readiness-checklist`](skills/integration-readiness-checklist) | Check an integration is ready to build, test and go live | nothing |
+| [`go-live-and-hypercare-plan`](skills/go-live-and-hypercare-plan) | Plan a safe go-live with a rollback and a watched hypercare period | nothing |
+| [`customer-health-scorecard`](skills/customer-health-scorecard) | Score customer health from transparent signals, with reasons and next actions | nothing |
+| [`adoption-review`](skills/adoption-review) | Compare usage with expected value and plan targeted interventions | nothing |
+| [`customer-feedback-to-product-brief`](skills/customer-feedback-to-product-brief) | Turn scattered feedback into an evidenced brief for Product and Engineering | nothing |
+| [`engineering-escalation-brief`](skills/engineering-escalation-brief) | Escalate a customer issue to Engineering with everything they need | nothing |
+| [`business-review-pack`](skills/business-review-pack) | Prepare an honest customer business review | nothing |
+| [`rollout-coordination-plan`](skills/rollout-coordination-plan) | Coordinate a rollout across product, engineering, partners and the customer's IT | nothing |
+| [`customer-playbook-builder`](skills/customer-playbook-builder) | Turn a recurring customer situation into a playbook and mark what can be automated | nothing |
+| [`renewal-and-expansion-plan`](skills/renewal-and-expansion-plan) | Plan a renewal from the notice deadline and the growth conversation from evidence | nothing |
+| [`customer-incident-communication`](skills/customer-incident-communication) | Write honest customer messages during and after an incident | nothing |
+| [`international-customer-communication`](skills/international-customer-communication) | Communicate clearly across languages, cultures and time zones | nothing |
+| [`ai-in-customer-operations-guardrails`](skills/ai-in-customer-operations-guardrails) | Decide where AI helps in customer work, and set limits, approvals and data rules | nothing |
+
+### Documentation
+
+Part of the [Documentation kit](kits/documentation).
+
+| Skill | Use it when | Needs |
+|---|---|---|
+| [`app-flow-mapper`](skills/app-flow-mapper) | Map the real flows of an existing app, step by step, with evidence | nothing (a browser tool or screenshots help) |
+| [`user-guide-writer`](skills/user-guide-writer) | Write a task-based user guide from a flow inventory, screenshots or the app | nothing |
+| [`diagram-with-brand-kit`](skills/diagram-with-brand-kit) | Draw a clear diagram that follows a graphic kit and check it as an image | nothing (a headless browser helps) |
+| [`guide-freshness-check`](skills/guide-freshness-check) | Find the guides that no longer match the app and plan the updates | nothing |
+| [`official-letter-and-notice-writer`](skills/official-letter-and-notice-writer) | Draft official letters and formal notices that are clear and stand up as a record | nothing |
+| [`client-handover-documentation`](skills/client-handover-documentation) | Assemble the handover pack a client needs to run what was delivered | nothing |
+| [`status-and-performance-report`](skills/status-and-performance-report) | Write a periodic report with checked figures, risks and decisions needed | nothing |
+| [`meeting-minutes-and-action-log`](skills/meeting-minutes-and-action-log) | Turn a meeting into minutes, decisions, actions and a follow-up message | nothing |
+| [`statement-of-work-drafter`](skills/statement-of-work-drafter) | Draft a project scope document both sides can agree before work starts | nothing |
+| [`document-template-and-style-guide`](skills/document-template-and-style-guide) | Create templates and a short style guide for consistent client documents | nothing |
+
 ### Career
 
 Part of the [Career kit](kits/career).
@@ -170,6 +238,11 @@ Part of the [Career kit](kits/career).
 | [`cover-letter-writer`](skills/cover-letter-writer) | Write a short, specific, natural cover letter | nothing |
 | [`achievement-story-builder`](skills/achievement-story-builder) | Turn work achievements into interview-ready STAR stories | nothing |
 | [`confidentiality-safe-wording`](skills/confidentiality-safe-wording) | Describe confidential work publicly without revealing names or secrets | nothing |
+| [`new-role-90-day-plan`](skills/new-role-90-day-plan) | Plan your first 30, 60 and 90 days in a new role | nothing |
+
+## Workflows
+
+Eight ready-made chains that combine several skills into a complete job, with a person approving at every gate: customer onboarding to handover, renewal season, incident to learning, request to delivery, client project kickoff, monthly client reporting, documenting an existing app and a job application. See [`workflows/`](workflows/README.md).
 
 ### n8n automation
 
@@ -347,6 +420,9 @@ Every skill belongs to one kit. Each kit page has a suggested order and one-step
 - [Support operations kit](kits/support-operations): Skills for running a support team: SLAs and escalation, KPIs, quality audits, coaching and access management.
 - [Operations and productivity kit](kits/operations-productivity): Skills for making work repeatable and measurable: SOPs, automation opportunities and data-backed insight writing.
 - [Agent management kit](kits/agent-management): Skills for running AI agents responsibly: charter, permissions, evaluation, approval gates, release and incident review.
+- [Requirements kit](kits/requirements): Skills for working between the business and engineering: discovering what is needed, turning requests into buildable ones, checking requirements and explaining technical matters in plain language.
+- [Customer operations kit](kits/customer-operations): Skills for running a portfolio of customers from signature to steady state: onboarding projects, workshops, integrations, go-live and hypercare, health and adoption, feedback to product, escalations and business reviews.
+- [Documentation kit](kits/documentation): Skills for documenting apps that already exist: mapping real flows, writing task-based guides, drawing diagrams in a consistent look and keeping guides current.
 - [Career kit](kits/career): Skills for job applications built from one honest master CV: tailoring, cover letters, interview stories and confidentiality-safe wording.
 - [Business Process Automation kit](kits/business-process-automation): Process discovery, API integration planning, data mapping, ROI estimation and acceptance testing.
 - [Specifications & Delivery Workflows kit](kits/specifications-delivery-workflows): Requirements specifications, workflow design, integration contracts, development planning, acceptance tests and readiness reviews.

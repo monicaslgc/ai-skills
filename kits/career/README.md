@@ -11,6 +11,7 @@ Skills for job applications built from one honest master CV: tailoring, cover le
 | [`cover-letter-writer`](../../skills/cover-letter-writer) | Write a short, specific, natural cover letter |
 | [`achievement-story-builder`](../../skills/achievement-story-builder) | Turn work achievements into interview-ready STAR stories |
 | [`confidentiality-safe-wording`](../../skills/confidentiality-safe-wording) | Describe confidential work publicly without revealing names or secrets |
+| [`new-role-90-day-plan`](../../skills/new-role-90-day-plan) | Plan your first 30, 60 and 90 days in a new role |
 
 ## Suggested order
 
@@ -18,6 +19,7 @@ Skills for job applications built from one honest master CV: tailoring, cover le
 2. Write safe, accurate descriptions with `confidentiality-safe-wording`.
 3. Tailor with `cv-tailoring-from-master` and write the letter with `cover-letter-writer`.
 4. Prepare with `achievement-story-builder`.
+5. Show how you would start with `new-role-90-day-plan`.
 
 ## Install the whole kit
 
@@ -28,6 +30,7 @@ cp -r ai-skills/skills/cv-tailoring-from-master ~/.claude/skills/
 cp -r ai-skills/skills/cover-letter-writer ~/.claude/skills/
 cp -r ai-skills/skills/achievement-story-builder ~/.claude/skills/
 cp -r ai-skills/skills/confidentiality-safe-wording ~/.claude/skills/
+cp -r ai-skills/skills/new-role-90-day-plan ~/.claude/skills/
 ```
 
 On Windows PowerShell:
@@ -39,6 +42,7 @@ Copy-Item -Recurse ai-skills\skills\cv-tailoring-from-master "$env:USERPROFILE\.
 Copy-Item -Recurse ai-skills\skills\cover-letter-writer "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\achievement-story-builder "$env:USERPROFILE\.claude\skills\"
 Copy-Item -Recurse ai-skills\skills\confidentiality-safe-wording "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse ai-skills\skills\new-role-90-day-plan "$env:USERPROFILE\.claude\skills\"
 ```
 
 These skills need no tools or servers. Each skill folder has a `USER_STORY.md` with a scenario and an example prompt.

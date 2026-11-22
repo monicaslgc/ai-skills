@@ -2,6 +2,23 @@
 
 All notable changes to this repository are listed here. The format follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.0] - 2026-11-22
+
+### Changed
+- Merged the earlier customer-operations, requirements and documentation work with the brand strategy, creative thinking, product discovery, e-commerce and AI quality kits: 202 skills in 24 kits, each with a `USER_STORY.md`.
+- CI now runs every validator: skills, tools, workflows, brand schemas and evals, skill relationships and cross-skill scenarios.
+
+## [0.4.0] - 2026-10-13
+
+### Added
+- Workflows: eight chains of skills (`workflows/`) with inputs, outputs and human gates, and `scripts/check_workflows.py` to keep them consistent with the skills.
+- Documentation kit: `app-flow-mapper`, `user-guide-writer`, `diagram-with-brand-kit` and `guide-freshness-check`, for documenting apps that already exist.
+- Customer operations kit, further skills: `rollout-coordination-plan`, `customer-playbook-builder`, `renewal-and-expansion-plan`, `customer-incident-communication`, `international-customer-communication`, `ai-in-customer-operations-guardrails`. Requirements kit: `industry-domain-primer`. Career kit: `new-role-90-day-plan`.
+- Documentation kit, official and client documents: `official-letter-and-notice-writer`, `client-handover-documentation`, `status-and-performance-report`, `meeting-minutes-and-action-log`, `statement-of-work-drafter`, `document-template-and-style-guide`.
+- Requirements kit: `requirements-elicitation-plan`, `stakeholder-request-translator`, `requirements-quality-check` and `plain-language-technical-explainer`.
+- Customer operations kit: `customer-onboarding-project-plan`, `configuration-workshop-planner`, `integration-readiness-checklist`, `go-live-and-hypercare-plan`, `customer-health-scorecard`, `adoption-review`, `customer-feedback-to-product-brief`, `engineering-escalation-brief` and `business-review-pack`.
+- "Start here" table at the top of the README.
+
 ## [0.3.0] - 2026-10-11
 
 ### Added
