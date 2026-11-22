@@ -6,6 +6,8 @@
 
 The instructions are plain Markdown and work with any agent that supports `SKILL.md`. Some skills call tools, and those tools must exist in your setup; see [Tool requirements](#tool-requirements).
 
+**New to skills?** Read [How skills work and how to build one](docs/how-skills-work.md).
+
 **Ecosystem map:** [Audit, skill relationships and cross-kit workflows](docs/skill-ecosystem/README.md).
 
 ## Start here
